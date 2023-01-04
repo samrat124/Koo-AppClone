@@ -774,5 +774,293 @@
           }
         ]
       }
+    ],
+    "peopleyoucanfollow":[
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/31386620/profile1661424911315t1a2pj.png?tr=n-dp_square",
+        "name":"Piramal Capital & Housing Finance Limited",
+        "username":"@PiramalFinance",
+        "profession":"Financial Services"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41741491/profile16700689047069fn40c.png?tr=n-dp_square",
+        "name":"Dalai Lama",
+        "username":"@dalailama",
+        "profession":"Spiritual Leader"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/36613113/profile1667287043124fqvucs.png?tr=n-dp_square",
+        "name":"Mamata Banerjee",
+        "username":"@MamataOfficial",
+        "profession":"Politician"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/11664193/c05e75f0-ba92-4d0c-9b30-fcebaf6b3cf8voke.jpg?tr=n-dp_square",
+        "name":"Virat Kohli",
+        "username":"@virat.kohli",
+        "profession":"Cricketer"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/7036203/56DB03B1-A153-4705-8EA7-D0A54A1644BF-profile.jpeg?tr=n-dp_square",
+        "name":"Sadhguru",
+        "username":"@SadhguruJV",
+        "profession":"Spiritual Leader"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/5096644/profile16178873649853itdal.png?tr=n-dp_square",
+        "name":"All India Radio News",
+        "username":"@airnewsalerts",
+        "profession":"Public Service Broadcaster"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/2850930/8836D206-927E-4BBF-9EF9-795756CEF6E4-profile.jpeg?tr=n-dp_square",
+        "name":"Swami Avdheshanand Giri",
+        "username":"@avdheshanandg",
+        "profession":"Spiritual Leader"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/3072079/6B6C5408-7CCB-4BCF-8213-89CDC36A24FE-profile.jpeg?tr=n-dp_square",
+        "name":"Nitin Gadkari",
+        "username":"@nitin.gadkari",
+        "profession":"Minister of Road Transport &amp; Highways, Government of India."
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/7374198/5c50ab26-efdd-4df0-b378-a9701e239a91voke.jpg?tr=n-dp_square",
+        "name":"Rajeev Chandrasekhar",
+        "username":"@rajeev_chandrasekhar",
+        "profession":"Union Minister of State for Electronics and Information Technology and ..."
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/2486862/0e1be0ac-1921-4126-9d97-47db6ffe22ffvoke.jpg?tr=n-dp_square",
+        "name":"Piyush Goyal",
+        "username":"@piyushgoyal",
+        "profession":"Politician"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/2796361/63aba622-bb0e-4ae2-8df9-4d8aac860bc2voke.jpg?tr=n-dp_square",
+        "name":"Pralhad Joshi",
+        "username":"@joshipralhad",
+        "profession":"Politician"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/8325202/profile16605884586118zt3d.png?tr=n-dp_square",
+        "name":"BKShivani",
+        "username":"@BKShivani",
+        "profession":"Spiritual Guide on TV Prog.: Awakening With Brahma Kumaris"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/8438048/00C70459-6EDA-40FA-859D-520AD2159A23-profile.jpeg?tr=n-dp_square",
+        "name":"Chief Minister, Goa"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/9875395/618cbf2b-deb7-4c3c-bca4-5c2474662637.jpg?tr=n-dp_square",
+        "name":"All India Trinamool Congress",
+        "username":"@AITCOfficial",
+        "profession":"Political Party India"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/7019830/8BCA58E1-6F36-4743-9730-C29062BB4CFD-profile.jpeg?tr=n-dp_square",
+        "name":"Office Of Nitin Gadkari",
+        "username":"@OfficeOfNG",
+        "profession":"Politics"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/7019830/8BCA58E1-6F36-4743-9730-C29062BB4CFD-profile.jpeg?tr=n-dp_square",
+        "name":"Gurudev Sri Sri Ravi Shankar",
+        "username":"@Gurudev",
+        "profession":"Spiritual Leader"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/11015086/profile163281125231462j4sp.png?tr=n-dp_square",
+        "name":"ABP Live",
+        "username":"@abplive",
+        "profession":"News"
+      }
+    ],
+    "globalcreators":[
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37418771/5FED8329-80EE-4EC7-B807-BBBD18541636-profile.jpeg?tr=n-dp_square",
+        "name":"Lula",
+        "username":"@lulaofficial",
+        "profession":""
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41741491/profile16700689047069fn40c.png?tr=n-dp_square",
+        "name":"Dalai Lama",
+        "username":"@dalailama",
+        "profession":"Spiritual Leader"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37330610/20e3343d-5697-4a40-99ef-fe43538d6c9d.jpg?tr=n-dp_square",
+        "name":"Koo For Brasil",
+        "username":"@KooForBrasil",
+        "profession":"Official Koo Brazil Handle"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37475010/profile1669163721528p8f07j.png?tr=n-dp_square",
+        "name":"Duolingo Brasil 🇧🇷",
+        "username":"@duolingobrasil",
+        "profession":"Coruja Poliglota"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/39006474/48144729-01F8-4158-9784-1DE3C237C4CE-profile.jpeg?tr=n-dp_square",
+        "name":"Patrícia Lélis",
+        "username":"@patricialelis",
+        "profession":""
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37652305/CA4F17C4-BA99-4EB1-8B4A-43E6CD33915E-profile.jpeg?tr=n-dp_square",
+        "name":"Caique Aguiar",
+        "username":"@caiqueaguiar",
+        "profession":"Actor"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/42084779/919fa503-28c2-4b19-8ee6-b1c8796cc96bvoke.jpg?tr=n-dp_square",
+        "name":"Alex Milone",
+        "username":"@alexmilone",
+        "profession":"Journalist"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/19234080/profile1659016692128kzergi.png?tr=n-dp_square",
+        "name":"Sputnik",
+        "username":"@sputniknews",
+        "profession":"Media"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37391909/1A98649B-8A5F-4DDD-8912-7358D260FC50-profile.jpeg?tr=n-dp_square",
+        "name":"Detremura",
+        "username":"@detremura",
+        "profession":"escritora"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37719741/ec82d4e9-7c4b-428e-aa29-591796789077.jpg?tr=n-dp_square",
+        "name":"GIL DO VIGOR",
+        "username":"@gildovigorofc",
+        "profession":"PhD Student"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37762969/profile1668807908563mae0xk.png?tr=n-dp_square",
+        "name":"Ale Santos",
+        "username":" @Savagefiction",
+        "profession":"Escritor"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/42056831/A24725D9-BB51-4684-820A-EF0E985CBAE9-profile.jpeg?tr=n-dp_square",
+        "name":"Prashant Rao",
+        "username":"@prashantsrao",
+        "profession":"Journalist"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37492270/f107206c-8eca-4cd7-9988-833554a14941.jpg?tr=n-dp_square",
+        "name":"Nil Moretto",
+        "username":"@nilmoretto",
+        "profession":"Jornalista e criadora de conteúdo"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/38221237/9CA8274F-D6F5-48A4-9660-9FF15CB9A1F9-profile.jpeg?tr=n-dp_square",
+        "name":"Guga Noblat",
+        "username":"@guganoblatreal",
+        "profession":"jornalista"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/37588420/d6480075-0f18-4d38-a034-2902bf7f2b9c.jpg?tr=n-dp_square",
+        "name":"Ronny Teles",
+        "username":"@RonnyCombate",
+        "profession":"Criador de Conteúdo"
+      }
+    ],
+    "newToKoo":[
+      {
+        "image":"https://images.kooapp.com/transcode_input/42187536/36FADFC4-21A3-4273-967A-E0A9DE9AFB8A-profile.jpeg?tr=n-dp_square",
+        "name":"JAGSEER SINGH",
+        "username":"@arjuna.jagseer",
+        "profession":"Athlete"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41838590/C960C452-9434-4F76-BE98-AE6C39294384-profile.jpeg?tr=n-dp_square",
+        "name":"Bobby kataria",
+        "username":"@bobbykataria",
+        "profession":"Influencer"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41849490/61a8745a-8160-49e4-a82f-3d74aff9bed1.jpg?tr=n-dp_square",
+        "name":"Shibani Kashyap",
+        "username":"@shibani_kashyap",
+        "profession":"Singer"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41887932/fb04452f-a8c8-4a62-b272-41c314758428voke.jpg?tr=n-dp_square",
+        "name":"Chandra Kanta Meghwal",
+        "username":"@chandra_kantaM052",
+        "profession":"Politician"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41936142/profile16708261891240hk1bm.png?tr=n-dp_square",
+        "name":"Koo for Eminent",
+        "username":"@KooForEminent",
+        "profession":"Entertainment"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/1476179/09da9091-b451-4d6c-9256-1c83969de16f.jpg?tr=n-dp_square",
+        "name":"Pramod Soni",
+        "username":"@thepramodsoni",
+        "profession":"Journalist"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41988267/profile1671111968684azd3cb.png?tr=n-dp_square",
+        "name":"बिज़नेस स्टैंडर्ड हिन्दी",
+        "username":"@bshindi",
+        "profession":"Newspaper"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/41991224/65D6D352-5D3F-43EF-96AB-E207670A2B85-profile.jpeg?tr=n-dp_square",
+        "name":"Nidhi Taneja",
+        "username":"@nidhitaneja",
+        "profession":"Journalist"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/42061814/8DACE720-1DD9-4257-9848-940F3C657D29-profile.jpeg?tr=n-dp_square",
+        "name":"Aditya Kalyanpur",
+        "username":"@adityatabla",
+        "profession":"Music"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/42093340/da1df823-54b5-477a-8262-70f14fd3f47d.jpeg?tr=n-dp_square",
+        "name":"Rangtaal Records",
+        "username":"@rangtaalrecords",
+        "profession":"Music Production & publisher"
+      }
+    ],
+    "popular":[
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/31386620/profile1661424911315t1a2pj.png?tr=n-dp_square",
+        "name":"Piramal Capital & Housing Finance Limited",
+        "username":"@PiramalFinance",
+        "profession":"Financial Services"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/3560322/profile1670146872363xrpem6.png?tr=n-dp_square",
+        "name":"francois gautier",
+        "username":"@francoisgautier",
+        "profession":"Journalist & Writer"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/3117321/90c1d534-14b1-4ee2-b3a9-c274f8367b53voke.jpg?tr=n-dp_square",
+        "name":"",
+        "username":"@f_for_fun_memes",
+        "profession":"Memer"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/2756051/328A7E6F-0BB1-4681-BA70-907A244090B3-profile.jpeg?tr=n-dp_square",
+        "name":"Sumit Peer",
+        "username":"@sumit_peercula",
+        "profession":"Political commentator"
+      },
+      {
+        "image":"https://images.kooapp.com/koo-profile-media/profiles/5573176/8511655C-2395-4BBB-B0C6-821175BAC76B-profile.jpeg?tr=n-dp_square",
+        "name":"Vivek Mishraa",
+        "username":"@iamvivekmishraa",
+        "profession":"Musician"
+      }
     ]
   }
