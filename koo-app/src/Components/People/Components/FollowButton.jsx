@@ -14,7 +14,7 @@ function FollowButton() {
   const [follow,setFollow]=useState("+ Follow");
   const [isFollowed,setisFollowed]=useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [loading,setLoading]=useState(false);
+  // const [loading,setLoading]=useState(false);
   const handleFollow=()=>{
     onOpen();
     setisFollowed(!isFollowed);
@@ -24,9 +24,9 @@ function FollowButton() {
       setLoading(false)
     },1000)
   }
-  if(loading){
-    return <CircularProgress isIndeterminate color='green.300' />
-  }
+  // if(loading){
+  //   return <CircularProgress isIndeterminate color='green.300' />
+  // }
   return (
     <>
     <Button color="#fff" bg="#809b9d"  size="sm" onClick={handleFollow}>{follow}</Button>
