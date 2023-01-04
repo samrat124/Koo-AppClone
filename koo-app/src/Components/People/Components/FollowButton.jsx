@@ -8,25 +8,28 @@ import {
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton,
+  ModalCloseButton,Spinner
 } from '@chakra-ui/react'
 function FollowButton() {
   const [follow,setFollow]=useState("+ Follow");
+  const [isFollow,setIsFollow]=useState("Unfollow");
   const [isFollowed,setisFollowed]=useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  // const [loading,setLoading]=useState(false);
+  const [loading,setLoading]=useState(false);
   const handleFollow=()=>{
     onOpen();
     setisFollowed(!isFollowed);
     setLoading(true);
     setTimeout(()=>{
       isFollowed ? setFollow("Unfollow") :setFollow(" + Follow")
+      isFollowed ? setIsFollow("Follow") :setIsFollow("Unfollow")
       setLoading(false)
     },1000)
   }
-  // if(loading){
-  //   return <CircularProgress isIndeterminate color='green.300' />
-  // }
+  if(loading){
+    // return <CircularProgress isIndeterminate color='green.300' />
+    return <Spinner color='blue.500' size='lg' />
+  }
   return (
     <>
     <Button color="#fff" bg="#809b9d"  size="sm" onClick={handleFollow}>{follow}</Button>
@@ -36,7 +39,7 @@ function FollowButton() {
           <ModalHeader>Modal Title</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Box>You will not be able to see any more content from this person. Are you sure you want to {follow}?</Box>
+            <Box>You will not be able to see any more content from this person. Are you sure you want to {isFollow}?</Box>
           </ModalBody>
           <ModalFooter>
             <Button colorScheme='gray' bg={"rgb(128, 155, 157)"} w="80px" h="32px" borderRadius="20px" mr={3} onClick={onClose}>
