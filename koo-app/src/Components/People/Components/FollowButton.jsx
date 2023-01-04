@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from "react";
-import { Box, Button, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, useDisclosure,CircularProgress } from '@chakra-ui/react';
 import {
   Modal,
   ModalOverlay,
@@ -13,13 +13,19 @@ import {
 function FollowButton() {
   const [follow,setFollow]=useState("+ Follow");
   const [isFollowed,setisFollowed]=useState(false);
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [loading,setLoading]=useState(false);
   const handleFollow=()=>{
     onOpen();
     setisFollowed(!isFollowed);
+    setLoading(true);
     setTimeout(()=>{
       isFollowed ? setFollow("Unfollow") :setFollow(" + Follow")
-    },500)
+      setLoading(false)
+    },1000)
+  }
+  if(loading){
+    return <CircularProgress isIndeterminate color='green.300' />
   }
   return (
     <>
@@ -33,10 +39,10 @@ function FollowButton() {
             <Box>You will not be able to see any more content from this person. Are you sure you want to {follow}?</Box>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}>
+            <Button colorScheme='gray' bg={"rgb(128, 155, 157)"} w="80px" h="32px" borderRadius="20px" mr={3} onClick={onClose}>
               Yes
             </Button>
-            <Button variant='ghost' onClick={onClose}>No</Button>
+            <Button variant='ghost' w="80px" h="32px" border="1px solid rgb(128, 155, 157)" borderRadius="20px" onClick={onClose}>No</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
