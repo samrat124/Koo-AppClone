@@ -13,6 +13,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+<<<<<<< HEAD
+    "react-player": "^2.11.0",
+=======
+>>>>>>> c3569b8918f841a099b7b2cdfdd429eb9e2bcf4b
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
