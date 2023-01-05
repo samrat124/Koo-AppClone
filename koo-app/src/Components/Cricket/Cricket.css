@@ -1,0 +1,161 @@
+
+
+
+#g-parent-div {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+  }
+  
+  #g-main-div {
+    border: 1px solid #e0e0e0;
+    width: 93.5%;
+  
+    margin-top: 10px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+  }
+  .cont1 {
+    display: flex;
+    gap: 2%;
+    padding: 10px;
+  }
+  .profilepic {
+    margin-top: 20px;
+    width: 50px;
+    height: 48px;
+    border-radius: 50%;
+  }
+  
+  #g-nu {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    font-family: Roboto, sans-serif !important;
+    color: #212121;
+  }
+  .username {
+    width: 100%;
+    font-style: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 0;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    margin-top: -15px;
+  }
+  .cont2 {
+    padding-bottom: 0px;
+    font-weight: 400;
+    color: rgb(33, 33, 33);
+    font-size: 13px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    padding: 0 16px;
+    word-break: break-word;
+    text-align: left;
+    width: 90%;
+  }
+  .contto {
+    color: #1e63bd;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    font-weight: 400;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    padding: 0 16px;
+    word-break: break-word;
+    text-align: left;
+    width: 90%;
+    cursor: pointer;
+  }
+  .cont3 {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-right: 0px;
+    cursor: pointer;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .cont3 > img {
+    width: 100%;
+  }
+  .cont4 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 1.6%;
+    justify-content: space-between;
+  }
+  .cont4 > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .cont4 > div > img {
+    width: 20px;
+  
+  }
+  .cont4 > div > p {
+     margin-left: 5px;
+    
+    }
+  .whatsappicon {
+      margin-top: 13px;
+    width: 22px;
+    background-color: white;
+    color: white;
+    padding: 2px;
+  }
+  
+  
+  
+  .cont5 {
+      height: 35px;
+      border-radius: 12px;
+      margin: 16px 16px 0;
+      border: 1px solid #e8e8e3;
+      display: flex;
+      cursor: pointer;
+      font-weight: 400;
+   
+    }
+    .cont5 > div {
+      margin-left: 18px;
+      color: #888;
+      width: 100%;
+      margin-top: 0.5px;
+      position: relative;
+      cursor: pointer;
+      margin-top: 10px;
+      color: #888;
+      text-decoration: none;
+      font-size: 12px;
+      font-family: Roboto,sans-serif!;
+    }
+    .cont5 > img {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+   
