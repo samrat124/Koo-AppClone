@@ -24,7 +24,7 @@ function FollowButton() {
       isFollowed ? setFollow("Unfollow") :setFollow(" + Follow")
       isFollowed ? setIsFollow("Follow") :setIsFollow("Unfollow")
       setLoading(false)
-    },1000)
+    },500)
   }
   if(loading){
     // return <CircularProgress isIndeterminate color='green.300' />
