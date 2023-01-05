@@ -1,15 +1,14 @@
 import React from 'react';
 import {useState} from "react";
-import { Box, Button, useDisclosure,CircularProgress } from '@chakra-ui/react';
+import { Box, Button, useDisclosure } from '@chakra-ui/react';
 import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalFooter,
   ModalBody,
   ModalCloseButton,Spinner
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 function FollowButton() {
   const [follow,setFollow]=useState("+ Follow");
   const [isFollow,setIsFollow]=useState("Unfollow");
@@ -36,10 +35,12 @@ function FollowButton() {
     <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Box>You will not be able to see any more content from this person. Are you sure you want to {isFollow}?</Box>
+            {
+              isFollowed ? <Box>You will not be able to see any more content from this person. Are you sure you want to {isFollow}?</Box>
+              : <Box>You will be able to see any more content from this person. Are you sure you want to {isFollow}?</Box>
+            }
           </ModalBody>
           <ModalFooter>
             <Button colorScheme='gray' bg={"rgb(128, 155, 157)"} w="80px" h="32px" borderRadius="20px" mr={3} onClick={onClose}>
