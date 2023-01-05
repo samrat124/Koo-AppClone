@@ -2,6 +2,7 @@ import React from "react";
 import FollowButton from "./FollowButton";
 import { Flex,Heading,Text } from "@chakra-ui/react";
 import { Image, Box } from "@chakra-ui/react";
+import IndividualUser from "./IndividualUser";
 
 function PeopleYouCanFollow() {
   const peopleyoucanfollow = [
@@ -14,17 +15,17 @@ function PeopleYouCanFollow() {
     },
     {
       image:
-        "https://images.kooapp.com/koo-profile-media/profiles/41741491/profile16700689047069fn40c.png?tr=n-dp_square",
-      name: "Dalai Lama",
-      username: "@dalailama",
-      profession: "Spiritual Leader",
-    },
-    {
-      image:
         "https://images.kooapp.com/koo-profile-media/profiles/36613113/profile1667287043124fqvucs.png?tr=n-dp_square",
       name: "Mamata Banerjee",
       username: "@MamataOfficial",
       profession: "Politician",
+    },
+    {
+      image:
+        "https://images.kooapp.com/koo-profile-media/profiles/41741491/profile16700689047069fn40c.png?tr=n-dp_square",
+      name: "Dalai Lama",
+      username: "@dalailama",
+      profession: "Spiritual Leader",
     },
     {
       image:
@@ -132,6 +133,7 @@ function PeopleYouCanFollow() {
       {peopleyoucanfollow.map((person) => {
         return (
           <>
+            
             <Flex borderRadius="10px 10px 0px 0px" border="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={0}>
               <Box boxSize="80px">
                 <Image

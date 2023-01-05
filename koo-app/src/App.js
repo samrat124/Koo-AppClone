@@ -8,7 +8,7 @@ function App() {
     <div className="App">
        <ChakraProvider>
         <People/>
-        </ChakraProvider> 
+      </ChakraProvider> 
     </div>
   );
 }

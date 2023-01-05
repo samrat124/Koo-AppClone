@@ -26,12 +26,11 @@ function FollowButton() {
     },500)
   }
   if(loading){
-    // return <CircularProgress isIndeterminate color='green.300' />
     return <Spinner color='blue.500' size='lg' />
   }
   return (
     <>
-    <Button color="#fff" bg="#809b9d"  size="sm" onClick={handleFollow}>{follow}</Button>
+    <Button color="#fff" bg="#809b9d" borderRadius={100}  size="sm" onClick={handleFollow}>{follow}</Button>
     <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
