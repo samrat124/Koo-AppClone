@@ -1,14 +1,14 @@
 
 import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
- import Login from './Components/Login/Login';
+import Navbar from './Components/Navbar/Navbar';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-       <ChakraProvider>
-         <Login/>
-        </ChakraProvider> 
+      <BrowserRouter>
+        
+       </BrowserRouter>
     </div>
   );
 }
