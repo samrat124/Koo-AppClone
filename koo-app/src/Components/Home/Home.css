@@ -1,0 +1,15 @@
+ .NavbarHome{
+    position: sticky;
+    top: 0;
+    background-color: white;
+     
+    /* border: 5px solid black; */
+    z-index: 1;
+ 
+ }
+ .homeMain{
+    width: 100%;
+    position: relative;
+    background-color: RGB(170 187 204);
+    /* border: 5px solid black; */
+ }

@@ -16,7 +16,7 @@ const LanguageModal = () => {
   return (
     
         <>
-      <Button onClick={onOpen}><GrLanguage/></Button>
+      <Button bgColor='transparent' onClick={onOpen}><GrLanguage/></Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
