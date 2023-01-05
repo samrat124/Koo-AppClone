@@ -1,10 +1,11 @@
 import React from 'react'
+import { InitialFocus } from './LoginModal'
 
 const Login = () => {
   return (
     <div>
 
-     pranav
+     <InitialFocus/>
 
     </div>
   )

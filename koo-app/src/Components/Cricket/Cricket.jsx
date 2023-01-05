@@ -1,8 +1,25 @@
 import React from 'react'
 
+
+
+
+
+
 const Cricket = () => {
   return (
-    <div>Cricket</div>
+
+    <div>Cricket
+
+      <div>i am working on cricket page</div>
+    </div>
+     
+
+
+
+
+
+
+
   )
 }
 
