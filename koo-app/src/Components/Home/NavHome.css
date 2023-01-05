@@ -1,0 +1,26 @@
+.homeNavMain{
+    display: flex;
+}
+.kooLogo{
+    width:40%;
+    
+    /* border:5px solid red */
+}
+.homeNav{
+    display: flex;
+    width:60%;
+    /* border:5px solid black */
+}
+.homeNavIcons{
+    width:60%;
+    /* border:5px solid red; */
+    display:flex;
+    align-items: center;
+    /* gap: 10%; */
+    justify-content: space-around;
+}
+.homeNavBarcode{
+    width: 40%;
+    /* border:5px solid blueviolet; */
+    display: flex;
+}
