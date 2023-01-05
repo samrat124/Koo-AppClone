@@ -132,7 +132,7 @@ function PeopleYouCanFollow() {
       {peopleyoucanfollow.map((person) => {
         return (
           <>
-            <Flex borderRadius="8px 8px 0px 0px" borderBottom="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={3}>
+            <Flex borderRadius="10px 10px 0px 0px" border="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={0}>
               <Box boxSize="80px">
                 <Image
                   src={person.image}
