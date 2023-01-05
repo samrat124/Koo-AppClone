@@ -1062,5 +1062,115 @@
         "username":"@iamvivekmishraa",
         "profession":"Musician"
       }
+    ],
+    "cricket": [
+      {
+        "id": 1,
+        "image": "https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+        "name": "Dil Hai Cricket - Subrata Biswas",
+        "username": "@dilhaicricket",
+        "profession": "content creater",
+        "description": "After 4 India callups in 2022, Rahul Tripathi is all set to make hisInternational debut in the 2nd T20I against Sri Lanka as Sanju Samson is doubtful for the match due to knee injury. However, Ruturaj Gaikwad is also in line and could be preferred over Tripathi.",
+        "hastags": "#cricket #cricketdaily #australiacricketteam #davidwarner #cricketupdates #cricketnews",
+        "image2": "https://images.kooapp.com/transcode_input/12304821/aa10f0bb-43b0-456f-a6d5-517e6e6fc981.jpg"
+      },
+      {
+        "id": 2,
+        "image": "https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+        "name": "Dil Hai Cricket - Subrata Biswas",
+        "username": "@dilhaicricket",
+        "profession": "content creater",
+        "hastags":"#cricket #msdhoni #dhoni #cricketdaily #cricketupdates #cricketnews #indiancricketteam",
+        "description": "Do you know Prakash Poddar was the person who recommended Dhoni’s name to BCCI. Without him, we would have never been able to witness the greatness of MS Dhoni. But unfortunately, we lost him today.",
+        "image2": "https://images.kooapp.com/transcode_input/12304821/70073774-702e-4299-957f-ffa6f20f0381.jpg"
+      },
+      {
+        "id": 3,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBtvpJJdmo3OEZ9QRhOkqtKDCoMtOj9Le4Q&usqp=CAU",
+        "name": "Cricket Lover ",
+        "username": "@dubey20",
+        "profession": "वरिष्ठ खेल पत्रकार",
+        "description": "India beat Sri Lanka in a thrilling match",
+        "hastags": " #indvssl  #deepakhooda  #shivammavi  #hardikpandya  #latestupdate  #Bigbreaking  #viralnews  #latestupdate #axarpatel  #teamindia  #cricketonkoo  #Cricket  #cricketfans  #dubey20",
+        "image2": "https://images.kooapp.com/transcode_input/5598489/f52d9c42-3519-479f-a8ab-f359279e7fda.jpg"
+      },
+      {
+        "id": 4,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3F5APDToo79RzPrUblyHfN3w4Ol2VAoF3w&usqp=CAU",
+        "name": "Alexandar",
+         "username": "@alexandar5",
+        "profession": "Athlete",
+        "description": "An outstanding start to the year in Mumbai for #TeamIndia! The brilliant bowling of debutant #ShivamMavi, Umran Malik and Harshal Patel help India seal the win by 2 runs. #INDvSL #CricketOnKoo #INDvsSL",
+        "hastags": "#INDvSL #CricketOnKoo #INDvsSL",
+        "image2": "https://images.kooapp.com/transcode_input/8700061/6A4562F8-7E07-42D2-842B-330CB4669E1D-image.jpeg"
+      },
+      {
+        "id": 5,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxVTxxOOYvfOiHUd_enkPjkvPyBGsEXaeywjdd9JGjg&s",
+        "name": "Female Cricket",
+        
+        "username": "@femalecricket",
+        "profession": "Official Account of Female Cricket",
+        "description": "The BCCI has got BUMPER INTEREST for the Women IPL Media Rights Tender. Amazon Prime, Fancode, Times Internet, Google, Discovery have also picked the    Post the media rights tender, BCCI will sell the WIPL Franchises.",
+  
+       
+        "hastags": "#Cricketonkoo  #WomensIPL",
+     
+        "image2": "https://images.kooapp.com/transcode_input/2963639/FINAL-IMAGE-WEB-cd6523f8-e07d-42ca-95ca-4e7244baa508.jpg"
+      },
+      {
+        "id": 6,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQUtoCRkbRyO08aBNjy_pTz4sqHUEe-zyUQ&usqp=CAU",
+        "name": "Sachin Choudhary",
+        "username": "@sachinghasil",
+        "profession": "Sports Content Professional",
+        "description": "A quickfire half-century partnership between @DJ5757 & Axar Patel👍 👍",
+        "hastags": "#INDVSL #shubmangill #shivammavi #cricketonkoo",
+        "image2": "https://images.kooapp.com/transcode_input/637568/2ef75c6b-e99b-4bc6-8943-0ba41cbfde14.jpg"
+      },
+      {
+        "id": 7,
+        "image": "https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+        "name": "Dil Hai Cricket - Subrata Biswas",
+        "username": "@dilhaicricket",
+        "profession": "content creater",
+        "description": "Virat Kohli was way ahead of his time!",
+        "hastags": "#viratkohli #indiancricket",
+        "image2": "https://images.kooapp.com/transcode_input/12304821/520b6bd6-9dda-466d-bb7a-e92e3c2858e6.png"
+      },
+      {
+        "id": 8,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqGrGhirKeMUkRwHAnWTiSnnBYIS0ZcAilxNp9xT3-x-gsfojvrZ96BYhuDYhosItlZ8&usqp=CAU",
+        "name": "Star Sports India",
+        "username": "@StarSportsIndia",
+        "profession": "...",
+        "description": "#SriLanka’s star wrist spinner, #WaniduHasaranga will be looking to up his game and better his existing record in the second T20I of the Mastercard #INDvSL T20I Series!🔥",
+        "hastags": "#cricket #startsports #srilankacricket #T20",
+        "image2": "https://images.kooapp.com/transcode_input/12100742/04817A8A-F3FA-44C2-963C-17153301099A-image.jpeg"
+      },
+      {
+        "id": 9,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqGrGhirKeMUkRwHAnWTiSnnBYIS0ZcAilxNp9xT3-x-gsfojvrZ96BYhuDYhosItlZ8&usqp=CAU",
+        "name": "Star Sports India",
+        "username": "@StarSportsIndia",
+        "profession": "...",
+        "hastags": "#teamindia #viratkohli #indiancricket #rishabhpant #rohitsharma",
+        "description": "#TeamIndia 🇮🇳 begin the Mastercard #INDvSL T20I series on a positive note with a hard-fought victory against the Islanders. 💪🏻   Will Sri Lanka square the series in the 2nd T20I?  Tune-in on Jan 5 | 6PM Onwards | Star Sports & Disney+Hotstar",
+  
+      
+       
+        "image2": "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2023/01/01/1136353-thumb-13.jpg?im=Resize=(1280,720)"
+      },
+      {
+        "id": 10,
+        "image": "https://meghatv.net/favicon.ico",
+        "name": "MeghUpdates ® 🚨",
+        "username": "@meghupdates",
+        "profession": "News",
+        "description": "USA U19 Women’s Squad has arrived in South Africa for the World Cup",
+        "hastags": "#Cricketonkoo",
+        "image2": "https://images.kooapp.com/transcode_input/2963639/FINAL-IMAGE-WEB-93d6da99-869a-4afa-b575-fe327b2fa5e9.jpg"
+      }
     ]
+
   }
