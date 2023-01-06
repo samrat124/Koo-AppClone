@@ -7,7 +7,8 @@
 .NavbarMain{
     display:flex;
     width: 100%;
-    border: 2px solid red;
+
+    
     
 
 
@@ -16,6 +17,7 @@
     display:grid;
     width: 20%;
     box-shadow: 10px 10px 5px white;
+    background-color: white;
     /* height:800px; */
   
 }
@@ -51,14 +53,14 @@
 }
 .NavbarComp{
     width: 50%;
-
-    border: 2px solid green;
+     margin: auto;
+     background-color: rgb(209, 207, 207);
     
 }
 .NavbarSidebar{
     width: 30%;
     background-color: white;
-    border: 5px solid pink;
+
 }
 .NavbarLogo{
     width:30%;
@@ -90,7 +92,10 @@
 }
 .i{
     width: 20%;
-    padding: 10px;
+    padding:5px;
+    margin-left:100px;
+    
+    padding-left: 20px;
 }
 .TrendingSideBar{
     width:90%;
@@ -131,14 +136,15 @@
 .circle{
    
     width:10%;
-    border-radius: 50%;
+  
     border: 2px solid gray;
     float: left;
     color: gray;
     margin-left: 12px;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 20px;
     text-align: center;
+    border: none;
 
 }
 .sideMain{
@@ -148,7 +154,7 @@
 }
 .SearchIcon{
     position: relative;
-
+    margin-top: 30px;
     display: flex;
     
 }
@@ -193,15 +199,13 @@
 
 .Card{
     background-color: white;
-    box-shadow:10px 10px 5px rgb(107, 40, 40);
-    border:2px solid peru;
     
 }
 .CardMain{
     width: 100%;
     height: 50px;
     margin: 0;
-    border: 2px solid palegreen;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -233,4 +237,54 @@ b{
 .Intro p{
     text-align:left;
     line-height:40px;
+}
+.Post{
+   
+ display: flex;
+ position: relative;
+   
+}
+
+.PostSearch{
+  border:2px solid red;
+}
+.PostUser{
+    width: 5%;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    height: 100%;
+}
+.PostAdd{
+    width: 5%;
+ /* border: 2px solid blue; */
+ position: absolute;
+ right: 0px
+}
+.follow{
+    background-color:antiquewhite;
+    padding: 10px;
+    height: 200px;
+    border-radius: 20px;
+}
+.cards-container {
+    display: flex;
+    border-radius: 6px;
+    color: #333;
+    background: #eee;
+    padding: 1rem;
+    
+    overflow-x: auto;
+    position: relative;
+}
+.follow{
+    width:90%;
+    margin: auto;
+    margin-top: 20px;
+    background-color:white;
+    height:100px;
+    border-radius: 10px;
+    text-align: center;
+    
+    
 }
