@@ -25,6 +25,7 @@ import { Box } from "@chakra-ui/react";
 import VideoCard from "../videocard/VideoCard";
 import { useState } from "react";
 import Profile from "./Profile";
+import Search from "../Login/Google";
 
 
 const Navbar = () => {
@@ -180,9 +181,8 @@ console.log(data);
         </div>
 
         <Button
-          className="btn"
-          bgColor="blue"
-          color="white"
+         
+         colorScheme="blue"
           width="200px"
           m="auto"
           mt="20px"
@@ -190,9 +190,8 @@ console.log(data);
           + Koo
         </Button>
         <Button
-          className="btn"
-          bgColor="blue"
-          color="white"
+          
+           colorScheme="blue"
           m="auto"
           mt="100px"
           mb="20px"
@@ -226,14 +225,14 @@ console.log(data);
           </div> 
     
   
-<Box display='flex' gap="10px" mt='30px' w='98%' m='auto'>
+<Box display='flex' gap="10px" w='98%' m='auto'>
         {data.map((ele)=>{
           return <Profile img={ele.image} name={ele.name} position={ele.profession} />
         })}
 </Box>
 
 
-          <VideoCard
+          <VideoCard 
             userName="Koo English"
             id="kooenglish"
             description="Welcome to the Koo family 🙂"
@@ -244,9 +243,8 @@ console.log(data);
 
           <div className="follow">
           <Button
-          className="btn"
-          bgColor="grey"
-          color="white"
+        
+        colorScheme="blue"
           width="200px"
           m="auto"
           borderRadius="20px"
@@ -279,8 +277,10 @@ console.log(data);
               <BiMicrophone />
             </div>
           </div> */}
-
           
+          <Box marginLeft="20px" marginTop="20px"><Search/></Box> 
+
+
 
           <div className="main1">
             <div className="heading">
@@ -295,7 +295,7 @@ console.log(data);
           <div className="TrendingSideBar">
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
+                <Text fontSize="md" textAlign="left">
                 #haldwani
                 </Text>
 
@@ -340,7 +340,7 @@ console.log(data);
             </div>
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
+                <Text fontSize="md" textAlign="left" >
                 #indvsl
                 </Text>
 
@@ -385,7 +385,7 @@ console.log(data);
             </div>
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
+                <Text fontSize="md" textAlign="left">
                 #g20india
                 </Text>
 
@@ -430,7 +430,7 @@ console.log(data);
             </div>
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
+                <Text fontSize="md" textAlign="left">
                 #bharatjodoyatra
                 </Text>
 
