@@ -7,12 +7,14 @@ import {
     ModalBody, Box,
     ModalCloseButton, Button, FormControl, Input, useDisclosure, FormLabel, Text
 } from '@chakra-ui/react'
+import 'react-toastify/dist/ReactToastify.css';
 import React from 'react'
 import { useState, useRef } from 'react'
 import { FcGoogle } from "react-icons/fc"
 import ReCAPTCHA from "react-google-recaptcha";
 import { App } from "./Google"
 import { toast, ToastContainer } from 'react-toastify';
+import {BsFacebook} from "react-icons/bs"
 
 
 
@@ -48,6 +50,10 @@ export const InitialFocus = () => {
 
         toast.success(`Hello ${obj.name}`)
 
+
+
+
+
     }
     const notify4 = () => {
 
@@ -69,7 +75,7 @@ export const InitialFocus = () => {
             
             notify2();
             
-            localStorage.setItem("isAuth",true);
+          
             setState("Details");
 
         }
@@ -82,7 +88,20 @@ export const InitialFocus = () => {
     const handle3=()=>{
           
         notify3();
+        localStorage.setItem("isAuth",true);
+        localStorage.setItem("loginData",JSON.stringify(obj));
+
         onClose();
+
+        fetch("http://localhost:3001/login",{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(obj)
+    
+    }).then((res)=>{
+
+         console.log(res.ok);
+
+    })
 
     }
     
@@ -136,9 +155,9 @@ export const InitialFocus = () => {
 
                         {obj.number !== "" ? <Box display="flex" pb="10" justifyContent="center" > <ReCAPTCHA ref={captacharef} sitekey="6LfNXdEjAAAAALF6Gp4pMyNhdx7vSArQAP3bkw2E" onChange={handleRecaptcha} /> </Box> : null}
 
-                        {state==true ? <Button disabled={check} colorScheme='blue' onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> :null}
-                        {state==false ?    <Button colorScheme='blue' onClick={handle2} w="70%" borderRadius="20px">Verify</Button>:null}
-                        {state=="Details" ? <Button colorScheme='blue' onClick={handle3} w="70%" borderRadius="20px">Submit</Button>:null}
+                        {state==true ? <Button disabled={check || obj.number.length!==10} colorScheme='blue' onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> :null}
+                        {state==false ?    <Button colorScheme='blue' disabled={obj.otp.length==0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button>:null}
+                        {state=="Details" ? <Button colorScheme='blue' disabled={obj.name.length==0 || obj.email.length==0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button>:null}
 
 
                         <br></br>
@@ -149,12 +168,12 @@ export const InitialFocus = () => {
                         
                         {obj.number == "" ? <Box display="flex" flexDirection="column" textAlign="center" gap="5" padding="5">
                             <Button bg="none" border="1px solid grey" borderRadius="40px" p='6' w="90%" margin="auto" display="flex" gap="3" alignItems="center"><div style={{ fontSize: "22px" }}><FcGoogle /></div><div>Sign-in with Google</div></Button>
-                            <Button bg="none" border="1px solid grey" borderRadius="40px" p='6' w="90%" margin="auto" display="flex" gap="3" alignItems="center"><div style={{ fontSize: "22px" }}><FcGoogle /></div><div>Sign-in with FaceBook</div></Button>
+                            <Button bg="none" border="1px solid grey" borderRadius="40px" p='6' w="90%" margin="auto" display="flex" gap="3" alignItems="center"><div style={{ fontSize: "22px" }}><BsFacebook /></div><div>Sign-in with FaceBook</div></Button>
                             {/* <Button bg="none" border="1px solid grey" borderRadius="40px" p='6' w="90%" margin="auto" display="flex" gap="3" alignItems="center"><div style={{ fontSize: "22px" }}><FcGoogle /></div><div>Sign-in with Gmail</div></Button> */}
 
                         </Box> : null}
 
-
+                       {/* <Box><img style={{width:"100%",height:"150px"}} src="https://wp-socialnation-assets.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/06/18184047/Koo-app.png" alt="one" /></Box> */}
 
                     </ModalBody>
 
