@@ -25,6 +25,7 @@ import { Box } from "@chakra-ui/react";
 import VideoCard from "../videocard/VideoCard";
 import { useState } from "react";
 import Profile from "./Profile";
+import Search from "../Login/Google";
 
 
 const Navbar = () => {
@@ -279,8 +280,8 @@ console.log(data);
               <BiMicrophone />
             </div>
           </div> */}
-
           
+          <Search/>
 
 
 
