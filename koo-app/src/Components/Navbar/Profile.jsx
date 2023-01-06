@@ -12,7 +12,19 @@ export default function Profile({img,name,position}) {
                 <Box><Heading fontSize="12px">{name}</Heading></Box> 
                 <Box><Text fontSize="12px">{position}</Text></Box> 
 
-                <Button marginTop="10px" size="xs"  colorScheme='blue'>Follow</Button>
+                <Button marginTop="10px" size="xs"  colorScheme='blue' onClick={(event)=>{
+
+                   if(event.target.innerText==="Follow"){
+                    event.target.innerText="Followed"
+                    event.target.style.backgroundColor="red";
+                   }
+                   else{
+                    event.target.innerText="Follow"
+                    event.target.style.backgroundColor="blue";
+
+                   }
+
+                }}>Follow</Button>
             </Box>
 
         </Box>
