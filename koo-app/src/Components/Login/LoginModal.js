@@ -14,9 +14,9 @@ import { FcGoogle } from "react-icons/fc"
 import ReCAPTCHA from "react-google-recaptcha";
 import { App } from "./Google"
 import { toast, ToastContainer } from 'react-toastify';
-import {BsFacebook} from "react-icons/bs"
+import { BsFacebook } from "react-icons/bs"
 
-
+import ReactAudioPlayer from 'react-audio-player';
 
 export const InitialFocus = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -25,16 +25,16 @@ export const InitialFocus = () => {
     const finalRef = React.useRef(null)
 
     const [state, setState] = useState(true);
-    
+
     const [check, setCheck] = useState(true);
     const captacharef = useRef();
     const [obj, setObj] = useState({
         number: "",
         otp: "",
-        name:"",
-        email:""
+        name: "",
+        email: ""
     })
-
+const[sound,setSound]=useState("");
 
     const notify1 = () => {
 
@@ -49,7 +49,6 @@ export const InitialFocus = () => {
     const notify3 = () => {
 
         toast.success(`Hello ${obj.name}`)
-
 
 
 
@@ -72,10 +71,9 @@ export const InitialFocus = () => {
     const handle2 = () => {
         if (obj.otp == 1234) {
             setState(true);
-            
+
             notify2();
-            
-          
+
             setState("Details");
 
         }
@@ -85,30 +83,33 @@ export const InitialFocus = () => {
         }
 
     }
-    const handle3=()=>{
-          
+    const handle3 = () => {
+
         notify3();
-        localStorage.setItem("isAuth",true);
-        localStorage.setItem("loginData",JSON.stringify(obj));
+        localStorage.setItem("isAuth", true);
+        localStorage.setItem("loginData", JSON.stringify(obj));
 
         onClose();
+        setSound("sound");
 
-        fetch("http://localhost:3001/login",{method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(obj)
-    
-    }).then((res)=>{
+        fetch("http://localhost:3001/login", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(obj)
 
-         console.log(res.ok);
+        }).then((res) => {
 
-    })
+            console.log(res.ok);
+
+        })
+        
 
     }
-    
+
 
     const handleRecaptcha = (value) => {
 
-         
+
         setCheck(false)
 
     }
@@ -117,8 +118,14 @@ export const InitialFocus = () => {
     return (
         <>
             <ToastContainer theme="dark" />
+           {sound?<ReactAudioPlayer style={{position:"absolute",top:"-100px"}}
+                src="/Hello,Welcome To KOO APP.mp3"
+                autoPlay={true}
+                controls
+
+            />:null} 
             <Button onClick={onOpen}>Login</Button>
-            
+
 
             <Modal
                 initialFocusRef={initialRef}
@@ -128,12 +135,12 @@ export const InitialFocus = () => {
             >
                 <ModalOverlay />
                 <ModalContent textAlign="center" borderRadius="18px" height="650px" >
-                {state==true ?<ModalHeader marginTop="20px" > Enter your Mobile Number </ModalHeader>:null}
-                {state==false ?<ModalHeader marginTop="20px"> Please Enter OTP </ModalHeader>:null}
+                    {state == true ? <ModalHeader marginTop="20px" > Enter your Mobile Number </ModalHeader> : null}
+                    {state == false ? <ModalHeader marginTop="20px"> Please Enter OTP </ModalHeader> : null}
 
 
-                   {state==false?<ModalHeader fontSize="16px"  marginBottom="5px" > {`OTP Sent to ${obj.number}`}</ModalHeader>:null}
-                   {state!=="Details" ? null :<ModalHeader fontSize="16px"  marginTop="20px" >Please Enter Your Details</ModalHeader>}
+                    {state == false ? <ModalHeader fontSize="16px" marginBottom="5px" > {`OTP Sent to ${obj.number}`}</ModalHeader> : null}
+                    {state !== "Details" ? null : <ModalHeader fontSize="16px" marginTop="20px" >Please Enter Your Details</ModalHeader>}
 
 
 
@@ -141,23 +148,23 @@ export const InitialFocus = () => {
                     <ModalBody pb={6} >
                         <FormControl  >
                             {/* <FormLabel>First name</FormLabel> */}
-                            {state==true ? <Box p='2' ><Input ref={initialRef} value={obj.number} onChange={(event) => setObj({ ...obj, number: event.target.value })} w="70%" textAlign="center" type="number" borderRadius="20px" placeholder='Mobile Number' /></Box> :
-                               null}
-                               {state==false? <Box ><Input ref={initialRef} value={obj.otp} onChange={(event) => setObj({ ...obj, otp: event.target.value })} w="70%" textAlign="center" type="password" borderRadius="20px" placeholder='Enter OTP' /></Box>:null}
-                            {state=="Details"? <Box p='2' ><Input ref={initialRef} value={obj.name} onChange={(event) => setObj({ ...obj, name: event.target.value })} w="70%" textAlign="center" type="text" borderRadius="20px" placeholder='Enter Your Name' /></Box> :null}
-                            {state=="Details"? <Box p='2' ><Input ref={initialRef} value={obj.email} onChange={(event) => setObj({ ...obj, email: event.target.value })} w="70%" textAlign="center" type="email" borderRadius="20px" placeholder='Enter Your Email' /></Box> :null}
+                            {state == true ? <Box p='2' ><Input ref={initialRef} value={obj.number} onChange={(event) => setObj({ ...obj, number: event.target.value })} w="70%" textAlign="center" type="number" borderRadius="20px" placeholder='Mobile Number' /></Box> :
+                                null}
+                            {state == false ? <Box ><Input ref={initialRef} value={obj.otp} onChange={(event) => setObj({ ...obj, otp: event.target.value })} w="70%" textAlign="center" type="password" borderRadius="20px" placeholder='Enter OTP' /></Box> : null}
+                            {state == "Details" ? <Box p='2' ><Input ref={initialRef} value={obj.name} onChange={(event) => setObj({ ...obj, name: event.target.value })} w="70%" textAlign="center" type="text" borderRadius="20px" placeholder='Enter Your Name' /></Box> : null}
+                            {state == "Details" ? <Box p='2' ><Input ref={initialRef} value={obj.email} onChange={(event) => setObj({ ...obj, email: event.target.value })} w="70%" textAlign="center" type="email" borderRadius="20px" placeholder='Enter Your Email' /></Box> : null}
 
                         </FormControl>
-                         
+
                         <br></br>
 
 
 
                         {obj.number !== "" ? <Box display="flex" pb="10" justifyContent="center" > <ReCAPTCHA ref={captacharef} sitekey="6LfNXdEjAAAAALF6Gp4pMyNhdx7vSArQAP3bkw2E" onChange={handleRecaptcha} /> </Box> : null}
 
-                        {state==true ? <Button disabled={check || obj.number.length!==10} colorScheme='blue' onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> :null}
-                        {state==false ?    <Button colorScheme='blue' disabled={obj.otp.length==0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button>:null}
-                        {state=="Details" ? <Button colorScheme='blue' disabled={obj.name.length==0 || obj.email.length==0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button>:null}
+                        {state == true ? <Button disabled={check || obj.number.length !== 10} colorScheme='blue' onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> : null}
+                        {state == false ? <Button colorScheme='blue' disabled={obj.otp.length == 0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button> : null}
+                        {state == "Details" ? <Button colorScheme='blue' disabled={obj.name.length == 0 || obj.email.length == 0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button> : null}
 
 
                         <br></br>
@@ -165,7 +172,7 @@ export const InitialFocus = () => {
 
                         <br></br>
                         <hr />
-                        
+
                         {obj.number == "" ? <Box display="flex" flexDirection="column" textAlign="center" gap="5" padding="5">
                             <Button bg="none" border="1px solid grey" borderRadius="40px" p='6' w="90%" margin="auto" display="flex" gap="3" alignItems="center"><div style={{ fontSize: "22px" }}><FcGoogle /></div><div>Sign-in with Google</div></Button>
                             <Button bg="none" border="1px solid grey" borderRadius="40px" p='6' w="90%" margin="auto" display="flex" gap="3" alignItems="center"><div style={{ fontSize: "22px" }}><BsFacebook /></div><div>Sign-in with FaceBook</div></Button>
@@ -173,7 +180,7 @@ export const InitialFocus = () => {
 
                         </Box> : null}
 
-                       {/* <Box><img style={{width:"100%",height:"150px"}} src="https://wp-socialnation-assets.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/06/18184047/Koo-app.png" alt="one" /></Box> */}
+                        {/* <Box><img style={{width:"100%",height:"150px"}} src="https://wp-socialnation-assets.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/06/18184047/Koo-app.png" alt="one" /></Box> */}
 
                     </ModalBody>
 
