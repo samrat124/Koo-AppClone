@@ -59,21 +59,19 @@ function IndividualUser() {
                 <FollowButton />
               </Box>
             </Flex>
-            <Box marginLeft={2}>
+            <Box marginLeft={2} lineHeight={10}>
                 {user.profession}
             </Box>
-            <Box w={570} marginLeft={2}>
+            <Box w={570} marginLeft={2} noOfLines="2">
                 {user.description}
             </Box>
-            <Box display="flex" flexDirection="row" justifyContent="flex-start" maxW="270px" >
-                <Box flexGrow={1} marginRight="1em">
-                    <span marginRight="2px"><b>{user.followers}</b></span>
-                    <span marginLeft="2px">Followers</span>
+            <Box display="flex" flexDirection="row" justifyContent="flex-start" maxW="270px" marginTop={5} marginBottom={5}>
+                <Box flexGrow={1} marginLeft="7px">
+                    <span ><b>{user.followers}</b></span>
+                    <span >Followers</span>
                 </Box>
-
-
                 <Box flexGrow={5} marginRight="1em">
-                    <span>{user.following} </span>
+                    <span><b>{user.following}</b></span>
                     <span>Following</span>
                 </Box>
             </Box>

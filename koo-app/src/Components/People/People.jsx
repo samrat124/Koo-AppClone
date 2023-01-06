@@ -9,9 +9,9 @@ const People = () => {
   return (
     <div>
       <PeopleYouCanFollow/>
-      {/* <GlobalCreators/>
+      <GlobalCreators/>
       <NewToKoo/>
-      <Popular/> */}
+      <Popular/>
       <IndividualUser/>
     </div>
   )
