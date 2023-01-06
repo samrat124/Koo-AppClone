@@ -36,17 +36,17 @@
 .NavbarLink{
     display:grid;
     /* height:400px; */
-    color:grey;
+    color:black;
     background-color: white;
     /* border: 3px solid blue; */
     align-items: center;
-   font-size: 20px;
+   font-size:18px;
  
 
 }
 
 .main:hover{
-     background-color: rgb(211, 191, 191);
+     background-color:#F8f7f3;
      border-radius: 20px;
      padding:15px;
      opacity: 0.4px;
@@ -54,7 +54,8 @@
 .NavbarComp{
     width: 50%;
      margin: auto;
-     background-color: rgb(209, 207, 207);
+     background-color:#F8f7f3;
+    
     
 }
 .NavbarSidebar{
@@ -103,8 +104,8 @@
     margin: auto;
 }
 .T1{
-    border-radius: 5px solid grey;
-    background-color: rgb(230, 221, 221);
+    border-radius: 5px solid rgb(146, 134, 134);
+    background-color:#F8f7f3;
     padding: 10px;
     border-radius: 20px;
     margin-top: 20px;
@@ -189,8 +190,8 @@
     top:0px;
     position:sticky;
     background-color: white;
-    color: grey;
-    font-size: 20px;
+    color: rgb(10, 10, 10);
+    font-size: 18px;
     z-index: 1;
 }
 .Video{

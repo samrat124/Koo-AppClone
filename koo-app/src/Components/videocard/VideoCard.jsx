@@ -28,7 +28,7 @@ const[like,setLike]=useState(99);
   return (
     <>
     <Center>
-      <Card maxW="xl"  m='auto'  mt='20px'  w='80%' bg='white'>
+      <Card maxW="xl"  m='auto'  mt='20px'  w='90%' bg='white'>
         <CardHeader >
           <Flex spacing="4">
             <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
@@ -52,9 +52,9 @@ const[like,setLike]=useState(99);
         </CardHeader>
         <CardBody>
           
-          <Text>{props.description}</Text>
+          <Text mt="-10px" >{props.description}</Text>
 
-          <ol>
+          <ol style={{display:"flex",marginTop:"20px",marginBottom:"20px", gap:"10px", flexDirection:"column" }}>
 
           <li>Follow people you like by clicking on the ’+ Follow’ button to see their posts in your feed.</li>
 <li>Share your thoughts with others and gain a following.</li>
