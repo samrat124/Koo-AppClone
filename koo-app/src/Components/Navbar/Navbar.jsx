@@ -249,9 +249,21 @@ console.log(data);
           m="auto"
           borderRadius="20px"
           
-          mt="20px"
+          mt="20px" onClick={(event)=>{
+
+            if(event.target.innerText==="Follow"){
+             event.target.innerText="Followed"
+             event.target.style.backgroundColor="red";
+            }
+            else{
+             event.target.innerText="Follow"
+             event.target.style.backgroundColor="blue";
+
+            }
+
+         }}
         >
-          Follow
+          Follow 
         </Button>
           </div>
         
