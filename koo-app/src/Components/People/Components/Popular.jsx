@@ -1,44 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FollowButton from "./FollowButton";
 import { Flex,Heading,Text } from "@chakra-ui/react";
 import { Image, Box } from "@chakra-ui/react";
+import { useState } from 'react';
 function Popular() {
-  const popular=[
-    {
-      "image":"https://images.kooapp.com/koo-profile-media/profiles/31386620/profile1661424911315t1a2pj.png?tr=n-dp_square",
-      "name":"Piramal Capital & Housing Finance Limited",
-      "username":"@PiramalFinance",
-      "profession":"Financial Services"
-    },
-    {
-      "image":"https://images.kooapp.com/koo-profile-media/profiles/3560322/profile1670146872363xrpem6.png?tr=n-dp_square",
-      "name":"francois gautier",
-      "username":"@francoisgautier",
-      "profession":"Journalist & Writer"
-    },
-    {
-      "image":"https://images.kooapp.com/koo-profile-media/profiles/3117321/90c1d534-14b1-4ee2-b3a9-c274f8367b53voke.jpg?tr=n-dp_square",
-      "name":"",
-      "username":"@f_for_fun_memes",
-      "profession":"Memer"
-    },
-    {
-      "image":"https://images.kooapp.com/koo-profile-media/profiles/2756051/328A7E6F-0BB1-4681-BA70-907A244090B3-profile.jpeg?tr=n-dp_square",
-      "name":"Sumit Peer",
-      "username":"@sumit_peercula",
-      "profession":"Political commentator"
-    },
-    {
-      "image":"https://images.kooapp.com/koo-profile-media/profiles/5573176/8511655C-2395-4BBB-B0C6-821175BAC76B-profile.jpeg?tr=n-dp_square",
-      "name":"Vivek Mishraa",
-      "username":"@iamvivekmishraa",
-      "profession":"Musician"
-    }
-  ]
+  const [data,setData]=useState([]);
+  useEffect(()=>{
+    fetch(`http://localhost:3001/popular`)
+    .then(res=>res.json())
+    .then((data)=>setData(data))
+  },[])
   return (
     <div>
       <Heading margin="20px" as='h4' size='md' alignContent="start">Popular</Heading>
-      {popular.map((person) => {
+      {data.map((person) => {
         return (
           <>
             <Flex borderRadius="8px 8px 0px 0px" borderBottom="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={3}>

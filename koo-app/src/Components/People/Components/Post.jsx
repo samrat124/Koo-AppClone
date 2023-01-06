@@ -11,9 +11,7 @@ import {
   Text,
   Stack,
   InputGroup,
-  InputLeftElement,
   Input,
-  InputRightElement,
   Avatar,
 } from "@chakra-ui/react";
 import React from "react";

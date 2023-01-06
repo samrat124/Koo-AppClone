@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import FollowButton from './FollowButton';
+import Post from './Post';
 
 function IndividualUser() {
     const user={
@@ -75,6 +76,8 @@ function IndividualUser() {
                     <span>Following</span>
                 </Box>
             </Box>
+
+                <Post/>
     </>
   )
 }
