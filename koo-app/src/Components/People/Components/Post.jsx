@@ -36,12 +36,6 @@ function Post() {
         "likes":45,
         "comments":17,
         "reKoo":7
-        "id": 1,
-        "title": "It is been my dream to ensure every resident of Bengal leads a secure & fulfilling life.This dream has inspired me to design schemes that give holistic protection to all. Today, these schemes have come together as a testimony of my endeavor my Suraksha Kawach",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlOmDMDyRRWB2huva9_BWjx9AMH6MqY-8bqw&usqp=CAU",
-        "likes":45,
-        "comments":17,
-        "reKoo":7
       },
       {
         "id": 2,

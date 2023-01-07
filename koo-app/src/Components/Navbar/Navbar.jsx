@@ -1,11 +1,6 @@
-
 import React, { useEffect } from "react";
-<<<<<<< HEAD
-// import ReactPlayer from "react-player";
-=======
 import ReactPlayer from "react-player";
->>>>>>> 2c266a0673c7e03962b8f5f9a5c34cafa75bf443
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { FiHash } from "react-icons/fi";
 import { MdLanguage } from "react-icons/md";
@@ -30,6 +25,8 @@ import VideoCard from "../videocard/VideoCard";
 import { useState } from "react";
 import Profile from "./Profile";
 import Search from "../Login/Google";
+import Feed from "../Feed/Feed"
+
 
 
 const Navbar = () => {
@@ -68,7 +65,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/feed"
+                to="feed"
               >
                 Feed
               </Link>
@@ -86,7 +83,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/profile"
+                to="profile"
               >
                 Profile
               </Link>
@@ -104,7 +101,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/explore"
+                to="explore"
               >
                 Explore
               </Link>
@@ -122,7 +119,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/language"
+                to="language"
               >
                 Language
               </Link>
@@ -140,7 +137,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/search"
+                to="search"
               >
                 Search
               </Link>
@@ -158,7 +155,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/notification"
+                to="notification"
               >
                 Notification
               </Link>
@@ -176,7 +173,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/logout"
+                to="logout"
               >
                 Logout
               </Link>
@@ -187,6 +184,7 @@ console.log(data);
         <Button
          
          colorScheme="blue"
+         bg="blue"
           width="200px"
           m="auto"
           mt="20px"
@@ -196,6 +194,7 @@ console.log(data);
         <Button
           
            colorScheme="blue"
+           bg="blue"
           m="auto"
           mt="100px"
           mb="20px"
@@ -207,69 +206,17 @@ console.log(data);
 
       <div className="NavbarComp">
         <div className="UpperNav">
-          <Link to="/feed">Feed</Link>
-          <Link to="/people">People</Link>
-          <Link to="/polls">Polls</Link>
-          <Link to="/videos">Videos</Link>
-          <Link to="/cricket">Cricket</Link>
-          <Link to="/new">New</Link>
-          <Link to="/Following">Following</Link>
-          <Link to="/popular">Popular</Link>
+          <Link to="feed">Feed</Link>
+          <Link to="people">People</Link>
+          <Link to="polls">Polls</Link>
+          <Link to="videos">Videos</Link>
+          <Link to="cricket">Cricket</Link>
+          <Link to="new">New</Link>
+          <Link to="following">Following</Link>
+          <Link to="popular">Popular</Link>
         </div>
-                
-         <div className="main1">
-            <div className="heading">
-              <Heading as="h1" size="md">
-              People you can follow
-              </Heading>
-            </div>
-            <div className="i">
-              <AiOutlineArrowRight />
-            </div>
-          </div> 
-    
-  
-<Box display='flex' gap="10px" w='98%' m='auto'>
-        {data.map((ele)=>{
-          return <Profile img={ele.image} name={ele.name} position={ele.profession} />
-        })}
-</Box>
-
-
-          <VideoCard 
-            userName="Koo English"
-            id="kooenglish"
-            description="Welcome to the Koo family 🙂"
-             url="https://youtu.be/K4TOrB7at0Y"
-          ></VideoCard>
-
-
-
-          <div className="follow">
-          <Button
-        
-        colorScheme="blue"
-          width="200px"
-          m="auto"
-          borderRadius="20px"
-          
-          mt="20px" onClick={(event)=>{
-
-            if(event.target.innerText==="Follow"){
-             event.target.innerText="Followed"
-             event.target.style.backgroundColor="red";
-            }
-            else{
-             event.target.innerText="Follow"
-             event.target.style.backgroundColor="blue";
-
-            }
-
-         }}
-        >
-          Follow 
-        </Button>
-          </div>
+         <Outlet/>       
+       <Feed/>
         
       </div>
       <div className="NavbarSidebar">
@@ -296,8 +243,8 @@ console.log(data);
           
           <Box marginLeft="20px" marginTop="20px"><Search/></Box> 
 
-
-
+            
+          
           <div className="main1">
             <div className="heading">
               <Heading as="h1" size="md">
@@ -351,7 +298,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+             <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -396,7 +343,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+              <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -441,7 +388,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+              <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -486,7 +433,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+              <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
 
