@@ -371,7 +371,29 @@
       ]
     }
   ],
-  "login": [],
+  "login": [
+    {
+      "number": "9981687137",
+      "otp": "1234",
+      "name": "Pranav",
+      "email": "adi@gmail.com",
+      "id": 1
+    },
+    {
+      "number": "9981687137",
+      "otp": "1234",
+      "name": "pranav",
+      "email": "adi@gmail.com",
+      "id": 2
+    },
+    {
+      "number": "9981687137",
+      "otp": "1234",
+      "name": "pranav",
+      "email": "adi@gmail.com",
+      "id": 3
+    }
+  ],
   "trending": [
     {
       "id": 1,

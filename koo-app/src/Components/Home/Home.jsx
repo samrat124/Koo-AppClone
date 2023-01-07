@@ -26,7 +26,7 @@ const Home = () => {
           <Heading size='2xl'>Features to explore</Heading>
           <p style={{marginTop:'30px'}}>Amazing features to connect with people</p>
         </div>
-       <div> <HomeCarousel/></div>
+        <HomeCarousel/>
         <div className='homemidP3'>
           <div className='homeMidp3p1'>
             <Heading  >Koo in <br/>numbers</Heading>
