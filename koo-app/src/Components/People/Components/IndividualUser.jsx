@@ -52,5 +52,4 @@ function IndividualUser() {
     </>
   )
 }
-
 export default IndividualUser;
