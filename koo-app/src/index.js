@@ -12,13 +12,8 @@ import { store } from './Components/Login/Redux/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-       
    <ChakraProvider>
-   
-    
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <App />
     </ChakraProvider>
   </React.StrictMode>
 );

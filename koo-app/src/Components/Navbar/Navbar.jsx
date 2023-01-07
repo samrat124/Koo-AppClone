@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link, Outlet } from "react-router-dom";
@@ -27,7 +26,6 @@ import { useState } from "react";
 import Profile from "./Profile";
 import Search from "../Login/Google";
 import Feed from "../Feed/Feed"
-import { useSelector } from "react-redux";
 
 
 
@@ -208,8 +206,8 @@ console.log(obj);
         </Button>
        {isAuth ?null: <Button
           
-          colorScheme="blue"
-          bg="blue"
+           colorScheme="blue"
+           bg="blue"
           m="auto"
           mt="100px"
           mb="20px"

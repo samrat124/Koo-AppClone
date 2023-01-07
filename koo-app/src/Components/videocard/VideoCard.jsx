@@ -21,7 +21,7 @@ import {BsFillShareFill } from "react-icons/bs";
 import {AiFillLike} from "react-icons/ai";
 import { Center} from '@chakra-ui/react'
 
-// import {AiFillDislike,BiCommentDetail,FaShare} from 'react-icons/fa'
+import {AiFillDislike,BiCommentDetail,FaShare} from 'react-icons/fa'
 export default function VideoCard(props) {
 const[like,setLike]=useState(99);
 
