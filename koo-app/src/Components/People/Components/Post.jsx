@@ -17,6 +17,7 @@ import {
 import React from "react";
 
 function Post() {
+  
   const person = {
     id: 1,
     image:

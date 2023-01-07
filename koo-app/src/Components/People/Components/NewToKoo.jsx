@@ -4,19 +4,23 @@ import { Flex,Heading,Text } from "@chakra-ui/react";
 import { Image, Box } from "@chakra-ui/react";
 import { useState } from 'react';
 import { useEffect } from 'react';
+
 function NewToKoo() {
+
   const [data,setData]=useState([]);
   useEffect(()=>{
     fetch(`http://localhost:3001/popular`)
     .then(res=>res.json())
     .then((data)=>setData(data))
   },[])
+
   return (
     <div>
       <Heading margin="20px" as='h4' size='md' alignContent="start">New To Koo</Heading>
       {data.map((person) => {
         return (
           <>
+
             <Flex borderRadius="8px 8px 0px 0px" borderBottom="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={3}>
               <Box boxSize="80px">
                 <Image
@@ -46,5 +50,4 @@ function NewToKoo() {
     </div>
   )
 }
-
 export default NewToKoo;

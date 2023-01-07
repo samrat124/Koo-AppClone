@@ -11,6 +11,7 @@ function GlobalCreators() {
     .then(res=>res.json())
     .then((data)=>setData(data))
   },[])
+  
   return (
     <div>
       <Heading margin="20px" as='h4' size='md' alignContent="start">Global Creators</Heading>
@@ -46,5 +47,4 @@ function GlobalCreators() {
     </div>
   )
 }
-
 export default GlobalCreators;

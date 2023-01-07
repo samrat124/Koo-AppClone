@@ -5,6 +5,7 @@ import { Image, Box } from "@chakra-ui/react";
 import { useEffect } from "react";
 import {Link} from "react-router-dom";
 
+
 function PeopleYouCanFollow() {
   const [data,setData]=useState([]);
   useEffect(()=>{
@@ -12,6 +13,7 @@ function PeopleYouCanFollow() {
     .then(res=>res.json())
     .then((data)=>setData(data))
   },[])
+  
   return (
     <div>
       <Heading margin="20px" as='h4' size='md' alignContent="start">People You Can Follow</Heading>

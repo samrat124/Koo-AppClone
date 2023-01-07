@@ -10,6 +10,7 @@ function Popular() {
     .then(res=>res.json())
     .then((data)=>setData(data))
   },[])
+  
   return (
     <div>
       <Heading margin="20px" as='h4' size='md' alignContent="start">Popular</Heading>

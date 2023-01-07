@@ -9,6 +9,7 @@ import {
   ModalBody,
   ModalCloseButton,Spinner
 } from '@chakra-ui/react';
+
 function FollowButton() {
   const [follow,setFollow]=useState("+ Follow");
   const [isFollow,setIsFollow]=useState("Unfollow");
@@ -25,9 +26,11 @@ function FollowButton() {
       setLoading(false)
     },500)
   }
+
   if(loading){
     return <Spinner color='blue.500' size='lg' />
   }
+  
   return (
     <>
     <Button color="#fff" bg="#809b9d" borderRadius={100}  size="sm" onClick={handleFollow}>{follow}</Button>
