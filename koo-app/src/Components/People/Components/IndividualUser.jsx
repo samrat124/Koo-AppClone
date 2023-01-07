@@ -51,7 +51,7 @@ function IndividualUser() {
                     <span>Following</span>
                 </Box>
             </Box>
-            <Post/>
+            <Post id={user.id}/>
     </>
   )
 }
