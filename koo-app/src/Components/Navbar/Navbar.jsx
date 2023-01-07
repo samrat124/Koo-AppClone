@@ -28,11 +28,14 @@ import Profile from "./Profile";
 import Search from "../Login/Google";
 import Feed from "../Feed/Feed"
 import { useSelector } from "react-redux";
+import ControlledUsage from "./Logout";
 
 
 
 const Navbar = () => {
 const[data,setState]=useState([]);
+
+const[chidiya,setChidiya]=useState(true);
 
 useEffect(()=>{
 
@@ -40,6 +43,13 @@ useEffect(()=>{
 
        setState(data);
 console.log(data);
+
+setTimeout(()=>{
+
+  setChidiya(false);
+
+},5000)
+
   })
 
 },[])
@@ -55,16 +65,23 @@ let obj=useSelector((state)=>{
 })
 console.log(obj);
 
-
+// https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQale17xtS5E4Kyg8xAhtvl4-V2pPqUJdK_vi8a4Aeq&s
   return (
+       
     <div className="NavbarMain">
-      <div className="sideBarLeft">
+      <div  className="sideBarLeft">
+      
         <div className="NavbarLogo">
-          <img
+       {!chidiya? <img
             className="navLogo"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQale17xtS5E4Kyg8xAhtvl4-V2pPqUJdK_vi8a4Aeq&s"
             alt="logoNav"
-          />
+          />:
+           <img
+            style={{width:"500px"}}
+            src="https://cdn.dribbble.com/users/1300804/screenshots/2899194/dribble_01.gif"
+            alt="logoNav"
+          />}
         </div>
         <div className="NavbarLink">
           <div className="main">
@@ -176,24 +193,7 @@ console.log(obj);
               </Link>
             </div>
           </div>{" "}
-          {isAuth ? <div className="main">
-            <div className="icon">
-              <FiLogOut />
-            </div>
-          <div className="text">
-              <Link
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "5px",
-                  justifyContent: "center",
-                }}
-                to="logout"
-              >
-                Logout
-              </Link>
-            </div>
-          </div>:null}
+         
         </div>
 
         <Button
@@ -206,7 +206,7 @@ console.log(obj);
         >
           + Koo
         </Button>
-       {isAuth ?null: <Button
+       {isAuth ? <ControlledUsage/>: <Button
           
           colorScheme="blue"
           bg="blue"
@@ -230,8 +230,8 @@ console.log(obj);
           <Link to="following">Following</Link>
           <Link to="popular">Popular</Link>
         </div>
-         <Outlet/>       
-       <Feed/>
+       <Box><Outlet/></Box>        
+       {/* <Feed/> */}
         
       </div>
       <div className="NavbarSidebar">
