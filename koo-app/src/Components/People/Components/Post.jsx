@@ -14,7 +14,7 @@ import {
   Input,
   Avatar,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 
 function Post({id}) {
   
