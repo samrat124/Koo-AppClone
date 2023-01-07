@@ -15,12 +15,17 @@ export default function Profile({img,name,position}) {
                 <Button marginTop="10px" size="xs"  colorScheme='blue' onClick={(event)=>{
 
                    if(event.target.innerText==="Follow"){
-                    event.target.innerText="Followed"
-                    event.target.style.backgroundColor="red";
+                    event.target.innerText="Following"
+                    event.target.style.color="black"
+                    
+                    event.target.style.backgroundColor="#FFD700";
                    }
                    else{
                     event.target.innerText="Follow"
                     event.target.style.backgroundColor="blue";
+                    event.target.style.color="white"
+
+
 
                    }
 

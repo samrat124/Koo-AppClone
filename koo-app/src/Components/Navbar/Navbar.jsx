@@ -42,6 +42,18 @@ console.log(data);
 
 },[])
 
+let isAuth=useSelector((state)=>{
+       return state.isAuth
+
+   
+})
+let obj=useSelector((state)=>{
+      return state.obj;
+
+})
+console.log(obj);
+
+
   return (
     <div className="NavbarMain">
       <div className="sideBarLeft">
@@ -85,7 +97,8 @@ console.log(data);
                 }}
                 to="profile"
               >
-                Profile
+               {isAuth ? <mark style={{backgroundColor:"#FFD700", borderRadius:"10px", padding:"5px"}} >{obj.name}</mark> : "Profile" } 
+
               </Link>
             </div>
           </div>
@@ -107,11 +120,11 @@ console.log(data);
               </Link>
             </div>
           </div>{" "}
-          <div className="main">
+          {isAuth ?  <div className="main">
             <div className="icon">
               <MdLanguage />
             </div>
-            <div className="text">
+         <div className="text">
               <Link
                 style={{
                   display: "flex",
@@ -124,12 +137,12 @@ console.log(data);
                 Language
               </Link>
             </div>
-          </div>{" "}
-          <div className="main">
+          </div>:null}
+         {isAuth ? <div className="main">
             <div className="icon">
               <BsSearch />
             </div>
-            <div className="text">
+           <div className="text">
               <Link
                 style={{
                   display: "flex",
@@ -142,7 +155,7 @@ console.log(data);
                 Search
               </Link>
             </div>
-          </div>{" "}
+          </div>:null}
           <div className="main">
             <div className="icon">
               <IoIosNotifications />
@@ -161,11 +174,11 @@ console.log(data);
               </Link>
             </div>
           </div>{" "}
-          <div className="main">
+          {isAuth ? <div className="main">
             <div className="icon">
               <FiLogOut />
             </div>
-            <div className="text">
+          <div className="text">
               <Link
                 style={{
                   display: "flex",
@@ -178,7 +191,7 @@ console.log(data);
                 Logout
               </Link>
             </div>
-          </div>
+          </div>:null}
         </div>
 
         <Button
@@ -191,7 +204,7 @@ console.log(data);
         >
           + Koo
         </Button>
-        <Button
+       {isAuth ?null: <Button
           
            colorScheme="blue"
            bg="blue"
@@ -200,8 +213,8 @@ console.log(data);
           mb="20px"
           width="200px"
         >
-          Signup
-        </Button>
+          SignIn
+        </Button>}
       </div>
 
       <div className="NavbarComp">

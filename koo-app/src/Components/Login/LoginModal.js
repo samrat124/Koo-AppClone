@@ -15,8 +15,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { App } from "./Google"
 import { toast, ToastContainer } from 'react-toastify';
 import { BsFacebook } from "react-icons/bs"
+import {useDispatch} from "react-redux"
 
 import ReactAudioPlayer from 'react-audio-player';
+import { myAction, myAction1 } from './Redux/action';
 
 export const InitialFocus = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -25,6 +27,7 @@ export const InitialFocus = () => {
     const finalRef = React.useRef(null)
 
     const [state, setState] = useState(true);
+    const dispatch=useDispatch();
 
     const [check, setCheck] = useState(true);
     const captacharef = useRef();
@@ -96,12 +99,16 @@ const[sound,setSound]=useState("");
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(obj)
+        
+
 
         }).then((res) => {
 
             console.log(res.ok);
 
         })
+        myAction(true,dispatch);
+        myAction1(obj,dispatch);
         
 
     }
@@ -162,9 +169,9 @@ const[sound,setSound]=useState("");
 
                         {obj.number !== "" ? <Box display="flex" pb="10" justifyContent="center" > <ReCAPTCHA ref={captacharef} sitekey="6LfNXdEjAAAAALF6Gp4pMyNhdx7vSArQAP3bkw2E" onChange={handleRecaptcha} /> </Box> : null}
 
-                        {state == true ? <Button disabled={check || obj.number.length !== 10} colorScheme='blue' onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> : null}
-                        {state == false ? <Button colorScheme='blue' disabled={obj.otp.length == 0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button> : null}
-                        {state == "Details" ? <Button colorScheme='blue' disabled={obj.name.length == 0 || obj.email.length == 0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button> : null}
+                        {state == true ? <Button disabled={check || obj.number.length !== 10} colorScheme='blue' bg="blue" onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> : null}
+                        {state == false ? <Button colorScheme='blue' bg="blue" disabled={obj.otp.length == 0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button> : null}
+                        {state == "Details" ? <Button colorScheme='blue' bg="blue" disabled={obj.name.length == 0 || obj.email.length == 0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button> : null}
 
 
                         <br></br>

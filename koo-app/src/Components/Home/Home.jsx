@@ -39,6 +39,7 @@ const Home = () => {
             <Box  textAlign='center'    boxShadow='1px 1px 5px grey'><Heading mt='20%'>7500+</Heading> <br/>Eminent Profiles</Box>
             <Box  textAlign='center' borderRadius='10px'backgroundColor='white'   boxShadow='1px 1px 5px grey'><Heading mt='20%'>1000+</Heading><br/>Topics to explore</Box>
             </Box>
+            
           </div>
           
         </div>
