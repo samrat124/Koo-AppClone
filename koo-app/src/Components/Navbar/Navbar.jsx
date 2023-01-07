@@ -99,7 +99,7 @@ console.log(obj);
                 }}
                 to="profile"
               >
-               {isAuth ? obj.name : "Profile" } 
+               {isAuth ? <mark style={{backgroundColor:"#FFD700", borderRadius:"10px", padding:"5px"}} >{obj.name}</mark> : "Profile" } 
 
               </Link>
             </div>
@@ -122,11 +122,11 @@ console.log(obj);
               </Link>
             </div>
           </div>{" "}
-          <div className="main">
+          {isAuth ?  <div className="main">
             <div className="icon">
               <MdLanguage />
             </div>
-            <div className="text">
+         <div className="text">
               <Link
                 style={{
                   display: "flex",
@@ -139,12 +139,12 @@ console.log(obj);
                 Language
               </Link>
             </div>
-          </div>{" "}
-          <div className="main">
+          </div>:null}
+         {isAuth ? <div className="main">
             <div className="icon">
               <BsSearch />
             </div>
-            <div className="text">
+           <div className="text">
               <Link
                 style={{
                   display: "flex",
@@ -157,7 +157,7 @@ console.log(obj);
                 Search
               </Link>
             </div>
-          </div>{" "}
+          </div>:null}
           <div className="main">
             <div className="icon">
               <IoIosNotifications />
@@ -176,11 +176,11 @@ console.log(obj);
               </Link>
             </div>
           </div>{" "}
-          <div className="main">
+          {isAuth ? <div className="main">
             <div className="icon">
               <FiLogOut />
             </div>
-            <div className="text">
+          <div className="text">
               <Link
                 style={{
                   display: "flex",
@@ -193,7 +193,7 @@ console.log(obj);
                 Logout
               </Link>
             </div>
-          </div>
+          </div>:null}
         </div>
 
         <Button
@@ -206,17 +206,17 @@ console.log(obj);
         >
           + Koo
         </Button>
-        <Button
+       {isAuth ?null: <Button
           
-           colorScheme="blue"
-           bg="blue"
+          colorScheme="blue"
+          bg="blue"
           m="auto"
           mt="100px"
           mb="20px"
           width="200px"
         >
-          Signup
-        </Button>
+          SignIn
+        </Button>}
       </div>
 
       <div className="NavbarComp">

@@ -16,11 +16,16 @@ export default function Profile({img,name,position}) {
 
                    if(event.target.innerText==="Follow"){
                     event.target.innerText="Following"
-                    event.target.style.backgroundColor="red";
+                    event.target.style.color="black"
+                    
+                    event.target.style.backgroundColor="#FFD700";
                    }
                    else{
                     event.target.innerText="Follow"
                     event.target.style.backgroundColor="blue";
+                    event.target.style.color="white"
+
+
 
                    }
 
