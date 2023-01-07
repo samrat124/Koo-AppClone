@@ -73,11 +73,11 @@ function Post({id}) {
     ],
   };
 
-  const [data,setData]=useState({})
+  const [person,setPerson]=useState({})
   useEffect(()=>{
     fetch(`http://localhost:3001/users/${id}`)
     .then((res)=>res.json())
-    .then((data)=>setData(data))
+    .then((data)=>setPerson(data))
   },[])
   return (
     <>
