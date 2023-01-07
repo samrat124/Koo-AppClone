@@ -1,11 +1,14 @@
 import React from 'react'
+import Search from './Google'
+
 import { InitialFocus } from './LoginModal'
 
 const Login = () => {
   return (
     <div>
 
-     <InitialFocus/>
+      <InitialFocus/>
+      {/* <Search/> */}
 
     </div>
   )

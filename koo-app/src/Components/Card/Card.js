@@ -1,33 +1,20 @@
 import React, { useEffect, useState } from "react";
-import "./Cricket.css";
+import "./Card.css";
 
-export default function Cricket() {
+export default function Card({image, name, username, profession, description, hashtags, image2}) {
   const [data, setdata] = useState([]);
 
-  useEffect(() => {
-    getdata();
-  }, []);
-
-  const getdata = () => {
-    fetch("http://localhost:3001/cricket")
-      .then((d) => {
-        return d.json();
-      })
-      .then((res) => {
-        setdata(res);
-        console.log(res);
-      });
-  };
+ 
 
   return (
     <>
-      {data.map((e) => {
-        return (
+     
+  
           <div id="g-parent-div">
             <div id="g-main-div">
               <div className="cont1">
-                {e.image ? (
-                  <img className="profilepic" src={e.image} alt="postimg" />
+                {image ? (
+                  <img className="profilepic" src={image} alt="postimg" />
                 ) : (
                   <img
                     className="profilepic"
@@ -38,20 +25,20 @@ export default function Cricket() {
 
                 <div id="g-nu">
                   <div>
-                    <h3 className="name">{e.name}</h3>
+                    <h3 className="name">{name}</h3>
                   </div>
                   <div className="username">
-                    {e.username} - {e.preofession}
+                    {username} - {profession}
                   </div>
                 </div>
               </div>
               <div className="cont2">
-                <span>{e.description}</span>
+                <span>{description}</span>
               </div>
 
-              <div className="contto">{e.hastags}</div>
+              <div className="contto">{hashtags}</div>
               <div className="cont3">
-                <img src={e.image2} alt="postimg" />
+                <img src={image2} alt="postimg" />
               </div>
 
               <div className="cont5">
@@ -102,8 +89,8 @@ export default function Cricket() {
               </div>
             </div>
           </div>
-        );
-      })}
+        
+  
     </>
   );
 }
