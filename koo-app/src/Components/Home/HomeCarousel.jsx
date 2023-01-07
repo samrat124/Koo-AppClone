@@ -33,9 +33,11 @@ const HomeCarousel = () => {
     <div>
     <Image w='100%' h='500px'  margin='auto' src='https://images.kooapp.com/img/crsl-1.png' alt='carousel' />
     </div>
+    </div>
    
   </div>
   )
 }
+
 
 export default HomeCarousel
