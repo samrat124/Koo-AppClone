@@ -73,11 +73,11 @@ function Post({id}) {
     ],
   };
 
-  const [person,setPerson]=useState({})
+  const [user,setUser]=useState({})
   useEffect(()=>{
     fetch(`http://localhost:3001/users/${id}`)
     .then((res)=>res.json())
-    .then((data)=>setPerson(data))
+    .then((data)=>setUser(data))
   },[])
   return (
     <>
@@ -88,7 +88,7 @@ function Post({id}) {
         w={570}
         h={77}
         maxWidth={900}
-        alignItems="center"
+        alignItems="center"git add .
         gap="30"
         m={0}
       >
