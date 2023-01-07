@@ -8,7 +8,7 @@ const Login = () => {
     <div>
 
       <InitialFocus/>
-      <Search/>
+      {/* <Search/> */}
 
     </div>
   )

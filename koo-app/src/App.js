@@ -1,17 +1,16 @@
 
 import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
-import NavHome from './Components/Home/NavHome';
-import Home from './Components/Home/Home'
-import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter } from 'react-router-dom';
 
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from  "./Components/Navbar/Navbar.jsx"
+import Home from './Components/Home/Home'
 function App() {
   return (
     <div className="App">
-       <ChakraProvider>
-        
-        </ChakraProvider> 
+       <BrowserRouter>
+      {/* <Navbar/> */}
+      <Home/>
+       </BrowserRouter>      
     </div>
   );
 }
