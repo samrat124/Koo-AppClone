@@ -6,6 +6,7 @@ import Navbar from '../Navbar/Navbar'
 import Feed from '../Feed/Feed'
 import People from '../People/People'
 
+
 const AllRoutes = () => {
   return (
     <div>
