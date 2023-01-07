@@ -3,6 +3,7 @@ import FollowButton from "./FollowButton";
 import { Flex,Heading,Text } from "@chakra-ui/react";
 import { Image, Box } from "@chakra-ui/react";
 import { useEffect } from "react";
+import {Link} from "react-router-dom";
 
 function PeopleYouCanFollow() {
   const [data,setData]=useState([]);
@@ -46,5 +47,4 @@ function PeopleYouCanFollow() {
     </div>
   );
 }
-
 export default PeopleYouCanFollow;
