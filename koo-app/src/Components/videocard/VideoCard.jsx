@@ -13,7 +13,7 @@ import {
   Image,
   Button,
 } from "@chakra-ui/react";
-// import ReactPlayer from "react-player";
+import ReactPlayer from "react-player";
 
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { BsFillChatLeftDotsFill } from "react-icons/bs";
@@ -21,7 +21,7 @@ import {BsFillShareFill } from "react-icons/bs";
 import {AiFillLike} from "react-icons/ai";
 import { Center} from '@chakra-ui/react'
 
-// import {AiFillDislike,BiCommentDetail,FaShare} from 'react-icons/fa'
+import {AiFillDislike,BiCommentDetail,FaShare} from 'react-icons/fa'
 export default function VideoCard(props) {
 const[like,setLike]=useState(99);
 
@@ -61,13 +61,13 @@ const[like,setLike]=useState(99);
           </ol>
           <p>Happy Koo to you!</p>
         </CardBody>
-        {/* <ReactPlayer
+        <ReactPlayer
           className='react-player'
          url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
           width='100%'
           height='250px'
           playing={true}
-        /> */}
+        />
 
         <CardFooter
           justify="space-between"
