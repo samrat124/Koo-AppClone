@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Cricket from '../Cricket/Cricket'
@@ -33,3 +34,5 @@ const AllRoutes = () => {
 }
 
 export default AllRoutes
+ 
+
