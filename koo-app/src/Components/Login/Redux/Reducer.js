@@ -1,6 +1,7 @@
 
 let obj={
-    isAuth:false
+    isAuth:false,
+    obj:{}
 }
 
 export const myReducer=(state=obj,action)=>{
@@ -11,6 +12,11 @@ export const myReducer=(state=obj,action)=>{
 
             return {
                 ...state,isAuth:action.Payload
+            }
+            case "AuthenticationData":
+
+            return {
+                ...state,obj:action.Payload
             }
 
             default: return state
