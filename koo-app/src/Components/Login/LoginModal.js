@@ -15,8 +15,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { App } from "./Google"
 import { toast, ToastContainer } from 'react-toastify';
 import { BsFacebook } from "react-icons/bs"
+import {useDispatch} from "react-redux"
 
 import ReactAudioPlayer from 'react-audio-player';
+import { myAction } from './Redux/action';
 
 export const InitialFocus = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -25,6 +27,7 @@ export const InitialFocus = () => {
     const finalRef = React.useRef(null)
 
     const [state, setState] = useState(true);
+    const dispatch=useDispatch();
 
     const [check, setCheck] = useState(true);
     const captacharef = useRef();
@@ -96,12 +99,17 @@ const[sound,setSound]=useState("");
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(obj)
+           
+            
+
+
 
         }).then((res) => {
 
             console.log(res.ok);
 
         })
+        myAction(true,dispatch);
         
 
     }
