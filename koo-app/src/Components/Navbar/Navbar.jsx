@@ -27,6 +27,7 @@ import { useState } from "react";
 import Profile from "./Profile";
 import Search from "../Login/Google";
 import Feed from "../Feed/Feed"
+import { useSelector } from "react-redux";
 
 
 
@@ -42,6 +43,18 @@ console.log(data);
   })
 
 },[])
+
+let isAuth=useSelector((state)=>{
+       return state.isAuth
+
+   
+})
+let obj=useSelector((state)=>{
+      return state.obj;
+
+})
+console.log(obj);
+
 
   return (
     <div className="NavbarMain">
@@ -86,7 +99,8 @@ console.log(data);
                 }}
                 to="profile"
               >
-                Profile
+               {isAuth ? obj.name : "Profile" } 
+
               </Link>
             </div>
           </div>
