@@ -7,6 +7,7 @@ import Navbar from '../Navbar/Navbar'
 import Feed from '../Feed/Feed'
 import People from '../People/People'
 import Login from '../Login/Login'
+import IndividualUser from '../People/Components/IndividualUser'
 
 
 
@@ -25,8 +26,7 @@ const AllRoutes = () => {
           <Route path="feed" element={<Feed />} />
           <Route path="login" element={<Login />} />
           <Route path="people" element={<People />} />
-
-
+          <Route path="individualuser/:id" element={<IndividualUser/>} />
         </Route>
 
 

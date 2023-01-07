@@ -14,9 +14,9 @@ import {
   Input,
   Avatar,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 
-function Post() {
+function Post({id}) {
   
   const person = {
     id: 1,
@@ -72,6 +72,13 @@ function Post() {
       },
     ],
   };
+
+  const [data,setData]=useState({})
+  useEffect(()=>{
+    fetch(`http://localhost:3001/users/${id}`)
+    .then((res)=>res.json())
+    .then((data)=>setData(data))
+  },[])
   return (
     <>
       <Flex
