@@ -1,7 +1,7 @@
 
 import React, { useEffect } from "react";
 import ReactPlayer from "react-player";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { FiHash } from "react-icons/fi";
 import { MdLanguage } from "react-icons/md";
@@ -27,6 +27,7 @@ import { useState } from "react";
 import Profile from "./Profile";
 import Search from "../Login/Google";
 import Feed from "../Feed/Feed"
+
 
 
 const Navbar = () => {
@@ -65,7 +66,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/feed"
+                to="feed"
               >
                 Feed
               </Link>
@@ -83,7 +84,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/profile"
+                to="profile"
               >
                 Profile
               </Link>
@@ -101,7 +102,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/explore"
+                to="explore"
               >
                 Explore
               </Link>
@@ -119,7 +120,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/language"
+                to="language"
               >
                 Language
               </Link>
@@ -137,7 +138,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/search"
+                to="search"
               >
                 Search
               </Link>
@@ -155,7 +156,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/notification"
+                to="notification"
               >
                 Notification
               </Link>
@@ -173,7 +174,7 @@ console.log(data);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="/logout"
+                to="logout"
               >
                 Logout
               </Link>
@@ -206,16 +207,16 @@ console.log(data);
 
       <div className="NavbarComp">
         <div className="UpperNav">
-          <Link to="/feed">Feed</Link>
-          <Link to="/people">People</Link>
-          <Link to="/polls">Polls</Link>
-          <Link to="/videos">Videos</Link>
-          <Link to="/cricket">Cricket</Link>
-          <Link to="/new">New</Link>
-          <Link to="/Following">Following</Link>
-          <Link to="/popular">Popular</Link>
+          <Link to="feed">Feed</Link>
+          <Link to="people">People</Link>
+          <Link to="polls">Polls</Link>
+          <Link to="videos">Videos</Link>
+          <Link to="cricket">Cricket</Link>
+          <Link to="new">New</Link>
+          <Link to="following">Following</Link>
+          <Link to="popular">Popular</Link>
         </div>
-                
+         <Outlet/>       
        <Feed/>
         
       </div>
