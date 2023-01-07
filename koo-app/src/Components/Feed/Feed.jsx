@@ -85,12 +85,13 @@ bg="blue"
 
     if(event.target.innerText==="Follow"){
      event.target.innerText="Following"
-     event.target.style.backgroundColor="red";
+     event.target.style.backgroundColor="#FFD700";
+     event.target.style.color="black";
     }
     else{
      event.target.innerText="Follow"
      event.target.style.backgroundColor="blue";
-
+     event.target.style.color="white";
     }
 
  }}
