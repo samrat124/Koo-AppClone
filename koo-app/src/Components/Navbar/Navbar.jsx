@@ -1,6 +1,6 @@
 
-import React from "react";
-import ReactPlayer from "react-player";
+import React, { useEffect } from "react";
+// import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { FiHash } from "react-icons/fi";
@@ -12,6 +12,7 @@ import { FiLogOut } from "react-icons/fi";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BiMicrophone } from "react-icons/bi";
 import { BsPeopleFill } from "react-icons/bs";
+import { IoIosAddCircle } from "react-icons/io";
 
 import "./Navbar.css";
 import { Button } from "@chakra-ui/react";
@@ -20,9 +21,26 @@ import { Heading } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import VideoCard from "../videocard/VideoCard";
+import { useState } from "react";
+import Profile from "./Profile";
+import Search from "../Login/Google";
+
 
 const Navbar = () => {
+const[data,setState]=useState([]);
+
+useEffect(()=>{
+
+  fetch("http://localhost:3001/peopleyoucanfollow?_Page=1&_limit=5").then((res)=>res.json()).then((data)=>{
+
+       setState(data);
+console.log(data);
+  })
+
+},[])
+
   return (
     <div className="NavbarMain">
       <div className="sideBarLeft">
@@ -163,9 +181,8 @@ const Navbar = () => {
         </div>
 
         <Button
-          className="btn"
-          bgColor="blue"
-          color="white"
+         
+         colorScheme="blue"
           width="200px"
           m="auto"
           mt="20px"
@@ -173,9 +190,8 @@ const Navbar = () => {
           + Koo
         </Button>
         <Button
-          className="btn"
-          bgColor="blue"
-          color="white"
+          
+           colorScheme="blue"
           m="auto"
           mt="100px"
           mb="20px"
@@ -196,23 +212,65 @@ const Navbar = () => {
           <Link to="/Following">Following</Link>
           <Link to="/popular">Popular</Link>
         </div>
-          <VideoCard
-            userName="Piramal Capital & Housing Finance Limited"
-            id="PiramalFinanceFinancial Services"
-            description="Karo nayi shuruaat by expanding your business with a Business Loan* from Piramal Finance.
+                
+         <div className="main1">
+            <div className="heading">
+              <Heading as="h1" size="md">
+              People you can follow
+              </Heading>
+            </div>
+            <div className="i">
+              <AiOutlineArrowRight />
+            </div>
+          </div> 
+    
+  
+<Box display='flex' gap="10px" w='98%' m='auto'>
+        {data.map((ele)=>{
+          return <Profile img={ele.image} name={ele.name} position={ele.profession} />
+        })}
+</Box>
 
-            Apply now: https://www.piramalfinance.com/business-loan?utm_source=koo&;utm_medium=video&utm_campaign=business_loan&utm_id=social_media&utm_term=expand_business&utm_content=google_maps
-            
-            #PiramalFinance #KhwaishonKeHumsafar #BusinessLoan
-            
-            *Terms & Conditions Apply"
-            url="https://youtu.be/K4TOrB7at0Y"
+
+          <VideoCard 
+            userName="Koo English"
+            id="kooenglish"
+            description="Welcome to the Koo family 🙂"
+             url="https://youtu.be/K4TOrB7at0Y"
           ></VideoCard>
+
+
+
+          <div className="follow">
+          <Button
+        
+        colorScheme="blue"
+          width="200px"
+          m="auto"
+          borderRadius="20px"
+          
+          mt="20px" onClick={(event)=>{
+
+            if(event.target.innerText==="Follow"){
+             event.target.innerText="Followed"
+             event.target.style.backgroundColor="red";
+            }
+            else{
+             event.target.innerText="Follow"
+             event.target.style.backgroundColor="blue";
+
+            }
+
+         }}
+        >
+          Follow 
+        </Button>
+          </div>
         
       </div>
       <div className="NavbarSidebar">
         <>
-          <div className="SearchIcon">
+          {/* <div className="SearchIcon">
             <div className="Search">
               {" "}
               <BsSearch />
@@ -230,7 +288,11 @@ const Navbar = () => {
               {" "}
               <BiMicrophone />
             </div>
-          </div>
+          </div> */}
+          
+          <Box marginLeft="20px" marginTop="20px"><Search/></Box> 
+
+
 
           <div className="main1">
             <div className="heading">
@@ -245,8 +307,8 @@ const Navbar = () => {
           <div className="TrendingSideBar">
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
-                  #haldwani
+                <Text fontSize="md" textAlign="left">
+                #haldwani
                 </Text>
 
                 <div className="TreImage">
@@ -261,7 +323,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://www.shutterstock.com/image-photo/image-happy-brunette-man-wearing-260nw-1489874846.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -269,7 +331,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -277,19 +339,21 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
                   />
                 </div>
               </div>
-              <div className="circle">+</div>
+              <div className="circle">
+              <IoIosAddCircle/>
+              </div>
             </div>
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
-                  #haldwani
+                <Text fontSize="md" textAlign="left" >
+                #indvsl
                 </Text>
 
                 <div className="TreImage">
@@ -304,7 +368,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://www.shutterstock.com/image-photo/image-happy-brunette-man-wearing-260nw-1489874846.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -312,7 +376,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -320,19 +384,21 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
                   />
                 </div>
               </div>
-              <div className="circle">+</div>
+              <div className="circle">
+              <IoIosAddCircle/>
+              </div>
             </div>
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
-                  #haldwani
+                <Text fontSize="md" textAlign="left">
+                #g20india
                 </Text>
 
                 <div className="TreImage">
@@ -347,7 +413,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://www.shutterstock.com/image-photo/image-happy-brunette-man-wearing-260nw-1489874846.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -355,7 +421,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -363,19 +429,21 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
                   />
                 </div>
               </div>
-              <div className="circle">+</div>
+              <div className="circle">
+              <IoIosAddCircle/>
+              </div>
             </div>
             <div className="T1">
               <div className="sideMain">
-                <Text fontSize="xl" textAlign="left">
-                  #haldwani
+                <Text fontSize="md" textAlign="left">
+                #bharatjodoyatra
                 </Text>
 
                 <div className="TreImage">
@@ -390,7 +458,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://www.shutterstock.com/image-photo/image-happy-brunette-man-wearing-260nw-1489874846.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -398,7 +466,7 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
@@ -406,14 +474,16 @@ const Navbar = () => {
                   <Image
                     className="im"
                     boxSize="25px"
-                    src="https://bit.ly/dan-abramov"
+                    src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
                     alt="Dan Abramov"
                     borderRadius="50%"
                     float="left"
                   />
                 </div>
               </div>
-              <div className="circle">+</div>
+              <div className="circle">
+              <IoIosAddCircle/>
+              </div>
             </div>
 
             <Divider orientation="horizontal" mt="50px" />
