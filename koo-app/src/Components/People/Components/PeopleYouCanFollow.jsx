@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import FollowButton from "./FollowButton";
 import { Flex,Heading,Text } from "@chakra-ui/react";
 import { Image, Box } from "@chakra-ui/react";
-import IndividualUser from "./IndividualUser";
 import { useEffect } from "react";
 
 function PeopleYouCanFollow() {

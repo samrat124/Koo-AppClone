@@ -1,17 +1,13 @@
 
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react'
-import IndividualUser from './Components/People/Components/IndividualUser';
-import PeopleYouCanFollow from './Components/People/Components/PeopleYouCanFollow';
-import Popular from './Components/People/Components/Popular';
-import GlobalCreators from './Components/People/Components/GlobalCreators';
-import NewToKoo from './Components/People/Components/NewToKoo';
+import People from './Components/People/People';
 
 function App() {
   return (
     <div className="App">
        <ChakraProvider>
-        
+        <People/>
       </ChakraProvider> 
     </div>
   );
