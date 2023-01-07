@@ -26,6 +26,7 @@ import VideoCard from "../videocard/VideoCard";
 import { useState } from "react";
 import Profile from "./Profile";
 import Search from "../Login/Google";
+import Feed from "../Feed/Feed"
 
 
 const Navbar = () => {
@@ -183,6 +184,7 @@ console.log(data);
         <Button
          
          colorScheme="blue"
+         bg="blue"
           width="200px"
           m="auto"
           mt="20px"
@@ -192,6 +194,7 @@ console.log(data);
         <Button
           
            colorScheme="blue"
+           bg="blue"
           m="auto"
           mt="100px"
           mb="20px"
@@ -213,59 +216,7 @@ console.log(data);
           <Link to="/popular">Popular</Link>
         </div>
                 
-         <div className="main1">
-            <div className="heading">
-              <Heading as="h1" size="md">
-              People you can follow
-              </Heading>
-            </div>
-            <div className="i">
-              <AiOutlineArrowRight />
-            </div>
-          </div> 
-    
-  
-<Box display='flex' gap="10px" w='98%' m='auto'>
-        {data.map((ele)=>{
-          return <Profile img={ele.image} name={ele.name} position={ele.profession} />
-        })}
-</Box>
-
-
-          <VideoCard 
-            userName="Koo English"
-            id="kooenglish"
-            description="Welcome to the Koo family 🙂"
-             url="https://youtu.be/K4TOrB7at0Y"
-          ></VideoCard>
-
-
-
-          <div className="follow">
-          <Button
-        
-        colorScheme="blue"
-          width="200px"
-          m="auto"
-          borderRadius="20px"
-          
-          mt="20px" onClick={(event)=>{
-
-            if(event.target.innerText==="Follow"){
-             event.target.innerText="Followed"
-             event.target.style.backgroundColor="red";
-            }
-            else{
-             event.target.innerText="Follow"
-             event.target.style.backgroundColor="blue";
-
-            }
-
-         }}
-        >
-          Follow 
-        </Button>
-          </div>
+       <Feed/>
         
       </div>
       <div className="NavbarSidebar">
@@ -292,8 +243,8 @@ console.log(data);
           
           <Box marginLeft="20px" marginTop="20px"><Search/></Box> 
 
-
-
+            
+          
           <div className="main1">
             <div className="heading">
               <Heading as="h1" size="md">
@@ -347,7 +298,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+             <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -392,7 +343,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+              <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -437,7 +388,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+              <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -482,7 +433,7 @@ console.log(data);
                 </div>
               </div>
               <div className="circle">
-              <IoIosAddCircle/>
+              <Link to="/trending"><IoIosAddCircle/></Link> 
               </div>
             </div>
 
