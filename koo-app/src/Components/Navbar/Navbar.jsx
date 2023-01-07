@@ -1,6 +1,10 @@
 
 import React, { useEffect } from "react";
+<<<<<<< HEAD
 // import ReactPlayer from "react-player";
+=======
+import ReactPlayer from "react-player";
+>>>>>>> 2c266a0673c7e03962b8f5f9a5c34cafa75bf443
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { FiHash } from "react-icons/fi";
