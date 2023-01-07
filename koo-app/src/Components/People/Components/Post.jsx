@@ -88,7 +88,7 @@ function Post({id}) {
         w={570}
         h={77}
         maxWidth={900}
-        alignItems="center"
+        alignItems="center"git add .
         gap="30"
         m={0}
       >
