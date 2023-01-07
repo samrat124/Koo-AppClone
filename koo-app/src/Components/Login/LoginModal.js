@@ -162,9 +162,9 @@ const[sound,setSound]=useState("");
 
                         {obj.number !== "" ? <Box display="flex" pb="10" justifyContent="center" > <ReCAPTCHA ref={captacharef} sitekey="6LfNXdEjAAAAALF6Gp4pMyNhdx7vSArQAP3bkw2E" onChange={handleRecaptcha} /> </Box> : null}
 
-                        {state == true ? <Button disabled={check || obj.number.length !== 10} colorScheme='blue' onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> : null}
-                        {state == false ? <Button colorScheme='blue' disabled={obj.otp.length == 0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button> : null}
-                        {state == "Details" ? <Button colorScheme='blue' disabled={obj.name.length == 0 || obj.email.length == 0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button> : null}
+                        {state == true ? <Button disabled={check || obj.number.length !== 10} colorScheme='blue' bg="blue" onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> : null}
+                        {state == false ? <Button colorScheme='blue' bg="blue" disabled={obj.otp.length == 0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button> : null}
+                        {state == "Details" ? <Button colorScheme='blue' bg="blue" disabled={obj.name.length == 0 || obj.email.length == 0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button> : null}
 
 
                         <br></br>
