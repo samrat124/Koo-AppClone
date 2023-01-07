@@ -4,6 +4,7 @@ import Cricket from '../Cricket/Cricket'
 import Home from '../Home/Home'
 import Navbar from '../Navbar/Navbar'
 import Feed from '../Feed/Feed'
+import People from '../People/People'
 
 const AllRoutes = () => {
   return (
@@ -15,9 +16,9 @@ const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/navbar" element={<Navbar />}>
 
-          <Route path="/cricket" element={<Cricket />} />
-          <Route path="/feed" element={<Feed />} />
-          <Route path="/people" element={<People />} />
+          <Route path="cricket" element={<Cricket />} />
+          <Route path="feed" element={<Feed />} />
+          <Route path="people" element={<People />} />
 
 
         </Route>
