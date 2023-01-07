@@ -10,3 +10,14 @@ export const myAction=(data,dispatch)=>{
     })
 
 }
+export const myAction1=(data,dispatch)=>{
+
+
+    dispatch({
+
+        type:"AuthenticationData",
+        Payload:data
+
+    })
+
+}

@@ -18,7 +18,7 @@ import { BsFacebook } from "react-icons/bs"
 import {useDispatch} from "react-redux"
 
 import ReactAudioPlayer from 'react-audio-player';
-import { myAction } from './Redux/action';
+import { myAction, myAction1 } from './Redux/action';
 
 export const InitialFocus = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -99,9 +99,7 @@ const[sound,setSound]=useState("");
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(obj)
-           
-            
-
+        
 
 
         }).then((res) => {
@@ -110,6 +108,7 @@ const[sound,setSound]=useState("");
 
         })
         myAction(true,dispatch);
+        myAction1(obj,dispatch);
         
 
     }
