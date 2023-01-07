@@ -16,5 +16,4 @@ const People = () => {
     </div>
   )
 }
-
 export default People

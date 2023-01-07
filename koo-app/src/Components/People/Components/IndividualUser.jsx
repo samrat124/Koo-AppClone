@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import FollowButton from './FollowButton';
 import Post from './Post';
 
+
 function IndividualUser() {
       const {id}=useParams();
       const [user,setUser]=useState({})
@@ -13,6 +14,8 @@ function IndividualUser() {
         .then((res)=>res.json())
         .then((data)=>setUser(data))
       },[id])
+
+      
   return (
     <>
                 <Box>
