@@ -90,7 +90,7 @@ function Post({id}) {
         maxWidth={900}
         alignItems="center"
         gap="30"
-        m={0}
+        m={"auto"}
       >
         <Box boxSize="80px">
           <Image

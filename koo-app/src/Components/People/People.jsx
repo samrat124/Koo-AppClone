@@ -7,7 +7,7 @@ import Popular from './Components/Popular';
 
 const People = () => {
   return (
-    <div>
+    <div >
       <PeopleYouCanFollow/>
       <GlobalCreators/>
       <NewToKoo/>

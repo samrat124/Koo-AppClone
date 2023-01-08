@@ -21,7 +21,7 @@ function IndividualUser() {
                 <Box>
               <Image src={user.image} w={570}/>
               </Box>
-        <Flex borderRadius="10px 10px 0px 0px" border="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={0}>
+        <Flex borderRadius="10px 10px 0px 0px" border="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={"auto"}>
               <Box>
                 <Box display={"flex"}>
                 <Heading as='h3' size='sm' marginLeft={2} noOfLines={1}>{user.name}</Heading>
