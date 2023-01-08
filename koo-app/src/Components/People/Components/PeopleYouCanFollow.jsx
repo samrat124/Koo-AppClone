@@ -3,10 +3,11 @@ import FollowButton from "./FollowButton";
 import { Flex,Heading,Text } from "@chakra-ui/react";
 import { Image, Box } from "@chakra-ui/react";
 import { useEffect } from "react";
-import {Link} from "react-router-dom";
+import {Link,useParams} from "react-router-dom";
 
 
 function PeopleYouCanFollow() {
+  let {id}=useParams();
   const [data,setData]=useState([]);
   useEffect(()=>{
     fetch(`http://localhost:3001/peopleyoucanfollow`)

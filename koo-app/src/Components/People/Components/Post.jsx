@@ -14,7 +14,7 @@ import {
   Input,
   Avatar,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 
 function Post({id}) {
   
@@ -73,11 +73,11 @@ function Post({id}) {
     ],
   };
 
-  const [data,setData]=useState({})
+  const [user,setUser]=useState({})
   useEffect(()=>{
     fetch(`http://localhost:3001/users/${id}`)
     .then((res)=>res.json())
-    .then((data)=>setData(data))
+    .then((data)=>setUser(data))
   },[])
   return (
     <>
