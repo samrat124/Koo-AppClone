@@ -21,8 +21,8 @@ function PeopleYouCanFollow() {
       {data.map((person) => {
         return (
           <>
-            <Link to={`/individualuser/${person.id}`}>
-            <Flex borderRadius="10px 10px 0px 0px" border="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m='auto'>
+            <Link to={`/navbar/individualuser/${person.id}`}>
+            <Flex borderRadius="10px 10px 0px 0px" border="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m="auto">
               <Box boxSize="80px">
                 <Image
                   src={person.image}
