@@ -6,7 +6,7 @@ import {AiOutlineArrowRight} from 'react-icons/ai'
 import HomeCarousel from './HomeCarousel'
 import kooAppqr from './kooAppqr.png'
 import kooFooter from './kooFooter.png'
-import Carousel from './Carousel'
+// import Carousel from './Carousel'
 
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
           <p style={{marginTop:'30px'}}>Amazing features to connect with people</p>
         </div>
         {/* <HomeCarousel/> */}
-        <Carousel/>
+        {/* <Carousel/> */}
         <div className='homemidP3'>
           <div className='homeMidp3p1'>
             <Heading  >Koo in <br/>numbers</Heading>
