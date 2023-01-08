@@ -1,5 +1,32 @@
 {
-  "post": [],
+  "post": [
+    {
+      "id": 1,
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+      "name": "Dil Hai Cricket - Subrata Biswas",
+      "username": "@dilhaicricket",
+      "profession": "content creater",
+      "description": "Virat Kohli was way ahead of his time!",
+      "hastags": "#viratkohli #indiancricket",
+      "image2": "https://images.kooapp.com/transcode_input/12304821/520b6bd6-9dda-466d-bb7a-e92e3c2858e6.png",
+      "like": 12,
+      "comments": 5,
+      "rekoo": 4
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaW5nJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "name": "Krishna",
+      "username": "@krishna17NPG5",
+      "profession": "hindu",
+      "description": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्",
+      "hastags": "#madhav  #harekrishna",
+      "image2": "https://images.kooapp.com/transcode_input/41664245/8a8d9e9f-e4a5-46e8-a7d6-e4f25556c4d6.jpg",
+      "like": 32,
+      "comments": 6,
+      "rekoo": 4
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -1443,7 +1470,7 @@
       "name": "Female Cricket",
       "username": "@femalecricket",
       "profession": "Official Account of Female Cricket",
-      "description": "The BCCI has got BUMPER INTEREST for the Women IPL Media Rights Tender. Amazon Prime, Fancode, Times Internet, Google, Discovery have also picked the    Post the media rights tender, BCCI will sell the WIPL Franchises.",
+      "description": "The BCCI has got BUMPER INTEREST for the Women IPL Media Rights Tender. Amazon Prime, Fancode, Times Internet, Google, Discovery have also picked   the    Post the media rights tender, BCCI will sell the WIPL Franchises.",
       "hastags": "#Cricketonkoo  #WomensIPL",
       "image2": "https://images.kooapp.com/transcode_input/2963639/FINAL-IMAGE-WEB-cd6523f8-e07d-42ca-95ca-4e7244baa508.jpg",
       "like": 12,
@@ -1748,6 +1775,75 @@
       "description": "Afraid of Becoming a ‘Ceremonial Golfer’, ‘Living Brand’ Greg Norman Once Revealed His ‘Seven-Year Game-Plan’ That Changed His Life’",
       "hastags": "#Golf",
       "image2": "https://images.kooapp.com/transcode_input/sugg85e9d8ba-4784-4a41-bcfa-479c90dc9c22.jpeg"
+    }
+  ],
+  "new": [
+    {
+      "id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bAWzupfqzzBYB3dSkQf5wdYWSTUxsNhfVw&usqp=CAU",
+      "name": "Biplob Sarma Pathak",
+      "username": "@Biplob_Sarma_Pathak",
+      "profession": "Business Owner",
+      "description": "#haldwani Law is equal for everyone in our Country, no more victim cards politics should be allowed in our Country n that is why law like UCC is urgently required in our Country, playing the victim card in every situations is a sign of immaturity, grew up and be responsible for your own actions of encroaching Railway land in Haldwani😡",
+      "image2": "",
+      "likes": 6,
+      "comments": 0,
+      "reKoo": 0
+    },
+    {
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxVTxxOOYvfOiHUd_enkPjkvPyBGsEXaeywjdd9JGjg&s",
+      "name": "Female Cricket",
+      "username": "@femalecricket",
+      "profession": "Official Account of Female Cricket",
+      "description": "The BCCI has got BUMPER INTEREST for the Women IPL Media Rights Tender. Amazon Prime, Fancode, Times Internet, Google, Discovery have also picked   the    Post the media rights tender, BCCI will sell the WIPL Franchises.",
+      "hastags": "#Cricketonkoo  #WomensIPL",
+      "image2": "https://images.kooapp.com/transcode_input/2963639/FINAL-IMAGE-WEB-cd6523f8-e07d-42ca-95ca-4e7244baa508.jpg",
+      "like": 20,
+      "comments": 5,
+      "rekoo": 15
+    },
+    {
+      "id": 3,
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+      "name": "Divesh Ranjan",
+      "username": "@divesh_ranjan72FQB",
+      "profession": "Official Account of Female Cricket",
+      "description": "@RailMinIndia dear honorable minister this is the current situation of train no.12491 from barauni junction to Jammu tawi.We all have to travel the sacred place in hell like pollution.  Now i am travelling in this train.  Kindly contact the concerned person to do the needful.  Yours faithfully  Indian citizen",
+      "hastags": "#indian railway  #piyushgoyal",
+      "image2": "https://images.kooapp.com/transcode_input/7411771/c4ccf283-bab2-49ad-848f-1c80a79f687d.jpg",
+      "like": 28,
+      "comments": 15,
+      "rekoo": 14
+    },
+    {
+      "id": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQUtoCRkbRyO08aBNjy_pTz4sqHUEe-zyUQ&usqp=CAU",
+      "name": "Sachin Choudhary",
+      "username": "@sachinghasil",
+      "profession": "Sports Content Professional",
+      "description": "A quickfire half-century partnership between @DJ5757 & Axar Patel👍 👍",
+      "hastags": "#INDVSL #shubmangill #shivammavi #cricketonkoo",
+      "question": "Which one of these players was not a wicket-keeper-batter?",
+      "option1": "Andy Flower",
+      "option2": "Brendon McCullum",
+      "option3": "Alex Stewart",
+      "option4": "Alastair Cook",
+      "likes": "14",
+      "comments": "6"
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaW5nJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "name": "Krishna",
+      "username": "@krishna17NPG5",
+      "profession": "hindu",
+      "description": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्",
+      "hastags": "#madhav  #harekrishna",
+      "image2": "https://images.kooapp.com/transcode_input/41664245/8a8d9e9f-e4a5-46e8-a7d6-e4f25556c4d6.jpg",
+      "like": 32,
+      "comments": 6,
+      "rekoo": 4
     }
   ]
 }
