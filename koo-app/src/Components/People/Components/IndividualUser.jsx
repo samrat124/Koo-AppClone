@@ -17,8 +17,8 @@ function IndividualUser() {
 
       
   return (
-    <>
-                <Box>
+    <Box marginLeft='4.5%' mt='2%'> 
+                <Box >
               <Image src={user.image} w={570}/>
               </Box>
         <Flex borderRadius="10px 10px 0px 0px" border="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={0}>
@@ -51,7 +51,7 @@ function IndividualUser() {
                     <span>Following</span>
                 </Box>
             </Box>
-    </>
+    </Box>
   )
 }
 export default IndividualUser;
