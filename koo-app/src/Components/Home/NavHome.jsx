@@ -15,10 +15,10 @@ const NavHome = () => {
       <div className='kooLogo'><div style={{display:'flex',alignItems:'center',margin:'auto'}}><Image h='40px' w='20%' mt='5px' ml='30%' src='https://www.kooapp.com/assets/2d634360.svg' alt='logo'/><p>Koo</p></div></div>  
       <div className='homeNav'>
         <div className='homeNavIcons'>
-            <Link className='iconNavHome' to='/feed'><HiOutlineHome/></Link>
-            <Link  className='iconNavHome' to='/explore'>< FiHash/></Link>
-            <Link  className='iconNavHome' to='/trending'><SlFire/></Link>
-            <Link  className='iconNavHome' to='/search'><CiSearch/></Link>
+            <Link className='iconNavHome' to='/navbar/feed'><HiOutlineHome/></Link>
+            <Link  className='iconNavHome' to='/navbar/explore'>< FiHash/></Link>
+            <Link  className='iconNavHome' to='/navbar/trending'><SlFire/></Link>
+            <Link  className='iconNavHome' to='/navbar/search'><CiSearch/></Link>
             <Link  to=''><LanguageModal/></Link>
             <Button h='30px' borderRadius='15px' bgColor='RGB(170 187 204)' color='white'>Login</Button>
         </div>

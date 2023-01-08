@@ -4,7 +4,20 @@ import "./Card.css";
 export default function Card({image, name, username, profession, description, hashtags, image2}) {
   const [data, setdata] = useState([]);
 
+  const [state, setState]= useState(5)
+
  
+  const updateCount = () => {
+ 
+
+    
+
+    setState((prevState) => prevState + 1);
+
+ 
+
+
+  };
 
   return (
     <>
@@ -18,7 +31,7 @@ export default function Card({image, name, username, profession, description, ha
                 ) : (
                   <img
                     className="profilepic"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyALOcLp4ykOIC4bim8L0xZIvgfLLZEo-mg&usqp=CAU"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhPz7CL8gVPIQ3wkwqaslgqc8DJ_XlzT9rg&usqp=CAU"
                     alt="postimg"
                   />
                 )}
@@ -50,12 +63,12 @@ export default function Card({image, name, username, profession, description, ha
               </div>
 
               <div className="cont4">
-                <div>
+                <div onClick={updateCount}>
                   <img
                     src="https://www.kooapp.com/img/Like1.5.svg"
                     alt="like"
                   />
-                  <p>2</p>
+                  <p>{state}</p>
                 </div>
                 <div>
                   <img

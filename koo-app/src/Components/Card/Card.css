@@ -1,12 +1,13 @@
 #g-parent-div {
-  width: 100%;
+  width: 85%;
   margin: auto;
-  background-color: white;
+  /* background-color: white; */
+  /* margin-left: 10px; */
 }
 
 #g-main-div {
   border: 1px solid #e0e0e0;
-  width: 93.5%;
+  width: 100%;
 
   margin-top: 10px;
   background-color: #fdfdfd;
@@ -27,7 +28,7 @@
 }
 
 #g-nu {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -52,7 +53,7 @@
   white-space: nowrap;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  margin-top: -15px;
+  /* margin-top: -15px; */
 }
 
 .cont2 {
@@ -120,7 +121,7 @@
   
   }
 .whatsappicon {
-    margin-top: 13px;
+    /* margin-top: 13px; */
   width: 22px;
   background-color: white;
   color: white;

@@ -35,7 +35,7 @@ const Feed = () => {
     
     useEffect(()=>{
     
-      fetch("http://localhost:3001/peopleyoucanfollow?_Page=1&_limit=5").then((res)=>res.json()).then((data)=>{
+      fetch("http://localhost:3001/users?_Page=1&_limit=5").then((res)=>res.json()).then((data)=>{
     
            setState(data);
     console.log(data);
@@ -56,9 +56,9 @@ const Feed = () => {
   </div> 
 
 
-<Box display='flex' gap="10px" w='98%' m='auto'>
+<Box display='flex' gap="10px" w='100%' m='auto' justifyContent="center" overflow="auto">
 {data.map((ele)=>{
-  return <Profile img={ele.image} name={ele.name} position={ele.profession} />
+  return <Link to={`/navbar/individualuser/${ele.id}`}><Profile img={ele.image} name={ele.name} position={ele.profession} /></Link>
 })}
 </Box>
 
@@ -73,7 +73,7 @@ const Feed = () => {
 
 
   <div className="follow">
-  <Button
+<Link to="/navbar/following">  <Button
 
 colorScheme="blue"
 bg="blue"
@@ -96,8 +96,8 @@ bg="blue"
 
  }}
 >
-  Follow 
-</Button>
+  Follow
+</Button></Link>
   </div>
   </div>
     

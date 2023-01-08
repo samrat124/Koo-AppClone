@@ -31,7 +31,11 @@ const Dictaphone = ({onChange1,state}) => {
       <Box display="flex" alignItems="center" w="90%" margin="auto" ><FaSearch style={{ marginRight: "-35px" }} /><Input textAlign="center" borderRadius="20px" placeholder="Search" type="text" autoFocus value={state}  onChange={(event) => {
         onChange1(event.target.value);
          
-      }} /><Button  ml="-50px" bg="none" onClick={SpeechRecognition.startListening}><BsFillMicFill/></Button>   </Box>
+      }} /><button style={{ position:"absolute", right:"60px", backgroundColor:"none"}} onMouseOver={(event) => {
+        event.target.style.cursor = "pointer"
+
+
+      }}  onClick={SpeechRecognition.startListening}><BsFillMicFill/></button>   </Box>
  
       {/* <button onClick={SpeechRecognition.stopListening}>Stop</button> */}
       {/* <button onClick={resetTranscript}>Reset</button> */}

@@ -63,10 +63,10 @@ const[like,setLike]=useState(99);
         </CardBody>
         <ReactPlayer
           className='react-player'
-         url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+         url='https://www.youtube.com/shorts/QQuOS0PeoQI'
           width='100%'
           height='250px'
-          playing={true}
+          playing={false}
         />
 
         <CardFooter
