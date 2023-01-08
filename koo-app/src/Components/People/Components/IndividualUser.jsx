@@ -17,7 +17,7 @@ function IndividualUser() {
 
       
   return (
-    <>
+    <Box marginLeft={"3%"} marginTop={"3%"}>
                 <Box>
               <Image src={user.image} w={570}/>
               </Box>
@@ -51,7 +51,7 @@ function IndividualUser() {
                     <span>Following</span>
                 </Box>
             </Box>
-    </>
+    </Box>
   )
 }
 export default IndividualUser;
