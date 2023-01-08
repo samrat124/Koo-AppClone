@@ -203,7 +203,8 @@
     background-color: white;
     color: rgb(10, 10, 10);
     font-size: 18px;
-    z-index: 1;
+    z-index: 20;
+    font-weight:470;
 }
 .Video{
     margin: auto;

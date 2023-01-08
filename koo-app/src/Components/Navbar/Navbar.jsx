@@ -29,6 +29,8 @@ import Search from "../Login/Google";
 import Feed from "../Feed/Feed"
 import { useSelector } from "react-redux";
 import ControlledUsage from "./Logout";
+import { InitialFocus } from "../Login/LoginModal";
+import InitialFocus1  from "../Login/PostComponent/PostChakra";
 
 
 
@@ -79,7 +81,7 @@ console.log(obj);
           />:
            <img
             style={{width:"500px"}}
-            src="https://cdn.dribbble.com/users/1300804/screenshots/2899194/dribble_01.gif"
+            src="/logo.gif"
             alt="logoNav"
           />}
         </div>
@@ -206,17 +208,7 @@ console.log(obj);
         >
           + Koo
         </Button>
-       {isAuth ? <ControlledUsage/>: <Button
-          
-          colorScheme="blue"
-          bg="blue"
-          m="auto"
-          mt="100px"
-          mb="20px"
-          width="200px"
-        >
-          SignIn
-        </Button>}
+       {isAuth ? <ControlledUsage/>: <InitialFocus/>}
       </div>
 
       <div className="NavbarComp">
@@ -230,8 +222,10 @@ console.log(obj);
           <Link to="following">Following</Link>
           <Link to="popular">Popular</Link>
         </div>
+        <InitialFocus1/>
        <Box><Outlet/></Box>        
        {/* <Feed/> */}
+
         
       </div>
       <div className="NavbarSidebar">
