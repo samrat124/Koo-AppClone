@@ -1,8 +1,43 @@
 {
-  "post":[],
+  
   "users": [
     {
       "id": 1,
+      "image": "https://images.kooapp.com/koo-profile-media/profiles/31386620/profile1661424911315t1a2pj.png?tr=n-dp_square",
+      "name": "Piramal Capital",
+      "username": "@PiramalFinance",
+      "profession": "Financial Services"
+    },
+    {
+      "id": 2,
+      "image": "https://images.kooapp.com/koo-profile-media/profiles/41741491/profile16700689047069fn40c.png?tr=n-dp_square",
+      "name": "Dalai Lama",
+      "username": "@dalailama",
+      "profession": "Spiritual Leader"
+    },
+    {
+      "id": 3,
+      "image": "https://images.kooapp.com/koo-profile-media/profiles/36613113/profile1667287043124fqvucs.png?tr=n-dp_square",
+      "name": "Mamata Banerjee",
+      "username": "@MamataOfficial",
+      "profession": "Politician"
+    },
+    {
+      "id": 4,
+      "image": "https://images.kooapp.com/koo-profile-media/profiles/11664193/c05e75f0-ba92-4d0c-9b30-fcebaf6b3cf8voke.jpg?tr=n-dp_square",
+      "name": "Virat Kohli",
+      "username": "@virat.kohli",
+      "profession": "Cricketer"
+    },
+    {
+      "id": 5,
+      "image": "https://images.kooapp.com/koo-profile-media/profiles/7036203/56DB03B1-A153-4705-8EA7-D0A54A1644BF-profile.jpeg?tr=n-dp_square",
+      "name": "Sadhguru",
+      "username": "@SadhguruJV",
+      "profession": "Spiritual Leader"
+    },
+    {
+      "id": 6,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8C9qeFOOfZ1oZJLWgAHfuepHmiUY3-RP3Rw&usqp=CAU",
       "name": "Mamata Banerjee",
       "username": "@MamataOfficial",
@@ -54,7 +89,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 7,
       "image": "https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg",
       "name": "Virat Kohli",
       "username": "@virat.kohli",
@@ -106,7 +141,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 8,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sadhguru-Jaggi-Vasudev.jpg/800px-Sadhguru-Jaggi-Vasudev.jpg",
       "name": "Sadhguru",
       "username": "@SadhguruJV",
@@ -158,7 +193,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 9,
       "image": "https://upload.wikimedia.org/wikipedia/hi/thumb/0/0d/%E0%A4%86%E0%A4%9C_%E0%A4%A4%E0%A4%95_%E0%A4%B2%E0%A5%8B%E0%A4%97%E0%A5%8B.svg/1280px-%E0%A4%86%E0%A4%9C_%E0%A4%A4%E0%A4%95_%E0%A4%B2%E0%A5%8B%E0%A4%97%E0%A5%8B.svg.png",
       "name": "AajTak",
       "username": "@AajTak",
@@ -210,7 +245,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 10,
       "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkSb6LHVDV1RRVSNChmm28EMfNmetjLdi8yZaSZ8aDP8qNBXvY",
       "name": "Sudhir Chaudhary",
       "username": "@sudhirchaudhary",
@@ -262,7 +297,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 11,
       "image": "https://starsunfolded.com/wp-content/uploads/2016/10/Anupam-Kher-Photo.jpg",
       "name": "Anupam Kher",
       "username": "@anupampkher",
@@ -314,7 +349,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 12,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd1kY49dNuhwqMuPIdagiIuK6k9m7vEbLES0jAwE&s",
       "name": "Defence Research and Development Organisation",
       "username": "@DRDO_India",
@@ -366,7 +401,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 13,
       "image": "https://upload.wikimedia.org/wikipedia/en/6/6f/Indian_Institute_of_Technology_Roorkee_logo.png",
       "name": "IIT Roorkee",
       "username": "Indian Institute of Technology Roorkee",
@@ -418,7 +453,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 14,
       "image": "https://www.thestatesman.com/wp-content/uploads/2022/08/1500x900_402454-bsf-1.jpg",
       "name": "Border Security Force ",
       "username": "@BSF_India",
@@ -470,7 +505,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 15,
       "image": "https://pbs.twimg.com/profile_images/1566450905976672260/I39Q62WR_400x400.jpg",
       "name": "Piyush Goyal",
       "username": "@piyushgoyal",
@@ -1453,77 +1488,6 @@
       "rekoo": 4
     }
   ],
-  "mostPopular":[
-    {
-      "id": 1,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxVTxxOOYvfOiHUd_enkPjkvPyBGsEXaeywjdd9JGjg&s",
-      "name": "Female Cricket",
-      "username": "@femalecricket",
-      "profession": "Official Account of Female Cricket",
-      "description": "The BCCI has got BUMPER INTEREST for the Women IPL Media Rights Tender. Amazon Prime, Fancode, Times Internet, Google, Discovery have also picked the    Post the media rights tender, BCCI will sell the WIPL Franchises.",
-      "hastags": "#Cricketonkoo  #WomensIPL",
-      "image2": "https://images.kooapp.com/transcode_input/2963639/FINAL-IMAGE-WEB-cd6523f8-e07d-42ca-95ca-4e7244baa508.jpg"
-    },
-    {
-      "id": 2,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/4460582/c36a1d0f-54f5-44f9-958c-5684c7b33c2avoke.jpg",
-      "name": "Hindustan Times",
-      "username": "@hindustantimes",
-      "profession": "Newspaper",
-      "description": "Mom creates ‘Sikh Helmet’ for kids that can fit over turban. Watch her story",
-      "hastags": "#Cricketonkoo  #WomensIPL",
-      "image2": "https://images.kooapp.com/transcode_input/sugg2e21281a-da50-4b8f-87c3-98377548947a.jpeg"
-    },
-    {
-      "id": 3,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/4460582/c36a1d0f-54f5-44f9-958c-5684c7b33c2avoke.jpg",
-      "name": "Hindustan Times",
-      "username": "@hindustantimes",
-      "profession": "Newspaper",
-      "description": "BJP leaders lash out at Nitish over comment linking women to population control",
-      "hastags": "#Cricketonkoo  #WomensIPL",
-      "image2": "https://images.kooapp.com/transcode_input/sugg399abbbb-d7eb-405b-aa7c-889569ad0d9b.jpeg"
-    },
-    {
-      "id": 4,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/4460582/c36a1d0f-54f5-44f9-958c-5684c7b33c2avoke.jpg",
-      "name": "Hindustan Times",
-      "username": "@hindustantimes",
-      "profession": "Newspaper",
-      "description": "BREAKING: On ’urination’ incident, Tata Sons says Air India’s response should have been ’much swifter’",
-      "hastags": "#Cricketonkoo  #WomensIPL",
-      "image2": "https://images.kooapp.com/transcode_input/suggc546ea6a-a0d7-4dbf-990f-bbf15c035f64.jpeg"
-    },
-    {
-      "id": 5,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/11015086/profile163281125231462j4sp.png",
-      "name": "ABP Live",
-      "username": "@abplive",
-      "profession": "Newspaper",
-      "description": "#swarabhaskar Shares Picture With Mystery Man With A Caption ’This Could Be Love’.",
-      "hastags": "#swarabhaskar",
-      "image2": "https://images.kooapp.com/transcode_input/suggf53f8cd7-4465-49ce-ae42-0d8a72b82edd.jpeg"
-    }, {
-      "id": 6,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/3546453/1c038527-31dc-4da5-afe5-8a656359dba4voke.jpg",
-      "name": "ETV Bharat",
-      "username": "@etvbharat",
-      "profession": "News / Media",
-      "description": "DMK MLA blames BJP for former Tamil Nadu CM Jayalalithas death’",
-      "hastags": "#Cricketonkoo  #WomensIPL",
-      "image2": "https://images.kooapp.com/transcode_input/sugg05384aee-9069-4306-a461-a85005fc9bee.jpeg"
-    }, {
-      "id": 7,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/9628685/19d4b071-496f-4dd7-9fe6-b2a054c86a65voke.jpg",
-      "name": "EssentiallySports",
-      "username": "@essentiallysports",
-      "profession": "News",
-      "description": "Afraid of Becoming a ‘Ceremonial Golfer’, ‘Living Brand’ Greg Norman Once Revealed His ‘Seven-Year Game-Plan’ That Changed His Life’",
-      "hastags": "#Golf",
-      "image2": "https://images.kooapp.com/transcode_input/sugg85e9d8ba-4784-4a41-bcfa-479c90dc9c22.jpeg"
-    }
-    
-  ],
   "polls": [
     {
       "id": 1,
@@ -1685,6 +1649,6 @@
       "likes": "25",
       "comments": "4"
     }
-  ]
-   
+  ],
+  "post": []
 }
