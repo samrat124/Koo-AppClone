@@ -1,49 +1,115 @@
 {
-  
   "post": [],
   "users": [
     {
       "id": 1,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/31386620/profile1661424911315t1a2pj.png?tr=n-dp_square",
-      "name": "Piramal Capital",
-      "username": "@PiramalFinance",
-      "profession": "Financial Services"
+      "image": "https://starsunfolded.com/wp-content/uploads/2016/10/Anupam-Kher-Photo.jpg",
+      "name": "Anupam Kher",
+      "username": "@anupampkher",
+      "profession": "Artist/Author",
+      "description": "Speaker/Padmashri/Padmabhushan Koo Your Opinion!",
+      "followers": "3.8M",
+      "following": "34",
+      "posts": [
+        {
+          "id": 1,
+          "title": "#आप सभी की नववर्ष की हार्दिक शुभकामनाएँ। Happy New Year. May God give you all the happiness in the world. Love and prayers always. 🙏😍",
+          "img": "https://images.kooapp.com/transcode_input/7036203/0A97B334-D1CC-46B7-8006-8F4671FBC4C7-image.jpeg",
+          "likes": 45,
+          "comments": 17,
+          "reKoo": 15
+        },
+        {
+          "id": 2,
+          "title": "Dearest Pele! You and your game, and the way you played it, will always be #GameChanger for millions of people all the world. Whether they played football or not. Thank you for your inspiring life.🙏 #RipLegend #OmShanti #Pele",
+          "img": "https://images.kooapp.com/transcode_input/2726126/8CFE5F11-E1D5-489E-AC62-006E8355E18A-image.jpeg",
+          "likes": 45,
+          "comments": 17,
+          "reKoo": 15
+        },
+        {
+          "id": 3,
+          "title": "आदरणीय प्रधानमंत्री @narendramodi जी! आपकी माताश्री #हीराबा जी के निधन का सुनकर मन दुखी भी हुआ और व्याकुल भी।आपका उनके प्रति प्यार और आदर जग ज़ाहिर है।उनका स्थान आपके जीवन में कोई नहीं भर पाएगा! पर आप भारत माँ के सपूत हो! देश की हर माँ का आशिर्वाद आपके ऊपर है।मेरी माँ का भी!🙏🕉",
+          "img": "https://images.kooapp.com/transcode_input/2726126/699AC026-0343-4899-AA2A-84A8C3E83D96-image.jpeg",
+          "likes": 45,
+          "comments": 17,
+          "reKoo": 15
+        },
+        {
+          "id": 4,
+          "title": "मेरे प्यारे और माँ की आँख के तारे @sikandarkher! दिल ख़ुश हो गया @iifa में इन ज़बर्दस्त कलाकारों के बीच तुम्हारा #BestSupportingActor का nomination देखकर।दादा जी कहते थे,“बड़ा मुश्किल है बहते हुए दरिया को रोकना!” तुम्हारी मेहनत,धैर्य काम आने लगा है! इसको वोट करना प्लीज! 👍🌺👏",
+          "img": "https://images.kooapp.com/transcode_input/2726126/4D9596F1-0FC8-4A8E-9838-B21D55E8E149-image.jpeg",
+          "likes": 45,
+          "comments": 17,
+          "reKoo": 15
+        },
+        {
+          "id": 5,
+          "title": "बहुत बहुत धन्यवाद @adarpoonawalla @SerumInstIndia #PrakashKumarSingh जी, ये किताब #TheShieldCovishield और शिव जी की अद्भुत प्रतिमा प्रदान करने के लिए। भारत में #Covid  महामारी की रोकथाम में आपकी बनाई #Vaccine का बहुत बड़ा योगदान है। हमें आप पर गर्व है! 😍🙏🇮🇳 #MadeInIndia",
+          "img": "https://images.kooapp.com/transcode_input/2726126/C10F605C-FDE1-4538-AE29-1EB3ABB8155E-image.jpeg",
+          "likes": 45,
+          "comments": 17,
+          "reKoo": 15
+        }
+      ]
     },
     {
       "id": 2,
       "image": "https://images.kooapp.com/koo-profile-media/profiles/41741491/profile16700689047069fn40c.png?tr=n-dp_square",
       "name": "Dalai Lama",
       "username": "@dalailama",
-      "profession": "Spiritual Leader"
+      "profession": "Spiritual Leader",
+      "followers": "105.2K",
+      "following": "4",
+      "posts": [
+        {
+          "id": 1,
+          "title": "His Holiness Lays Foundation Stone of Dalai Lama Centre for Tibetan & Indian Ancient Wisdom",
+          "img": "https://images.kooapp.com/transcode_input/41741491/0facbfe3-2875-4284-bcb0-4106fc5a70cd.jpg",
+          "likes": 932,
+          "comments": 21,
+          "reKoo": 53
+        },
+        {
+          "id": 2,
+          "title": "https://www.dalailama.com/news/2023/congratulations-to-lula-da-silva",
+          "img": "https://images.kooapp.com/transcode_input/sugg1ee1c630-553d-46e0-999f-87ca43f13ed0.jpeg",
+          "likes": 45,
+          "comments": 17,
+          "reKoo": 15
+        },
+        {
+          "id": 3,
+          "title": "Pilgrimage to the Mahabodhi Stupa | His Holiness the Dalai Lama''s pilgrimage to the Mahabodhi Stupa in Bodhgaya, Bihar, India on December 23, 2022. | By Dalai Lama | Facebook..",
+          "img": "https://images.kooapp.com/transcode_input/sugg5ecfc72d-2382-4f7e-a7e2-c57278de48bf.jpeg",
+          "likes": 989,
+          "comments": 44,
+          "reKoo": 64
+        },
+        {
+          "id": 4,
+          "title": "Delhi, India - This morning the weather was chilly and a little misty as His Holiness the Dalai Lama drove to the Salwan Public School in Gurugram. He was greeted on arrival by the Chairman of the Salwan Education Trust, Sushil Dutt Salwan, who escorted him into the school lobby. Principals and staff of 58 schools from across Gurugram took the opportunity to greet His Holiness while he enjoyed tea and biscuits.",
+          "img": "https://images.kooapp.com/transcode_input/41741491/98126292-539d-4cb1-90d5-3a7d62d0175b.jpg",
+          "likes": 800,
+          "comments": 50,
+          "reKoo": 80
+        },
+        {
+          "id": 5,
+          "title": " I accept the prize with profound gratitude on behalf of the oppressed everywhere and for all those who struggle for freedom and work for world peace. I accept it as a tribute to the man who founded the modern tradition of nonviolent action for change – Mahatma Gandhi – whose life taught and inspired me.",
+          "img": "https://images.kooapp.com/transcode_input/41741491/4c1a7456-b8f8-4953-8c1c-6c54a1acc51a.jpg",
+          "likes": 359,
+          "comments": 45,
+          "reKoo": 32
+        }
+      ]
     },
     {
       "id": 3,
       "image": "https://images.kooapp.com/koo-profile-media/profiles/36613113/profile1667287043124fqvucs.png?tr=n-dp_square",
       "name": "Mamata Banerjee",
       "username": "@MamataOfficial",
-      "profession": "Politician"
-    },
-    {
-      "id": 4,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/11664193/c05e75f0-ba92-4d0c-9b30-fcebaf6b3cf8voke.jpg?tr=n-dp_square",
-      "name": "Virat Kohli",
-      "username": "@virat.kohli",
-      "profession": "Cricketer"
-    },
-    {
-      "id": 5,
-      "image": "https://images.kooapp.com/koo-profile-media/profiles/7036203/56DB03B1-A153-4705-8EA7-D0A54A1644BF-profile.jpeg?tr=n-dp_square",
-      "name": "Sadhguru",
-      "username": "@SadhguruJV",
-      "profession": "Spiritual Leader"
-    },
-    {
-      "id": 6,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8C9qeFOOfZ1oZJLWgAHfuepHmiUY3-RP3Rw&usqp=CAU",
-      "name": "Mamata Banerjee",
-      "username": "@MamataOfficial",
       "profession": "Politician",
-      "description": "The Official Koo handle of Mamata Banerjee, founder Chairperson All India Trinamool Congress. Honourable Chief Minister, West Bengal.",
       "followers": "145.8K",
       "following": "4",
       "posts": [
@@ -90,12 +156,11 @@
       ]
     },
     {
-      "id": 7,
-      "image": "https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg",
+      "id": 4,
+      "image": "https://images.kooapp.com/koo-profile-media/profiles/11664193/c05e75f0-ba92-4d0c-9b30-fcebaf6b3cf8voke.jpg?tr=n-dp_square",
       "name": "Virat Kohli",
       "username": "@virat.kohli",
       "profession": "Cricketer",
-      "description": "Carpediem!",
       "followers": "4.9M",
       "following": "0",
       "posts": [
@@ -142,12 +207,11 @@
       ]
     },
     {
-      "id": 8,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sadhguru-Jaggi-Vasudev.jpg/800px-Sadhguru-Jaggi-Vasudev.jpg",
+      "id": 5,
+      "image": "https://images.kooapp.com/koo-profile-media/profiles/7036203/56DB03B1-A153-4705-8EA7-D0A54A1644BF-profile.jpeg?tr=n-dp_square",
       "name": "Sadhguru",
       "username": "@SadhguruJV",
-      "profession": "...",
-      "description": "A Yogi, Mystic & Visionary. Koos from Sadhguru himself are signed -Sg. This account is managed by volunteers. #Savesoil #Consciousplanet",
+      "profession": "Spiritual Leader",
       "followers": "595.8K",
       "following": "3",
       "posts": [
@@ -194,11 +258,11 @@
       ]
     },
     {
-      "id": 9,
+      "id": 6,
       "image": "https://upload.wikimedia.org/wikipedia/hi/thumb/0/0d/%E0%A4%86%E0%A4%9C_%E0%A4%A4%E0%A4%95_%E0%A4%B2%E0%A5%8B%E0%A4%97%E0%A5%8B.svg/1280px-%E0%A4%86%E0%A4%9C_%E0%A4%A4%E0%A4%95_%E0%A4%B2%E0%A5%8B%E0%A4%97%E0%A5%8B.svg.png",
       "name": "AajTak",
       "username": "@AajTak",
-      "profession": "...",
+      "profession": "News Channel",
       "description": "AajTak covers breaking news, latest news in politics, sports, business & cinema. Follow us & stay ahead! Download the App: https://aajtak.app.link/QFAp3ZaHmQ",
       "followers": "2.7M",
       "following": "1",
@@ -246,9 +310,9 @@
       ]
     },
     {
-      "id": 10,
-      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkSb6LHVDV1RRVSNChmm28EMfNmetjLdi8yZaSZ8aDP8qNBXvY",
-      "name": "Sudhir Chaudhary",
+      "id": 7,
+      "image": "https://akm-img-a-in.tosshub.com/aajtak/images/author/sudhir_01-1_0.jpg",
+      "name": "SudhirChaudhary",
       "username": "@sudhirchaudhary",
       "profession": "Journalist",
       "description": "Consulting Editor, Aaj Tak. Hosts India’s No.1 news show Black&White every night at 9 pm. Ex-Editor In Chief & CEO , Zee News, WION , Zee Business, Zee 24 Taas. Fmr Host of DNA . Recipient of Ramnath Goenka Award",
@@ -298,63 +362,11 @@
       ]
     },
     {
-      "id": 11,
-      "image": "https://starsunfolded.com/wp-content/uploads/2016/10/Anupam-Kher-Photo.jpg",
-      "name": "Anupam Kher",
-      "username": "@anupampkher",
-      "profession": "Artist/Author/Motivational",
-      "description": "Speaker/Padmashri/Padmabhushan Koo Your Opinion!",
-      "followers": "3.8M",
-      "following": "34",
-      "posts": [
-        {
-          "id": 1,
-          "title": "#आप सभी की नववर्ष की हार्दिक शुभकामनाएँ। Happy New Year. May God give you all the happiness in the world. Love and prayers always. 🙏😍",
-          "img": "https://images.kooapp.com/transcode_input/7036203/0A97B334-D1CC-46B7-8006-8F4671FBC4C7-image.jpeg",
-          "likes": 45,
-          "comments": 17,
-          "reKoo": 15
-        },
-        {
-          "id": 2,
-          "title": "Dearest Pele! You and your game, and the way you played it, will always be #GameChanger for millions of people all the world. Whether they played football or not. Thank you for your inspiring life.🙏 #RipLegend #OmShanti #Pele",
-          "img": "https://images.kooapp.com/transcode_input/2726126/8CFE5F11-E1D5-489E-AC62-006E8355E18A-image.jpeg",
-          "likes": 45,
-          "comments": 17,
-          "reKoo": 15
-        },
-        {
-          "id": 3,
-          "title": "आदरणीय प्रधानमंत्री @narendramodi जी! आपकी माताश्री #हीराबा जी के निधन का सुनकर मन दुखी भी हुआ और व्याकुल भी।आपका उनके प्रति प्यार और आदर जग ज़ाहिर है।उनका स्थान आपके जीवन में कोई नहीं भर पाएगा! पर आप भारत माँ के सपूत हो! देश की हर माँ का आशिर्वाद आपके ऊपर है।मेरी माँ का भी!🙏🕉",
-          "img": "https://images.kooapp.com/transcode_input/2726126/699AC026-0343-4899-AA2A-84A8C3E83D96-image.jpeg",
-          "likes": 45,
-          "comments": 17,
-          "reKoo": 15
-        },
-        {
-          "id": 4,
-          "title": "मेरे प्यारे और माँ की आँख के तारे @sikandarkher! दिल ख़ुश हो गया @iifa में इन ज़बर्दस्त कलाकारों के बीच तुम्हारा #BestSupportingActor का nomination देखकर।दादा जी कहते थे,“बड़ा मुश्किल है बहते हुए दरिया को रोकना!” तुम्हारी मेहनत,धैर्य काम आने लगा है! इसको वोट करना प्लीज! 👍🌺👏",
-          "img": "https://images.kooapp.com/transcode_input/2726126/4D9596F1-0FC8-4A8E-9838-B21D55E8E149-image.jpeg",
-          "likes": 45,
-          "comments": 17,
-          "reKoo": 15
-        },
-        {
-          "id": 5,
-          "title": "बहुत बहुत धन्यवाद @adarpoonawalla @SerumInstIndia #PrakashKumarSingh जी, ये किताब #TheShieldCovishield और शिव जी की अद्भुत प्रतिमा प्रदान करने के लिए। भारत में #Covid  महामारी की रोकथाम में आपकी बनाई #Vaccine का बहुत बड़ा योगदान है। हमें आप पर गर्व है! 😍🙏🇮🇳 #MadeInIndia",
-          "img": "https://images.kooapp.com/transcode_input/2726126/C10F605C-FDE1-4538-AE29-1EB3ABB8155E-image.jpeg",
-          "likes": 45,
-          "comments": 17,
-          "reKoo": 15
-        }
-      ]
-    },
-    {
-      "id": 12,
+      "id": 8,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd1kY49dNuhwqMuPIdagiIuK6k9m7vEbLES0jAwE&s",
       "name": "Defence Research and Development Organisation",
       "username": "@DRDO_India",
-      "profession": "...",
+      "profession": "Defence",
       "description": "DRDO is the R&D wing of Ministry of Defence, Govt of India   Empowering India with cutting-edge defence systems & technologies",
       "followers": "54.7K",
       "following": "7",
@@ -402,11 +414,11 @@
       ]
     },
     {
-      "id": 13,
+      "id": 9,
       "image": "https://upload.wikimedia.org/wikipedia/en/6/6f/Indian_Institute_of_Technology_Roorkee_logo.png",
       "name": "IIT Roorkee",
       "username": "Indian Institute of Technology Roorkee",
-      "profession": "...",
+      "profession": "Education",
       "description": "Indian Institute of Technology Roorkee https://www.iitr.ac.in/",
       "followers": "996.3K",
       "following": "6",
@@ -454,11 +466,11 @@
       ]
     },
     {
-      "id": 14,
+      "id": 10,
       "image": "https://www.thestatesman.com/wp-content/uploads/2022/08/1500x900_402454-bsf-1.jpg",
       "name": "Border Security Force ",
       "username": "@BSF_India",
-      "profession": "...",
+      "profession": "Border",
       "description": "Official handle of Border Security Force (BSF), India’s first line of defence, safeguarding the India-Pakistan India-Bangladesh borders.",
       "followers": "671.9K",
       "following": "6",
@@ -506,7 +518,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 11,
       "image": "https://pbs.twimg.com/profile_images/1566450905976672260/I39Q62WR_400x400.jpg",
       "name": "Piyush Goyal",
       "username": "@piyushgoyal",
@@ -1659,7 +1671,7 @@
       "comments": "4"
     }
   ],
-  "mostPopular":[
+  "mostPopular": [
     {
       "id": 1,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxVTxxOOYvfOiHUd_enkPjkvPyBGsEXaeywjdd9JGjg&s",
@@ -1709,7 +1721,8 @@
       "description": "#swarabhaskar Shares Picture With Mystery Man With A Caption ’This Could Be Love’.",
       "hastags": "#swarabhaskar",
       "image2": "https://images.kooapp.com/transcode_input/suggf53f8cd7-4465-49ce-ae42-0d8a72b82edd.jpeg"
-    }, {
+    },
+    {
       "id": 6,
       "image": "https://images.kooapp.com/koo-profile-media/profiles/3546453/1c038527-31dc-4da5-afe5-8a656359dba4voke.jpg",
       "name": "ETV Bharat",
@@ -1718,7 +1731,8 @@
       "description": "DMK MLA blames BJP for former Tamil Nadu CM Jayalalithas death’",
       "hastags": "#Cricketonkoo  #WomensIPL",
       "image2": "https://images.kooapp.com/transcode_input/sugg05384aee-9069-4306-a461-a85005fc9bee.jpeg"
-    }, {
+    },
+    {
       "id": 7,
       "image": "https://images.kooapp.com/koo-profile-media/profiles/9628685/19d4b071-496f-4dd7-9fe6-b2a054c86a65voke.jpg",
       "name": "EssentiallySports",
@@ -1728,6 +1742,5 @@
       "hastags": "#Golf",
       "image2": "https://images.kooapp.com/transcode_input/sugg85e9d8ba-4784-4a41-bcfa-479c90dc9c22.jpeg"
     }
-    
   ]
 }
