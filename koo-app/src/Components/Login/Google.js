@@ -72,9 +72,11 @@ setState(value);
       <Dictaphone onChange1={valueText} state={state} />
       {state !== "" ? <Box display="flex" flexDirection="column" gap="0" w="90%" margin="auto" height="600px" bg="#F0FFF0" >
         {arr.map((ele) => {
-          return <Text display="flex" alignItems="center" gap="5" borderRadius="20px" p="5"  ><Image w="10%" borderRadius="20px" src={ele.image} alt="one" /><Link to={`/trending/${ele.id}`}><h1><b>{ele.name}</b></h1><p style={{ fontSize: "14px" }}>{ele.username}</p></Link></Text>
+          return <Text display="flex"   alignItems="center" gap="5" borderRadius="20px" p="5"  ><Image w="10%" borderRadius="20px" src={ele.image} alt="one" /><Link onClick={()=>{
+            setState("");
+          }}  to={`individualuser/${ele.id}`}><h1><b>{ele.name}</b></h1><p style={{ fontSize: "14px" }}>{ele.username}</p></Link></Text>
         })}
-      </Box> : null}
+      </Box> : null}  
       {/* <button onClick={()=>record()}>lo</button> */}
       
 
