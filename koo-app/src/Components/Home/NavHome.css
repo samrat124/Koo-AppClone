@@ -39,7 +39,11 @@
      justify-content: center;
 }
 .iconNavHome:hover{
-   background-color: RGB(170 187 204); 
+   background-color: RGB(170 187 204);
+}
+.loginButtonHome{
+    background-color:RGB(170 187 204);
+     width:10px;
 }
 @media screen {
     
