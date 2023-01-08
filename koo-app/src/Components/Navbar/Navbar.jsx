@@ -31,6 +31,7 @@ import { useSelector } from "react-redux";
 import ControlledUsage from "./Logout";
 import { InitialFocus } from "../Login/LoginModal";
 import InitialFocus1  from "../Login/PostComponent/PostChakra";
+import InitialFocus3 from "../Login/PostComponent/PostChak";
 
 
 
@@ -206,7 +207,7 @@ console.log(obj);
           m="auto"
           mt="20px"
         >
-          + Koo <InitialFocus1/>
+          <InitialFocus3/>
         </Button>
        {isAuth ? <ControlledUsage/>: <InitialFocus/>}
       </div>
