@@ -73,7 +73,7 @@ const Feed = () => {
 
 
   <div className="follow">
-  <Button
+<Link to="/navbar/following">  <Button
 
 colorScheme="blue"
 bg="blue"
@@ -96,8 +96,8 @@ bg="blue"
 
  }}
 >
-  Follow 
-</Button>
+  Follow
+</Button></Link>
   </div>
   </div>
     
