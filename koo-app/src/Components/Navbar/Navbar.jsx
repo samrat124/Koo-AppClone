@@ -135,7 +135,7 @@ console.log(obj);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="explore"
+                to="videos"
               >
                 Explore
               </Link>
@@ -153,9 +153,9 @@ console.log(obj);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="language"
+                to="people"
               >
-                Language
+                User
               </Link>
             </div>
           </div>:null}
@@ -189,7 +189,7 @@ console.log(obj);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="notification"
+                to="new"
               >
                 Notification
               </Link>
@@ -198,7 +198,7 @@ console.log(obj);
          
         </div>
 
-        <Button
+        <Button 
          
          colorScheme="blue"
          bg="blue"
@@ -206,7 +206,7 @@ console.log(obj);
           m="auto"
           mt="20px"
         >
-          + Koo
+          + Koo <InitialFocus1/>
         </Button>
        {isAuth ? <ControlledUsage/>: <InitialFocus/>}
       </div>
@@ -307,7 +307,7 @@ console.log(obj);
                 </div>
               </div>
               <div className="circle">
-             <Link to="/trending"><IoIosAddCircle/></Link> 
+             <Link to="popular"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -352,7 +352,7 @@ console.log(obj);
                 </div>
               </div>
               <div className="circle">
-              <Link to="/trending"><IoIosAddCircle/></Link> 
+              <Link to="popular"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -397,7 +397,7 @@ console.log(obj);
                 </div>
               </div>
               <div className="circle">
-              <Link to="/trending"><IoIosAddCircle/></Link> 
+              <Link to="popular"><IoIosAddCircle/></Link> 
               </div>
             </div>
             <div className="T1">
@@ -442,7 +442,7 @@ console.log(obj);
                 </div>
               </div>
               <div className="circle">
-              <Link to="/trending"><IoIosAddCircle/></Link> 
+              <Link to="popular"><IoIosAddCircle/></Link> 
               </div>
             </div>
 
