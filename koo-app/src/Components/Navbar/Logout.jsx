@@ -10,7 +10,7 @@ import {
     PopoverAnchor,
     Button,
     ButtonGroup,
-    useDisclosure
+    useDisclosure,Box
   } from '@chakra-ui/react'
 
 import { myAction } from '../Login/Redux/action';
@@ -23,10 +23,10 @@ function ControlledUsage() {
   
     return (
       <>
-        <Button mr={5} onClick={onToggle}>
+        <Button  onClick={onToggle} colorScheme="blue" bg="blue" w="75%" m="auto">
           Logout
         </Button>
-        <Popover
+      <Box position="absolute" top="400px"> <Popover
           returnFocusOnClose={false}
           isOpen={isOpen}
           onClose={onClose}
@@ -57,7 +57,7 @@ function ControlledUsage() {
               </ButtonGroup>
             </PopoverFooter>
           </PopoverContent>
-        </Popover>
+        </Popover></Box>
       </>
     )
   }

@@ -1,5 +1,6 @@
 {
   
+  "post": [],
   "users": [
     {
       "id": 1,
@@ -627,6 +628,13 @@
       "name": "naina",
       "email": "naina@gmail.com",
       "id": 10
+    },
+    {
+      "number": "9992859407",
+      "otp": "1234",
+      "name": "rr",
+      "email": "rr@gmail.com",
+      "id": 11
     }
   ],
   "trending": [
@@ -731,7 +739,8 @@
           "comments": 4,
           "reKoo": 2
         },
-        { "id": 10,
+        {
+          "id": 10,
           "name": "Vishnu Nair",
           "username": "@im_vishnu_nair",
           "profession": "",
@@ -1119,7 +1128,7 @@
       "profession": "Political Party India"
     },
     {
-      "id":15,
+      "id": 15,
       "image": "https://images.kooapp.com/koo-profile-media/profiles/7019830/8BCA58E1-6F36-4743-9730-C29062BB4CFD-profile.jpeg?tr=n-dp_square",
       "name": "Office Of Nitin Gadkari",
       "username": "@OfficeOfNG",
@@ -1191,7 +1200,7 @@
       "profession": "Journalist"
     },
     {
-      "id":8 ,
+      "id": 8,
       "image": "https://images.kooapp.com/koo-profile-media/profiles/19234080/profile1659016692128kzergi.png?tr=n-dp_square",
       "name": "Sputnik",
       "username": "@sputniknews",
@@ -1649,6 +1658,5 @@
       "likes": "25",
       "comments": "4"
     }
-  ],
-  "post": []
+  ]
 }

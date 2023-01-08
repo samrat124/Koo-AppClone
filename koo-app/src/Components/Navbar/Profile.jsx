@@ -8,7 +8,7 @@ export default function Profile({img,name,position}) {
                     
             <Box display="flex" flexDirection="column" textAlign="center">
 
-        <Box  ><img style={{borderRadius:"50%" }}  src={img} alt="one" /></Box>
+        <Box  h="100px" w="100px" mb="5px"><img style={{borderRadius:"50%", width:"80%",margin:"auto" }}  src={img} alt="one" /></Box>
                 <Box><Heading fontSize="12px">{name}</Heading></Box> 
                 <Box><Text fontSize="12px">{position}</Text></Box> 
 
