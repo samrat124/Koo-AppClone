@@ -9,6 +9,10 @@ import People from '../People/People'
 import Login from '../Login/Login'
 import IndividualUser from '../People/Components/IndividualUser'
 import Popular from '../Popular/Popular'
+import Videos from '../Videos/Videos'
+// import VideoCard from '../videocard/VideoCard'
+import VideosCard from '../Videos/Videos'
+import VideoLogic from '../Videos/videoLogic'
 
 
 
@@ -29,6 +33,8 @@ const AllRoutes = () => {
           <Route path="people" element={<People />} />
           <Route path="individualuser/:id" element={<IndividualUser/>} />
           <Route path="popular" element={<Popular/>}/>
+          <Route path="videos" element={<VideoLogic/>}/>
+
         </Route>
 
 
