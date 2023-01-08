@@ -17,7 +17,7 @@ function Popular() {
       {data.map((person) => {
         return (
           <>
-            <Flex borderRadius="8px 8px 0px 0px" borderBottom="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m={"auto"}>
+            <Flex borderRadius="8px 8px 0px 0px" borderBottom="1px solid #e8e8e3" color="#424242" w={570} h={77} maxWidth={900} alignItems="center" gap="30" m="auto">
               <Box boxSize="80px">
                 <Image
                   src={person.image}
