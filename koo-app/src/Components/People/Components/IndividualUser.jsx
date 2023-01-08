@@ -17,7 +17,7 @@ function IndividualUser() {
 
       
   return (
-    <Box marginLeft={"4.5%"} marginTop={"2%"}>
+    <Box marginLeft='4.5%' mt='2%'>
                 <Box>
               <Image src={user.image} w={570}/>
               </Box>
