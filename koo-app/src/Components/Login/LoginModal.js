@@ -131,7 +131,7 @@ const[sound,setSound]=useState("");
                 controls
 
             />:null} 
-            <Button onClick={onOpen}>Login</Button>
+            <Button colorScheme="blue" bg="blue" w="65%" m="auto" onClick={onOpen}>Login</Button>
 
 
             <Modal
