@@ -31,7 +31,7 @@ export default function Card({image, name, username, profession, description, ha
                 ) : (
                   <img
                     className="profilepic"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyALOcLp4ykOIC4bim8L0xZIvgfLLZEo-mg&usqp=CAU"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhPz7CL8gVPIQ3wkwqaslgqc8DJ_XlzT9rg&usqp=CAU"
                     alt="postimg"
                   />
                 )}
