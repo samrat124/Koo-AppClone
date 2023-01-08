@@ -1,12 +1,13 @@
 #g-parent-div {
-  width: 90%;
+  width: 85%;
   margin: auto;
-  background-color: white;
+  /* background-color: white; */
+  /* margin-left: 10px; */
 }
 
 #g-main-div {
   border: 1px solid #e0e0e0;
-  width: 93.5%;
+  width: 100%;
 
   margin-top: 10px;
   background-color: #fdfdfd;
