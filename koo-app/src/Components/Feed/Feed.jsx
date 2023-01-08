@@ -56,7 +56,7 @@ const Feed = () => {
   </div> 
 
 
-<Box display='flex' gap="10px" w='98%' m='auto'>
+<Box display='flex' gap="10px" w='100%' m='auto' justifyContent="center" overflow="auto">
 {data.map((ele)=>{
   return <Link to={`/navbar/individualuser/${ele.id}`}><Profile img={ele.image} name={ele.name} position={ele.profession} /></Link>
 })}
