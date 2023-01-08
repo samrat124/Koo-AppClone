@@ -1,0 +1,17 @@
+.g-loading-gif {
+  margin: auto;
+  width: 640px;
+  padding: 50px;
+  font-family: "Avenir", sans-serif;
+  color: #33475b;
+  margin-top: 100px;
+}
+
+.g-loading-gif > div {
+  display: flex;
+  justify-content: center;
+}
+
+.g-loading-gif > div > img {
+  width: 60%;
+}
