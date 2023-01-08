@@ -10,10 +10,10 @@ function IndividualUser() {
       const {id}=useParams();
       const [user,setUser]=useState({})
       useEffect(()=>{
-        fetch(`http://localhost:3001/peopleyoucanfollow/${id}`)
+        fetch(`http://localhost:3001/users/${id}`)
         .then((res)=>res.json())
         .then((data)=>setUser(data))
-      },[id])
+      },[])
 
       
   return (
@@ -51,7 +51,6 @@ function IndividualUser() {
                     <span>Following</span>
                 </Box>
             </Box>
-            <Post id={user.id}/>
     </>
   )
 }
