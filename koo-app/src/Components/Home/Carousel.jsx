@@ -88,13 +88,14 @@ export default function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'xl'}
-            // position="relative"
+            height={'md'}
+            position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            // backgroundSize="cover"
+            backgroundSize="cover"
             backgroundImage={`url(${url})`}
             w='100%'
+            margin='auto'
           />
         ))}
       </Slider>
