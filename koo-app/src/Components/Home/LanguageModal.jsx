@@ -13,12 +13,12 @@ import {
 
 const LanguageModal = () => {
 
-  
+
     const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     
         <>
-      <Button bgColor='transparent' onClick={onOpen}><GrLanguage/></Button>
+      <Button bgColor='transparent' onClick={onOpen}><GrLanguage size='20px'/></Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
