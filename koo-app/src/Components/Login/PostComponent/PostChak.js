@@ -94,7 +94,7 @@ function handlePost1(){
         </div>
       </div>
       <div style={{width:"100%",margin:"20px 0px 20px 0px"}} >
-        <textarea style={{width:"100%",color:"grey"}}
+        <textarea style={{width:"100%",color:"grey",padding:"15px"}}
           name=""
           id=""
           value={obj.description}

@@ -95,7 +95,7 @@ onClose();
         </div>
       </div>
       <div style={{width:"100%",margin:"20px 0px 20px 0px"}} >
-        <textarea style={{width:"100%",color:"grey"}}
+        <textarea onFocus={true} style={{width:"100%",padding:"15px",color:"grey"}}
           name=""
           id=""
           value={obj.description}
