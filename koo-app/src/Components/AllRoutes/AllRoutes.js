@@ -14,6 +14,7 @@ import Videos from '../Videos/Videos'
 import VideosCard from '../Videos/Videos'
 import VideoLogic from '../Videos/videoLogic'
 import Polls from '../Polls/Polls'
+import NewData from '../Login/NewData'
 
 
 
@@ -36,6 +37,10 @@ const AllRoutes = () => {
           <Route path="popular" element={<Popular/>}/>
           <Route path="videos" element={<VideoLogic/>}/>
           <Route path="polls" element={<Polls/>}/>
+          <Route path="new" element={<NewData/>}/>
+          <Route path="following" element={<People/>}/>
+
+
 
 
         </Route>
