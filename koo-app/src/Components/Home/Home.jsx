@@ -7,9 +7,12 @@ import HomeCarousel from './HomeCarousel'
 import kooAppqr from './kooAppqr.png'
 import kooFooter from './kooFooter.png'
 import Carousel from './Carousel'
+import {Link} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const Home = () => {
+  let navigate=useNavigate();
   return (
     <div className='homeParent' >
       <div className='NavbarHome'><NavHome/></div>
@@ -19,7 +22,7 @@ const Home = () => {
           <div><Heading size='3xl' letterSpacing='2px' ml='30px'  >Know what’s happening!</Heading></div>
     <div style={{marginTop:'30px'}}>
       <p style={{marginLeft:'30px'}}>All in your Language</p></div>
-    <div><Button bgColor='RGB(99 115 131)' color='white' w='300px' mt='30px' ml='30px' borderRadius='20px' gap='20px'>Go to Feed  <AiOutlineArrowRight/></Button></div></div>
+    <div><Button bgColor='RGB(99 115 131)' color='white' w='300px' mt='30px' ml='30px' borderRadius='20px' gap='20px' onClick={()=>{navigate('/navbar/feed')}}>Go to Feed  <AiOutlineArrowRight/></Button></div></div>
 </div>
         <div className='homeMainMid2'><img src='https://images.kooapp.com/img/home.png' alt ='navBelowImg'/></div>
         </div>
@@ -28,7 +31,7 @@ const Home = () => {
           <p style={{marginTop:'30px'}}>Amazing features to connect with people</p>
         </div>
         {/* <HomeCarousel/> */}
-        <Carousel/>
+        <Box w='100%' h='600px'><Carousel/></Box>
         <div className='homemidP3'>
           <div className='homeMidp3p1'>
             <Heading  >Koo in <br/>numbers</Heading>
