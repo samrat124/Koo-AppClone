@@ -111,7 +111,12 @@ const[sound,setSound]=useState("");
         })
         myAction(true,dispatch);
         myAction1(obj,dispatch);
+        setTimeout(()=>{
+
         navigate("/navbar/feed");
+
+        },2000)
+    
         
 
     }
