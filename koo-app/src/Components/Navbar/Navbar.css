@@ -7,13 +7,6 @@
 .NavbarMain{
     display:flex;
     width: 100%;
-    
-
-
-    
-    
-
-
 }
 .sideBarLeft{
     display:grid;
@@ -300,4 +293,31 @@ b{
     text-align: center;
     
     
+}
+
+@media  screen and (max-width: 767px){
+    .sideBarLeft{
+        display: none;
+    }
+    .NavbarSidebar{
+     display: none;
+    }
+    .NavbarComp{
+        width: 100%;
+        left:0%;
+        overflow-x: hidden;
+        position: relative;
+        /* margin: auto; */
+    }
+    .UpperNav{
+        overflow: auto;
+        justify-content: flex-start;
+        gap: 5%;
+    }
+    #g-parent-div {
+        width: 100%;
+        /* margin: auto; */
+        left:0%;
+    }
+
 }
