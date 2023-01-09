@@ -14,7 +14,7 @@ function Thankyou() {
 
             />:null} 
 
-    <Button bg="blue" colorScheme="blue" w="50%" onClick={()=>{
+    <Button bg="RGB(167 180 194)" colorScheme="white" w="50%" onClick={()=>{
         setSound(!sound);
     }} >
 Thankyou

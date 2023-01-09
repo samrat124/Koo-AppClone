@@ -75,6 +75,7 @@ console.log(obj);
       <div  className="sideBarLeft">
       
         <div className="NavbarLogo">
+          <Link to='/'>
        {!chidiya? <img
             className="navLogo"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQale17xtS5E4Kyg8xAhtvl4-V2pPqUJdK_vi8a4Aeq&s"
@@ -85,6 +86,7 @@ console.log(obj);
             src="/logo.gif"
             alt="logoNav"
           />}
+          </Link>
         </div>
         <div className="NavbarLink">
           <div className="main">

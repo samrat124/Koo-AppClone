@@ -57,4 +57,7 @@
     border: none;
     justify-content: flex-end;
 }
+.thankyou{
+    display: none;
+}
 }

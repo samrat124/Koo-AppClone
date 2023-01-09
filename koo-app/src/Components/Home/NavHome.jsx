@@ -8,6 +8,7 @@ import {SlFire} from 'react-icons/sl';
 import LanguageModal from './LanguageModal';
 import {CiSearch} from 'react-icons/ci'
 import { InitialFocus } from '../Login/LoginModal';
+import Thankyou from '../Login/Thankyou';
 
 
 const NavHome = () => {
@@ -24,9 +25,9 @@ const NavHome = () => {
       <div className='homeNav'>
         <div className='homeNavIcons'>
            <Box className='hiddenRes'> <Link className='iconNavHome' to='/navbar/feed'><HiOutlineHome size='20px'/></Link></Box>
-           <Box className='hiddenRes'> <Link  className='iconNavHome' to='/navbar/explore'>< FiHash size='20px'/></Link></Box>
-           <Box className='hiddenRes'> <Link  className='iconNavHome' to='/navbar/trending'><SlFire size='20px'/></Link></Box>
-           <Box className='hiddenRes'> <Link  className='iconNavHome' to='/navbar/search'><CiSearch size='20px'/></Link></Box>
+           <Box className='hiddenRes'> <Link  className='iconNavHome' to='/navbar/feed'>< FiHash size='20px'/></Link></Box>
+           <Box className='hiddenRes'> <Link  className='iconNavHome' to='/navbar/feed'><SlFire size='20px'/></Link></Box>
+           <Box className='hiddenRes'> <Link  className='iconNavHome' to='/navbar/feed'><CiSearch size='20px'/></Link></Box>
            <Box >  <Link  to=''><LanguageModal /></Link></Box>
             {/* <Button h='30px' borderRadius='15px' bgColor='RGB(170 187 204)' color='white'>Login</Button>style={{backgroundColor:'RGB(170 187 204)',width:'10px',}} */}
            <Box w='80px'> <  InitialFocus {...loginButton} /></Box>
@@ -34,7 +35,9 @@ const NavHome = () => {
         <div id='hiddenItem'  className='homeNavBarcode'>
             <Image h='50px' w='50px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/330px-QR_code_for_mobile_English_Wikipedia.svg.png' alt='qr' />
             <p style={{marginTop:'10px',fontWeight:'bold',fontSize:'20px',letterSpacing:'1px'}}>Get Koo</p>
+            
         </div>
+        <Box w='250px'  justifyContent='flex-end' mt='2%'  className='thankyou'><Thankyou/></Box>
       </div>
     </div>
   )

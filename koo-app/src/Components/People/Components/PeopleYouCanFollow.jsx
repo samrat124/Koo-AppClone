@@ -4,17 +4,21 @@ import { Flex,Heading,Text } from "@chakra-ui/react";
 import { Image, Box } from "@chakra-ui/react";
 import { useEffect } from "react";
 import {Link,useParams} from "react-router-dom";
+import Loading from "../../Loading/Loading";
 
 
 function PeopleYouCanFollow() {
   let {id}=useParams();
   const [data,setData]=useState([]);
+   
   useEffect(()=>{
     fetch(`http://localhost:3001/peopleyoucanfollow`)
     .then(res=>res.json())
-    .then((data)=>setData(data))
+    .then((data)=>{setData(data)
+       
+    })
   },[])
-
+     
   return (
     <div>
       <Heading margin="20px" as='h4' size='md' alignContent="start">People You Can Follow</Heading>
