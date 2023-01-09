@@ -91,7 +91,7 @@ export default function Card({image, name, username, profession, description, ha
                   />
                 </div>
                 <div>
-                  <a href="https://web.whatsapp.com/">
+                  <a href="https://web.whatsapp.com/" target="_blank">
                     <img
                       className="whatsappicon"
                       src="https://www.kooapp.com/img/cardFooterIcons/whatsapp_new.svg"
