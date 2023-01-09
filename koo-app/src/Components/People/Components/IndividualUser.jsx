@@ -13,7 +13,7 @@ function IndividualUser() {
         fetch(`http://localhost:3001/users/${id}`)
         .then((res)=>res.json())
         .then((data)=>setUser(data))
-      },[])
+      },[id])
 
       
       return (
