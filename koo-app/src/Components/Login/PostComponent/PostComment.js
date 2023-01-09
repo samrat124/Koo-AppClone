@@ -18,7 +18,7 @@ import {useState} from "react";
 import "../../Post/Post.css";
 import { useSelector } from 'react-redux';
 
-function InitialFocus3() {
+function InitialFocus4() {
     const { isOpen, onOpen, onClose } = useDisclosure()
   
     const initialRef = React.useRef(null)
@@ -51,11 +51,12 @@ function handlePost1(){
   body: JSON.stringify(obj)}).then((res)=>console.log(res.ok));
   onClose();
 
+
 }
   
     return (
       <>
-        <button style={{width:"100%"}} onClick={onOpen}><Box w="100%">Koo+</Box></button>
+        <button style={{width:"100%"}} onClick={onOpen}><Box w="100%">Comment</Box></button>
         
   
         <Modal
@@ -136,4 +137,4 @@ function handlePost1(){
       </>
     )
   }
-  export default InitialFocus3;
+  export default InitialFocus4;

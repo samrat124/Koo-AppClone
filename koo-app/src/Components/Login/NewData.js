@@ -26,7 +26,7 @@ function NewData() {
 
       {
         data.map((data) => {
-          return (<Card image={data.image} name={data.name} username={data.username} description={data.description} image2={data.image2} hashtags={data.hastags} profession={data.profession} />)
+          return (<Card image={data.image} name={data.name} username={data.username} description={data.description}  hashtags={data.hastags} profession={data.profession} />)
         })
       }
 
