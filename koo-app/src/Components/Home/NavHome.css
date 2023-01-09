@@ -45,6 +45,16 @@
     background-color:RGB(170 187 204);
      width:10px;
 }
-@media screen {
-    
+@media  screen and (max-width: 767px){
+.hiddenRes{
+    display: none;
+}
+#hiddenItem{
+    display: none;
+}
+.homeNavIcons{
+    width: 100%;
+    border: none;
+    justify-content: flex-end;
+}
 }

@@ -8,7 +8,7 @@ import {
     ModalHeader,
     ModalFooter,
     ModalBody,
-    ModalCloseButton,useDisclosure,Button 
+    ModalCloseButton,useDisclosure,Button ,Box
   } from '@chakra-ui/react'
 
 const LanguageModal = () => {
@@ -26,14 +26,19 @@ const LanguageModal = () => {
           <ModalHeader>Modal Title</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            {/* <Lorem count={2} /> */}
+            <Box>
+              <Button onClick={onClose}>English</Button>
+              <Button onClick={onClose}>
+                Hindi
+              </Button>
+            </Box>
           </ModalBody>
 
           <ModalFooter>
             <Button colorScheme='blue' mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button variant='ghost'>Secondary Action</Button>
+             
           </ModalFooter>
         </ModalContent>
       </Modal>
