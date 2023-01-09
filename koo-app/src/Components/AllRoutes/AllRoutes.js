@@ -13,6 +13,7 @@ import Videos from '../Videos/Videos'
 // import VideoCard from '../videocard/VideoCard'
 import VideosCard from '../Videos/Videos'
 import VideoLogic from '../Videos/videoLogic'
+import Polls from '../Polls/Polls'
 
 
 
@@ -34,6 +35,8 @@ const AllRoutes = () => {
           <Route path="individualuser/:id" element={<IndividualUser/>} />
           <Route path="popular" element={<Popular/>}/>
           <Route path="videos" element={<VideoLogic/>}/>
+          <Route path="polls" element={<Polls/>}/>
+
 
         </Route>
 
