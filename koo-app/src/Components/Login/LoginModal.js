@@ -19,12 +19,14 @@ import {useDispatch} from "react-redux"
 
 import ReactAudioPlayer from 'react-audio-player';
 import { myAction, myAction1 } from './Redux/action';
+import { useNavigate } from 'react-router';
 
 export const InitialFocus = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     const initialRef = React.useRef(null)
     const finalRef = React.useRef(null)
+    let navigate=useNavigate();
 
     const [state, setState] = useState(true);
     const dispatch=useDispatch();
@@ -109,6 +111,7 @@ const[sound,setSound]=useState("");
         })
         myAction(true,dispatch);
         myAction1(obj,dispatch);
+        navigate("/navbar/feed");
         
 
     }
