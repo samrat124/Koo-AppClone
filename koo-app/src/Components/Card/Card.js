@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Card.css";
+import InitialFocus4 from '../Login/PostComponent/PostComment'
 
 export default function Card({image, name, username, profession, description, hashtags, image2}) {
   const [data, setdata] = useState([]);
@@ -57,15 +58,17 @@ export default function Card({image, name, username, profession, description, ha
 
               <div className="contto">{hashtags}</div>
               <div className="cont3">
-                <img src={image2} alt="postimg" />
+                <img src={image2} />
               </div>
 
               <div className="cont5">
+                
                 <img
                   src="https://www.kooapp.com/img/profilePlaceholderYellow.svg"
                   alt="comment"
                 />
                 <div>Write your comment...</div>
+                <InitialFocus4/>
               </div>
 
               <div className="cont4">
