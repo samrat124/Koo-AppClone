@@ -9,10 +9,16 @@ export default function Card({image, name, username, profession, description, ha
  
   const updateCount = () => {
  
+           if(state<6){
+            setState((prevState) => prevState + 1);
+           }
 
+           if(state==6){
+            setState((prevState) => prevState - 1);
+           }
     
 
-    setState((prevState) => prevState + 1);
+  
 
  
 
@@ -85,7 +91,7 @@ export default function Card({image, name, username, profession, description, ha
                   />
                 </div>
                 <div>
-                  <a href="https://www.kooapp.com/img/Whatsapp1.5.svg">
+                  <a href="https://web.whatsapp.com/">
                     <img
                       className="whatsappicon"
                       src="https://www.kooapp.com/img/cardFooterIcons/whatsapp_new.svg"
