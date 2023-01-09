@@ -26,21 +26,21 @@ function ControlledUsage() {
         <Button  onClick={onToggle} colorScheme="blue" bg="blue" w="75%" m="auto">
           Logout
         </Button>
-      <Box position="absolute" top="400px"> <Popover
+      <Box position="absolute" top="450px" left="70px"> <Popover
           returnFocusOnClose={false}
           isOpen={isOpen}
           onClose={onClose}
           placement='right'
           closeOnBlur={false}
         >
-          <PopoverContent>
+          <PopoverContent style={{width:"100%"}}>
             <PopoverHeader fontWeight='semibold'>Confirmation</PopoverHeader>
             <PopoverArrow />
             <PopoverCloseButton />
             <PopoverBody>
-              Are you sure you want to continue with your action?
+              Are you sure ?
             </PopoverBody>
-            <PopoverFooter display='flex' justifyContent='flex-end'>
+            <PopoverFooter display='flex' justifyContent='flex-start'>
               <ButtonGroup size='sm'>
                 <Button variant='outline'  onClick={()=>{
                   
