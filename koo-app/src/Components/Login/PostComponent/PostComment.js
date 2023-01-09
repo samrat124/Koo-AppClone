@@ -56,7 +56,7 @@ function handlePost1(){
   
     return (
       <>
-        <button style={{width:"100%"}} onClick={onOpen}><Box w="100%">Comment</Box></button>
+        <button style={{width:"100%"}} onClick={onOpen}><Box w="100%"></Box></button>
         
   
         <Modal
