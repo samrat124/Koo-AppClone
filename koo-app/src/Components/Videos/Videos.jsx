@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../Components/Card/Card.css"
-
+import InitialFocus4 from "../Login/PostComponent/PostComment"
 function VideosCard({ image, name, username, profession, description, hashtags, image2 }) {
   const [data, setdata] = useState([]);
 
@@ -63,6 +63,8 @@ function VideosCard({ image, name, username, profession, description, hashtags, 
               alt="comment"
             />
             <div>Write your comment...</div>
+            <InitialFocus4/>
+            
           </div>
 
           <div className="cont4">
