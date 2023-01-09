@@ -17,18 +17,42 @@ import {useState} from "react";
   
 import { PostBox } from './PostBox'
 import "../../Post/Post.css";
+import { useSelector } from 'react-redux';
 
 function InitialFocus1() {
     const { isOpen, onOpen, onClose } = useDisclosure()
   
     const initialRef = React.useRef(null)
     const finalRef = React.useRef(null)
-    const[text, setText]= useState('');
+    let newData=useSelector((state)=>state.obj);
+    const[obj, setObj]= useState({
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bAWzupfqzzBYB3dSkQf5wdYWSTUxsNhfVw&usqp=CAU",
+      "name":newData.name,
+      "username": "@Biplob_Sarma_Pathak",
+      "profession": "Business Owner",
+      "description":"",
+      "image2": "https://images.kooapp.com/transcode_input/41664245/8a8d9e9f-e4a5-46e8-a7d6-e4f25556c4d6.jpg",
+      "likes": 6,
+      "comments": 0,
+      "reKoo": 0
+    });
+
+    function handlePost1(){
+      console.log(1);
+      
+       fetch("http://localhost:3001/new",{method: 'POST',
+       headers: { 'Content-Type': 'application/json' },
+       body: JSON.stringify(obj)}).then((res)=>console.log(res));
+onClose();
+    }
 
   const handlechange = (event)=>{
     console.log("On change");
-    setText(event.target.value)
-}
+    setObj({...obj,description:event.target.value});
+
+    
+
+} 
   
     return (
       <>
@@ -74,10 +98,10 @@ function InitialFocus1() {
         <textarea style={{width:"100%",color:"grey"}}
           name=""
           id=""
-          value={text}
+          value={obj.description}
           cols="80"
           rows="10"
-          vaalue={text}
+          
           placeholder="Whats on your mind?"
           onChange={handlechange}
         ></textarea>
@@ -95,7 +119,7 @@ function InitialFocus1() {
           <img src="https://img.icons8.com/fluency-systems-regular/512/microphone.png" width="20px"
            alt="" />
         <br />
-           {text.length}/400 
+           {obj.description.length}/400 
           </div>
       
       </div>
@@ -103,7 +127,7 @@ function InitialFocus1() {
             </ModalBody>
   
             <ModalFooter>
-              <Button colorScheme='blue' mr={3}>
+              <Button colorScheme='blue' mr={3} onClick={handlePost1}>
                 Post
               </Button>
               <Button onClick={onClose}>Cancel</Button>
