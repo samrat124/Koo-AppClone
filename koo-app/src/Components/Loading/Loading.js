@@ -1,6 +1,6 @@
 import React from 'react'
 import './loading.css'
-export default function loading() {
+export default function Loading() {
   return (
     <div className="g-loading-gif">
         <div>

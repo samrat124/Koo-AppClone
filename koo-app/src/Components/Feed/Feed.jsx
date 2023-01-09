@@ -27,11 +27,13 @@ import VideoCard from "../videocard/VideoCard";
 import { useState } from "react";
 import Profile from "../Navbar/Profile";
 import Search from "../Login/Google";
+import Loading from "../Loading/Loading";
 
 
 const Feed = () => {
  
     const[data,setState]=useState([]);
+    const[load,setLoad]=useState(true);
     
     useEffect(()=>{
     
@@ -39,9 +41,13 @@ const Feed = () => {
     
            setState(data);
     console.log(data);
+    setLoad(false);
       })
     
     },[])
+    if(load){
+      return <Loading/>
+    }
   return (
     <div>
     <div className="main1">

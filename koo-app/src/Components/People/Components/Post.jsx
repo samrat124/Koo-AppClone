@@ -15,8 +15,10 @@ import {
   Avatar,
 } from "@chakra-ui/react";
 import React, { useEffect,useState } from "react";
+import Loading from "../../Loading/Loading";
 
 function Post({id}) {
+  const[load,setLoad]=useState(true);
   
   const person = {
     id: 1,
@@ -77,8 +79,13 @@ function Post({id}) {
   useEffect(()=>{
     fetch(`http://localhost:3001/users/${id}`)
     .then((res)=>res.json())
-    .then((data)=>setUser(data))
+    .then((data)=>{setUser(data);
+    setLoad(false)}
+    )
   },[])
+  if(load){
+    return <Loading/>
+  }
   return (
     <>
       <Flex

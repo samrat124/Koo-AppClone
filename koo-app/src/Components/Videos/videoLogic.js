@@ -2,10 +2,12 @@ import React from 'react'
 import VideoCard from '../videocard/VideoCard';
 import { useState,useEffect } from 'react';
 import VideosCard from './Videos';
+import Loading from '../Loading/Loading';
 
 function VideoLogic() {
 
     const [data, setdata] = useState([]);
+    const[load,setLoad]=useState(true);
 
     useEffect(() => {
         getdata();
@@ -18,10 +20,14 @@ function VideoLogic() {
           })
           .then((res) => {
             setdata(res);
+            setLoad(false);
             console.log(res);
           });
       };
-
+      
+      if(load){
+        return <Loading/>
+      }
 
   return (
     <>
