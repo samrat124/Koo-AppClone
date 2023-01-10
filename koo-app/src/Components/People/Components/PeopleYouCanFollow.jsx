@@ -12,7 +12,7 @@ function PeopleYouCanFollow() {
   const [data,setData]=useState([]);
    
   useEffect(()=>{
-    fetch(`http://localhost:3001/peopleyoucanfollow`)
+    fetch(`https://mock-server-app-fqpl.onrender.com/peopleyoucanfollow`)
     .then(res=>res.json())
     .then((data)=>{setData(data)
        

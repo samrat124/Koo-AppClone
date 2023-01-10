@@ -11,7 +11,7 @@ function NewData() {
   }, []);
 
   const getdata = () => {
-    fetch("http://localhost:3001/new")
+    fetch("https://mock-server-app-fqpl.onrender.com/new")
       .then((d) => {
         return d.json();
       })

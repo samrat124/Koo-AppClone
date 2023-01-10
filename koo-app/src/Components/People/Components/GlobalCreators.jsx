@@ -7,7 +7,7 @@ import { useState } from 'react';
 function GlobalCreators() {
   const [data,setData]=useState([]);
   useEffect(()=>{
-    fetch(`http://localhost:3001/globalcreators`)
+    fetch(`https://mock-server-app-fqpl.onrender.com/globalcreators`)
     .then(res=>res.json())
     .then((data)=>setData(data))
   },[])

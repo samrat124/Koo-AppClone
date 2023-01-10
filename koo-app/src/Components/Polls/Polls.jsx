@@ -9,7 +9,7 @@ const Polls = () => {
       }, []);
     
       const getdata = () => {
-        fetch("http://localhost:3001/polls")
+        fetch("https://mock-server-app-fqpl.onrender.com/polls")
           .then((d) => {
             return d.json();
           })
