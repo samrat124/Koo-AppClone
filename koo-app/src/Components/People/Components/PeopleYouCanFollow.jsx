@@ -9,7 +9,13 @@ import Loading from "../../Loading/Loading";
 
 function PeopleYouCanFollow() {
   let {id}=useParams();
-  const [data,setData]=useState([]);
+  const [data,setData]=useState([{
+    "id": 1,
+    "image": "https://images.kooapp.com/koo-profile-media/profiles/31386620/profile1661424911315t1a2pj.png?tr=n-dp_square",
+    "name": "Piramal Capital",
+    "username": "@PiramalFinance",
+    "profession": "Financial Services"
+  }]);
    
   useEffect(()=>{
     fetch(`https://mock-server-app-fqpl.onrender.com/peopleyoucanfollow`)
