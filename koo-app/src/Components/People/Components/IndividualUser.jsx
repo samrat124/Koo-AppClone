@@ -8,7 +8,13 @@ import Post from './Post';
 
 function IndividualUser() {
       const {id}=useParams();
-      const [user,setUser]=useState({})
+      const [user,setUser]=useState( {
+        "id": 1,
+        "image": "https://images.kooapp.com/koo-profile-media/profiles/37418771/5FED8329-80EE-4EC7-B807-BBBD18541636-profile.jpeg?tr=n-dp_square",
+        "name": "Lula",
+        "username": "@lulaofficial",
+        "profession": ""
+      })
       useEffect(()=>{
         fetch(`https://mock-server-app-fqpl.onrender.com/user/${id}`)
         .then((res)=>res.json())

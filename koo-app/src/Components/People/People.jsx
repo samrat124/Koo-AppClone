@@ -20,7 +20,7 @@ const People = () => {
       <GlobalCreators/>
       <NewToKoo/>
       <Popular/>
-      <IndividualUser/>
+      {/* <IndividualUser/> */}
     </div>
   )
 }
