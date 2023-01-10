@@ -18,6 +18,7 @@ import {useState} from "react";
 import { PostBox } from './PostBox'
 import "../../Post/Post.css";
 import { useSelector } from 'react-redux';
+import { toast, ToastContainer } from 'react-toastify';
 
 function InitialFocus1() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -43,7 +44,8 @@ function InitialFocus1() {
        fetch("http://localhost:3001/new",{method: 'POST',
        headers: { 'Content-Type': 'application/json' },
        body: JSON.stringify(obj)}).then((res)=>console.log(res));
-onClose();
+      onClose();
+    notify4();
     }
 
   const handlechange = (event)=>{
@@ -52,10 +54,16 @@ onClose();
 
     
 
+}
+const notify4 = () => {
+
+  toast.success(`Post added in New Section`)
+
 } 
   
     return (
       <>
+        <ToastContainer style={{position:"fixed",top:"0%",width:"17%",fontSize:"14px", margin:"auto",left:"0%",zIndex:"9999"}} theme="dark" position="top-left"/>
         <button style={{width:"100%"}} onClick={onOpen}><Box w="100%"><PostBox/></Box></button>
         
   

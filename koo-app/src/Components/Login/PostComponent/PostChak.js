@@ -13,10 +13,13 @@ import {
 import 'react-toastify/dist/ReactToastify.css';
 import React from 'react'
 import {useState} from "react";
+
  
 
 import "../../Post/Post.css";
 import { useSelector } from 'react-redux';
+import { toast, ToastContainer } from 'react-toastify';
+
 
 function InitialFocus3() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -43,6 +46,30 @@ function InitialFocus3() {
       
   
   } 
+  const notify1 = () => {
+
+    toast.warn("Wrong OTP")
+
+}
+const notify2 = () => {
+
+    toast.success("Login Successfull")
+
+}
+const notify3 = () => {
+
+    toast.success(`Hello ${obj.name}`)
+
+
+
+
+}
+const notify4 = () => {
+
+    toast.success(`Post added in New Section`)
+  
+
+}
 
 function handlePost1(){
       
@@ -50,11 +77,14 @@ function handlePost1(){
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(obj)}).then((res)=>console.log(res.ok));
   onClose();
+  notify4();  
+   
 
 }
   
     return (
       <>
+       <ToastContainer style={{position:"fixed",top:"0%",width:"17%",fontSize:"14px", margin:"auto",left:"0%",zIndex:"9999"}} theme="dark" position="top-left"/>
         <button style={{width:"100%"}} onClick={onOpen}><Box w="100%">Koo+</Box></button>
         
   

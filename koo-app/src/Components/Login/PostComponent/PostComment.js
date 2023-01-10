@@ -13,6 +13,7 @@ import {
 import 'react-toastify/dist/ReactToastify.css';
 import React from 'react'
 import {useState} from "react";
+import { toast, ToastContainer } from 'react-toastify';
  
 
 import "../../Post/Post.css";
@@ -50,12 +51,20 @@ function handlePost1(){
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(obj)}).then((res)=>console.log(res.ok));
   onClose();
+  notify4();
+
 
 
 }
+const notify4 = () => {
+
+  toast.success(`Post added in New Section`)
+
+} 
   
     return (
       <>
+        <ToastContainer style={{position:"fixed",top:"0%",width:"17%",fontSize:"14px", margin:"auto",left:"0%",zIndex:"9999"}} theme="dark" position="top-left"/>
         <button style={{width:"100%"}} onClick={onOpen}><Box w="100%"></Box></button>
         
   
