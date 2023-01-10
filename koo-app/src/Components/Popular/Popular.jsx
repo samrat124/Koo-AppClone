@@ -6,7 +6,7 @@ const Popular = () => {
     const[popularData,setPopularData]=useState([]);
     const[load,setLoad]=useState(true);
     let fetchData=async()=>{
-        let res=await fetch('http://localhost:3001/mostPopular')
+        let res=await fetch('https://mock-server-app-fqpl.onrender.com/mostPopular')
         let popular=await res.json();
         setPopularData(popular);
         setLoad(false);

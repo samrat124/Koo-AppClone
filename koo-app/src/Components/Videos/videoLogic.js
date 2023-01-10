@@ -14,7 +14,7 @@ function VideoLogic() {
       }, []);
     
       const getdata = () => {
-        fetch("http://localhost:3001/cricket")
+        fetch("https://mock-server-app-fqpl.onrender.com/cricket")
           .then((d) => {
             return d.json();
           })

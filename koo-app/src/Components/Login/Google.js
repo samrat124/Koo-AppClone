@@ -35,7 +35,7 @@ function Search() {
 
   const getData = () => {
 
-    fetch(`http://localhost:3001/users?q=${state}`).then((res) => {
+    fetch(`https://mock-server-app-fqpl.onrender.com/user?q=${state}`).then((res) => {
       return res.json();
     }).then((data) => {
 

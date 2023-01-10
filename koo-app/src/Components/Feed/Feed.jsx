@@ -37,7 +37,7 @@ const Feed = () => {
     
     useEffect(()=>{
     
-      fetch("http://localhost:3001/users?_Page=1&_limit=5").then((res)=>res.json()).then((data)=>{
+      fetch("https://mock-server-app-fqpl.onrender.com/user?_Page=1&_limit=5").then((res)=>res.json()).then((data)=>{
     
            setState(data);
     console.log(data);

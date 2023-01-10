@@ -42,7 +42,7 @@ const[chidiya,setChidiya]=useState(true);
 
 useEffect(()=>{
 
-  fetch("http://localhost:3001/peopleyoucanfollow?_Page=1&_limit=5").then((res)=>res.json()).then((data)=>{
+  fetch("https://mock-server-app-fqpl.onrender.com/peopleyoucanfollow?_Page=1&_limit=5").then((res)=>res.json()).then((data)=>{
 
        setState(data);
 console.log(data);

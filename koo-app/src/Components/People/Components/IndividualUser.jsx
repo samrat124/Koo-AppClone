@@ -10,7 +10,7 @@ function IndividualUser() {
       const {id}=useParams();
       const [user,setUser]=useState({})
       useEffect(()=>{
-        fetch(`http://localhost:3001/users/${id}`)
+        fetch(`https://mock-server-app-fqpl.onrender.com/user/${id}`)
         .then((res)=>res.json())
         .then((data)=>setUser(data))
       },[id])

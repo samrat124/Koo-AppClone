@@ -41,7 +41,7 @@ function InitialFocus1() {
     function handlePost1(){
       console.log(1);
       
-       fetch("http://localhost:3001/new",{method: 'POST',
+       fetch("https://mock-server-app-fqpl.onrender.com/new",{method: 'POST',
        headers: { 'Content-Type': 'application/json' },
        body: JSON.stringify(obj)}).then((res)=>console.log(res));
       onClose();

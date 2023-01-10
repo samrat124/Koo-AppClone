@@ -6,7 +6,7 @@ import { useState } from 'react';
 function Popular() {
   const [data,setData]=useState([]);
   useEffect(()=>{
-    fetch(`http://localhost:3001/popular`)
+    fetch(`https://mock-server-app-fqpl.onrender.com/popular`)
     .then(res=>res.json())
     .then((data)=>setData(data))
   },[])
