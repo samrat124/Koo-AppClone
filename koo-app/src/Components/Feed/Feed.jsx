@@ -28,6 +28,9 @@ import { useState } from "react";
 import Profile from "../Navbar/Profile";
 import Search from "../Login/Google";
 import Loading from "../Loading/Loading";
+import InitialFocus1 from "../Login/PostComponent/PostChakra";
+import InitialFocus3 from "../Login/PostComponent/PostChak";
+import InitialFocus4 from "../Login/PostComponent/PostComment";
 
 
 const Feed = () => {

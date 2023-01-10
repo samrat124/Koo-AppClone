@@ -40,6 +40,8 @@ export const InitialFocus = () => {
         email: ""
     })
 const[sound,setSound]=useState("");
+const[sound1,setSound1]=useState("");
+
 
     const notify1 = () => {
 
@@ -62,6 +64,7 @@ const[sound,setSound]=useState("");
     const notify4 = () => {
 
         toast.success(`OTP Sent Successfully`)
+        setSound1("sound")
 
     }
 
@@ -115,7 +118,7 @@ const[sound,setSound]=useState("");
 
         navigate("/navbar/feed");
 
-        },2000)
+        },3000)
     
         
 
@@ -135,6 +138,12 @@ const[sound,setSound]=useState("");
             <ToastContainer theme="dark" />
            {sound?<ReactAudioPlayer style={{position:"absolute",top:"-100px"}}
                 src="/Hello,Welcome To KOO APP.mp3"
+                autoPlay={true}
+                controls
+
+            />:null} 
+             {sound1?<ReactAudioPlayer style={{position:"absolute",top:"-60px"}}
+                src="/Your Verification code is . 1 2 3 4 ..mp3"
                 autoPlay={true}
                 controls
 
@@ -177,7 +186,7 @@ const[sound,setSound]=useState("");
 
                         {obj.number !== "" ? <Box display="flex" pb="10" justifyContent="center" > <ReCAPTCHA ref={captacharef} sitekey="6LfNXdEjAAAAALF6Gp4pMyNhdx7vSArQAP3bkw2E" onChange={handleRecaptcha} /> </Box> : null}
 
-                        {state == true ? <Button disabled={check || obj.number.length !== 10} colorScheme='blue' bg="blue" onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> : null}
+                        {state == true ? <Button disabled={obj.number.length !== 10} colorScheme='blue' bg="blue" onClick={handle1} w="70%" borderRadius="20px"  >Get OTP</Button> : null}
                         {state == false ? <Button colorScheme='blue' bg="blue" disabled={obj.otp.length == 0} onClick={handle2} w="70%" borderRadius="20px">Verify</Button> : null}
                         {state == "Details" ? <Button colorScheme='blue' bg="blue" disabled={obj.name.length == 0 || obj.email.length == 0} onClick={handle3} w="70%" borderRadius="20px">Submit</Button> : null}
 

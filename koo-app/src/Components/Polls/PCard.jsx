@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Card/Card.css";
 import {Text,Button,Box} from '@chakra-ui/react'
+import InitialFocus4 from "../Login/PostComponent/PostComment";
 
 export default function PCard({image, name, username,question,option1,option2,option3,option4, profession, description, hashtags, image2}) {
   const [data, setdata] = useState([]);
@@ -85,7 +86,7 @@ export default function PCard({image, name, username,question,option1,option2,op
                   src="https://www.kooapp.com/img/profilePlaceholderYellow.svg"
                   alt="comment"
                 />
-                <div>Write your comment...</div>
+                <div><InitialFocus4/></div>
               </div>
 
               <div className="cont4">

@@ -67,8 +67,8 @@ export default function Card({image, name, username, profession, description, ha
                   src="https://www.kooapp.com/img/profilePlaceholderYellow.svg"
                   alt="comment"
                 />
-                <div>Write your comment...</div>
-                <InitialFocus4/>
+                <div><InitialFocus4/></div>
+                
               </div>
 
               <div className="cont4">

@@ -119,7 +119,7 @@ console.log(obj);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="profile"
+                to="#"
               >
                {isAuth ? <mark style={{backgroundColor:"#FFD700", borderRadius:"10px", padding:"5px"}} >{obj.name}</mark> : "Profile" } 
 
@@ -174,7 +174,7 @@ console.log(obj);
                   gap: "5px",
                   justifyContent: "center",
                 }}
-                to="search"
+                to="#"
               >
                 Search
               </Link>

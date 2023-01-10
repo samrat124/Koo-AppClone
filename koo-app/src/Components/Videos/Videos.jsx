@@ -62,8 +62,8 @@ function VideosCard({ image, name, username, profession, description, hashtags, 
               src="https://www.kooapp.com/img/profilePlaceholderYellow.svg"
               alt="comment"
             />
-            <div>Write your comment...</div>
-            <InitialFocus4/>
+            <div><InitialFocus4/></div>
+             
             
           </div>
 
