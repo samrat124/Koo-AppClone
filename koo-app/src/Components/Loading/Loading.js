@@ -4,7 +4,7 @@ export default function Loading() {
   return (
     <div className="g-loading-gif">
         <div>
-        <img src="https://cdn.dribbble.com/users/1787505/screenshots/7300251/media/a351d9e0236c03a539181b95faced9e0.gif" alt="" />
+        <img src="/Dual Ball-1s-200px (1).gif" alt="one" />
         </div>
       </div>
   )
