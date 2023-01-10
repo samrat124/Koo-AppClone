@@ -22,6 +22,9 @@ import {AiFillLike} from "react-icons/ai";
 import { Center} from '@chakra-ui/react'
 
 import {AiFillDislike,BiCommentDetail,FaShare} from 'react-icons/fa'
+import InitialFocus4 from "../Login/PostComponent/PostComment";
+import InitialFocus3 from "../Login/PostComponent/PostChak";
+import { InitialFocus } from "../Login/LoginModal";
 export default function VideoCard(props) {
 const[like,setLike]=useState(99);
 
@@ -86,7 +89,7 @@ const[like,setLike]=useState(99);
             Like  {like}
           </Button>
           <Button flex="1" variant="ghost" leftIcon={<BsFillChatLeftDotsFill/>}>
-            Comment
+            <InitialFocus4/>
           </Button>
           <Button flex="1" variant="ghost" leftIcon={<BsFillShareFill/>}>
             Share

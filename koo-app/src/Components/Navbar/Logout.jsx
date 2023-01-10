@@ -15,11 +15,13 @@ import {
 
 import { myAction } from '../Login/Redux/action';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 
 function ControlledUsage() {
     const { isOpen, onToggle, onClose } = useDisclosure()
     const dispatch1=useDispatch();
+    let navigate=useNavigate();
   
     return (
       <>
@@ -52,6 +54,7 @@ function ControlledUsage() {
                   
                   myAction(false,dispatch1);
                    onClose();
+                   navigate("/");
 
                 }} >Apply</Button>
               </ButtonGroup>
