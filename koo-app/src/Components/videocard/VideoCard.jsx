@@ -10,7 +10,6 @@ import {
   Box,
   Heading,
   Text,
-  Image,
   Button,
 } from "@chakra-ui/react";
 import ReactPlayer from "react-player";
@@ -20,11 +19,7 @@ import { BsFillChatLeftDotsFill } from "react-icons/bs";
 import {BsFillShareFill } from "react-icons/bs";
 import {AiFillLike} from "react-icons/ai";
 import { Center} from '@chakra-ui/react'
-
-import {AiFillDislike,BiCommentDetail,FaShare} from 'react-icons/fa'
 import InitialFocus4 from "../Login/PostComponent/PostComment";
-import InitialFocus3 from "../Login/PostComponent/PostChak";
-import { InitialFocus } from "../Login/LoginModal";
 export default function VideoCard(props) {
 const[like,setLike]=useState(99);
 

@@ -1,27 +1,23 @@
-import React, { useEffect, useState } from "react";
-import "../../Components/Card/Card.css"
-import InitialFocus4 from "../Login/PostComponent/PostComment"
-function VideosCard({ image, name, username, profession, description, hashtags, image2 }) {
-  const [data, setdata] = useState([]);
-
-  const [state, setState] = useState(5)
-
+import React, { useState } from "react";
+import "../../Components/Card/Card.css";
+import InitialFocus4 from "../Login/PostComponent/PostComment";
+function VideosCard({
+  image,
+  name,
+  username,
+  profession,
+  description,
+  hashtags,
+  image2,
+}) {
+  const [state, setState] = useState(5);
 
   const updateCount = () => {
-
-
-
-
     setState((prevState) => prevState + 1);
-
-
-
   };
 
   return (
     <>
-
-
       <div id="g-parent-div">
         <div id="g-main-div">
           <div className="cont1">
@@ -49,12 +45,13 @@ function VideosCard({ image, name, username, profession, description, hashtags, 
           </div>
 
           <div className="contto">{hashtags}</div>
-          <div  >
+          <div>
             {/* <img src={image2} alt="postimg" /> */}
-            <iframe width="100%"  height="315"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                 
-            </iframe>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            ></iframe>
           </div>
 
           <div className="cont5">
@@ -62,17 +59,14 @@ function VideosCard({ image, name, username, profession, description, hashtags, 
               src="https://www.kooapp.com/img/profilePlaceholderYellow.svg"
               alt="comment"
             />
-            <div><InitialFocus4/></div>
-             
-            
+            <div>
+              <InitialFocus4 />
+            </div>
           </div>
 
           <div className="cont4">
             <div onClick={updateCount}>
-              <img
-                src="https://www.kooapp.com/img/Like1.5.svg"
-                alt="like"
-              />
+              <img src="https://www.kooapp.com/img/Like1.5.svg" alt="like" />
               <p>{state}</p>
             </div>
             <div>
@@ -84,10 +78,7 @@ function VideosCard({ image, name, username, profession, description, hashtags, 
               <p>2</p>
             </div>
             <div>
-              <img
-                src="https://www.kooapp.com/img/Rekoo1.5.svg"
-                alt="swap"
-              />
+              <img src="https://www.kooapp.com/img/Rekoo1.5.svg" alt="swap" />
             </div>
             <div>
               <a href="https://www.kooapp.com/img/Whatsapp1.5.svg">
@@ -107,8 +98,6 @@ function VideosCard({ image, name, username, profession, description, hashtags, 
           </div>
         </div>
       </div>
-
-
     </>
   );
 }
