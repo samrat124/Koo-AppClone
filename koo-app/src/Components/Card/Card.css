@@ -3,6 +3,9 @@
   margin: auto;
   /* background-color: white; */
   /* margin-left: 10px; */
+  word-break: revert;
+  /* word-break: inherit; */
+  /* overflow: hidden; */
 }
 
 #g-main-div {
@@ -50,9 +53,10 @@
   font-size: 14px;
   font-weight: 400;
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  
   /* margin-top: -15px; */
 }
 
@@ -161,4 +165,6 @@
     margin-left: 10px;
     margin-top: 10px;
   }
+
+  
  
