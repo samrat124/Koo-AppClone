@@ -3,7 +3,6 @@ import NavHome from './NavHome'
 import './Home.css'
 import { Button, Heading,Text,Box,Image } from '@chakra-ui/react'
 import {AiOutlineArrowRight} from 'react-icons/ai' 
-import HomeCarousel from './HomeCarousel'
 import kooAppqr from './kooAppqr.png'
 import kooFooter from './kooFooter.png'
 import Carousel from './Carousel'
@@ -30,7 +29,7 @@ const Home = () => {
           <Heading size='2xl'>Features to explore</Heading>
           <p style={{marginTop:'30px'}}>Amazing features to connect with people</p>
         </div>
-        {/* <HomeCarousel/> */}
+         
         <Box w='100%' h='500px' className='carouselHome'><Carousel/></Box>
         <div className='homemidP3'>
           <div className='homeMidp3p1'>

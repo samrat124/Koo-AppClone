@@ -15,3 +15,13 @@
 .g-loading-gif > div > img {
   width: 60%;
 }
+
+@media  screen and (max-width: 767px){
+
+  .g-loading-gif {
+    width:100%;
+    padding: 5%;
+
+  }
+
+}

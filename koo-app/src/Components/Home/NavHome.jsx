@@ -8,7 +8,7 @@ import {SlFire} from 'react-icons/sl';
 import LanguageModal from './LanguageModal';
 import {CiSearch} from 'react-icons/ci'
 import { InitialFocus } from '../Login/LoginModal';
-import Thankyou from '../Login/Thankyou';
+import Thankyou from '../Login/thankyou';
 
 
 const NavHome = () => {
