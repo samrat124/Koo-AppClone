@@ -2,7 +2,7 @@
 
 # Team Details:-
         1. Pranav.
-        2. Smrat.
+        2. Samrat.
         3. sunaina.
         4. Gopal.
    
